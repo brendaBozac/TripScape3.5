@@ -1,0 +1,127 @@
+.navbar {
+  height: 4vmax;
+  background-color: #70ADB6;
+  margin-top: 0;
+  position: fixed;
+  z-index: 4;
+}
+.navbar .ContainerNavbar {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.navbar-brand {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2vmax;
+}
+.navbar-brand .brandImg {
+  width: 2vmax;
+  color: #294e5a;
+}
+.navbar-brand .brandText {
+  margin-bottom: 0;
+  color: #294e5a;
+  font-weight: 400;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #294e5a;
+  font-family: "Alata", sans-serif;
+}
+
+/* media queries */
+/* estructura */
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 992px) {
+  .navbar {
+    height: 6vmax;
+  }
+  .navbar .ContainerNavbar .nav-izquierda {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandImg {
+    width: 4vmax;
+  }
+  .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandText {
+    font-size: 2vmax;
+  }
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+    margin-bottom: 0.3vmax;
+  }
+  .navbar-collapse {
+    background-color: #dae5e9;
+    margin: 3vmax;
+    padding: 1vmax;
+    border-radius: 10px;
+    padding-left: 2vmax;
+    z-index: 22;
+  }
+  .nav-link {
+    color: #70ADB6;
+    font-weight: bold;
+    font-size: 1.8vmax;
+  }
+  .nav-link:hover {
+    background-color: #f0f0f0;
+    color: #70ADB6;
+    border-radius: 5px;
+    padding-left: 0.5vmax;
+  }
+  .dropdown-menu {
+    background-color: #f0f0f0;
+    border: none;
+  }
+  .dropdown-menu li .dropdown-item {
+    font-weight: bold;
+    color: #294e5a;
+    font-size: 1.8vmax;
+  }
+  .dropdown-menu li .dropdown-item:hover {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    color: #70ADB6;
+    border-radius: 5px;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 8vmax;
+    padding-bottom: 0.4vmax;
+  }
+  .navbar .ContainerNavbar .nav-izquierda {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandImg {
+    width: 5vmax;
+  }
+  .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandText {
+    font-size: 3vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding-bottom: 0.8vmax;
+  }
+}
+/* medida personalizada 420 */
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+
+/*# sourceMappingURL=styles.css.map */
