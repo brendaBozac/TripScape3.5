@@ -1,0 +1,166 @@
+.headerContenedor {
+    height: 50vmax;
+    width: 100%;
+    /* background-image: url('../../Img/uno.jpg');
+    background-size: cover;
+    background-position: center center; */
+    // padding: 0;
+    padding-top: 4vmax;
+    margin: 0;
+    z-index: 1;
+}
+
+
+/* 
+.col-izq-header {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+
+    transform: scale(0.8);
+    opacity: 0;
+    animation: zoomIn 1.5s ease-out forwards;
+
+
+    @keyframes zoomIn {
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+    }
+ 
+    .spanHeaderUno {
+        color: rgb(255, 255, 255);
+        font-family: "Alata", sans-serif;
+        font-size: 2.4vmax;
+        text-shadow: 8px 5px 4px rgba(0, 0, 0, 0.836);
+    
+    }
+
+    h1 {
+        color: rgb(255, 255, 255);
+        font-family: "Notable", sans-serif;
+        font-weight: 300;
+        font-size: 5.4vmax;
+        text-shadow: 4px 8px 8px rgba(0, 0, 0, 0.836);
+        letter-spacing: 1.5px;
+    }
+
+    .botonHeader {
+        color: #ffffff;
+        background-color: #247452;
+        padding: 0.5vmax 2vmax;
+        border-radius: 5px;
+        text-decoration: none;
+        // font-family: "Montserrat", sans-serif;
+        font-family: "Alata", sans-serif;
+        letter-spacing: 1.5px;
+        font-weight: 700;
+        font-size: 1.4vmax;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.836);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.836);
+        margin-top: 2.5vmax;
+
+    }
+
+    .botonHeader:hover {
+        color:#21273a;
+        background-color: #3edb9a;
+        text-shadow: none;
+    }
+} */
+
+
+
+.bandaHeader {
+    width: 100%;
+    padding: 0;
+    margin-top: -20vmax;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+/* estructura */
+
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (min-width:1401px) {
+    
+    
+}
+
+
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:1400px) {
+    
+    
+}
+
+
+
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:1200px) {
+    
+
+    
+}
+
+
+
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:992px) {
+    
+    
+   
+}
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:768px) {
+
+
+}
+
+
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:576px) {
+
+    
+
+}
+
+
+
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:320px) {
+
+
+}

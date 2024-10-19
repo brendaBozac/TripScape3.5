@@ -1,14 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #c78465;
+}
+
 .navbar {
-  height: 4vmax;
+  min-height: 4vmax;
   background-color: #70ADB6;
   margin-top: 0;
   position: fixed;
   z-index: 4;
 }
 .navbar .ContainerNavbar {
-  background-color: #f0f0f0;
+  background-color: #f1ebe1;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .navbar-brand {
@@ -34,6 +44,14 @@
   font-family: "Alata", sans-serif;
 }
 
+.dropdown-menu-end li {
+  color: #f3d9ce;
+}
+.dropdown-menu-end li a {
+  font-family: "Alata", sans-serif;
+  color: #70ADB6;
+}
+
 /* media queries */
 /* estructura */
 /* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
@@ -41,29 +59,32 @@
 /* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
 /* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 992px) {
-  .navbar {
-    height: 6vmax;
-  }
   .navbar .ContainerNavbar .nav-izquierda {
+    min-height: 2vmax;
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
     justify-content: space-between;
+    margin: 0 auto;
   }
   .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandImg {
-    width: 4vmax;
+    width: 2vmax;
   }
   .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandText {
     font-size: 2vmax;
   }
   .navbar-toggler {
     border: none;
+    user-select: none;
     padding: 0;
     margin-bottom: 0.3vmax;
   }
+  .navbar-toggler .menuHamuguesa {
+    width: 3vmax;
+  }
   .navbar-collapse {
     background-color: #dae5e9;
-    margin: 3vmax;
+    margin: 2vmax;
     padding: 1vmax;
     border-radius: 10px;
     padding-left: 2vmax;
@@ -98,30 +119,104 @@
 }
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 768px) {
-  .navbar {
-    height: 8vmax;
-    padding-bottom: 0.4vmax;
-  }
-  .navbar .ContainerNavbar .nav-izquierda {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandImg {
-    width: 5vmax;
-  }
-  .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandText {
-    font-size: 3vmax;
+  .nav-link {
+    font-size: 1.8vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 576px) {
-  .navbar {
-    padding-bottom: 0.8vmax;
+  .nav-link {
+    font-size: 1.8vmax;
   }
 }
 /* medida personalizada 420 */
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+.headerContenedor {
+  height: 50vmax;
+  width: 100%;
+  /* background-image: url('../../Img/uno.jpg');
+  background-size: cover;
+  background-position: center center; */
+  padding-top: 4vmax;
+  margin: 0;
+  z-index: 1;
+}
+
+/* 
+.col-izq-header {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+
+    transform: scale(0.8);
+    opacity: 0;
+    animation: zoomIn 1.5s ease-out forwards;
+
+
+    @keyframes zoomIn {
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+    }
+
+    .spanHeaderUno {
+        color: rgb(255, 255, 255);
+        font-family: "Alata", sans-serif;
+        font-size: 2.4vmax;
+        text-shadow: 8px 5px 4px rgba(0, 0, 0, 0.836);
+
+    }
+
+    h1 {
+        color: rgb(255, 255, 255);
+        font-family: "Notable", sans-serif;
+        font-weight: 300;
+        font-size: 5.4vmax;
+        text-shadow: 4px 8px 8px rgba(0, 0, 0, 0.836);
+        letter-spacing: 1.5px;
+    }
+
+    .botonHeader {
+        color: #ffffff;
+        background-color: #247452;
+        padding: 0.5vmax 2vmax;
+        border-radius: 5px;
+        text-decoration: none;
+        // font-family: "Montserrat", sans-serif;
+        font-family: "Alata", sans-serif;
+        letter-spacing: 1.5px;
+        font-weight: 700;
+        font-size: 1.4vmax;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.836);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.836);
+        margin-top: 2.5vmax;
+
+    }
+
+    .botonHeader:hover {
+        color:#21273a;
+        background-color: #3edb9a;
+        text-shadow: none;
+    }
+} */
+.bandaHeader {
+  width: 100%;
+  padding: 0;
+  margin-top: -20vmax;
+}
+
+/* media queries */
+/* estructura */
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 
 /*# sourceMappingURL=styles.css.map */

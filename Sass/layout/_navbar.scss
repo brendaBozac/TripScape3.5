@@ -1,15 +1,17 @@
 .navbar {
-    height: 4vmax;
+    min-height: 4vmax;
     background-color: $color-dark-three;
     margin-top: 0;
     position: fixed;
     z-index: 4;
 
     .ContainerNavbar {
-        background-color: $color-light-one;
+        // background-color: $color-light-one;
+        background-color: $color-arena;
         display: flex;
-        flex-flow: row wrap;
-        
+        flex-direction: row;
+        // height: 3vmax;
+        justify-content: center;
         
     }
 }
@@ -49,7 +51,16 @@
 
 }
  
+.dropdown-menu-end {
+    li {
 
+        color: $color-light-three;
+        a {
+            font-family: $fuente-principal;
+            color: $color-dark-three;
+        }
+    }
+}
 
 
 
@@ -92,20 +103,24 @@
 
 @media screen and (max-width:992px) {
     
-    .navbar {
-        height: 6vmax;
+     .navbar {
+
+    
     
         .ContainerNavbar {
             .nav-izquierda {
+                min-height: 2vmax;
                 display: flex;
                 flex-flow: row nowrap;
                 width: 100%;
                 justify-content: space-between;
+                margin: 0 auto;
     
                 .navbar-brand {
+                
                    
                     .brandImg {
-                        width: 4vmax;
+                        width: 2vmax;
                     }
               
                     .brandText {
@@ -116,22 +131,31 @@
             }
     
         }
-    }
+    } 
 
     
     .navbar-toggler {
         border: none;
+        user-select: none;
         padding: 0;
         margin-bottom: 0.3vmax;
+
+
+        .menuHamuguesa {
+            width: 3vmax;
+        }
+
+
     }
 
     .navbar-collapse {
         background-color: $color-light-two;
-        margin: 3vmax;
+        margin: 2vmax;
         padding: 1vmax;
         border-radius: 10px;
         padding-left: 2vmax;
         z-index: 22;
+        
     }
 
     .nav-link {
@@ -167,7 +191,7 @@
             }
         }
     }
-
+ 
    
 }
 
@@ -178,34 +202,8 @@
 
 @media screen and (max-width:768px) {
 
-    
-    .navbar {
-        height: 8vmax;
-        padding-bottom: 0.4vmax;
-    
-        .ContainerNavbar {
-            .nav-izquierda {
-                display: flex;
-                flex-flow: row nowrap;
-                width: 100%;
-                justify-content: space-between;
-
-    
-                .navbar-brand {
-                   
-                    .brandImg {
-                        width: 5vmax;
-                    }
-              
-                    .brandText {
-                        font-size: 3vmax;
-                    }
-    
-                }
-
-            }
-    
-        }
+    .nav-link {
+        font-size: $size-xs;
     }
 
 }
@@ -217,10 +215,10 @@
 
 @media screen and (max-width:576px) {
 
-    .navbar {
-        padding-bottom: 0.8vmax;
-    }
     
+    .nav-link {
+        font-size: $size-xs;
+    }
 
 }
 
