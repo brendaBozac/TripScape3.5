@@ -1,17 +1,30 @@
 .headerContenedor {
-    height: 50vmax;
+    height: 40vmax;
     width: 100%;
-    /* background-image: url('../../Img/uno.jpg');
+    background-image: url('../../Img/uno.jpg');
     background-size: cover;
-    background-position: center center; */
+    background-position: center top 70%;
     // padding: 0;
-    padding-top: 4vmax;
-    margin: 0;
+    margin-top: 0;
     z-index: 1;
+    padding: 6vmax;
+    box-sizing: border-box;
 }
 
 
-/* 
+
+.bandaHeader {
+    width: 100%;
+    padding: 0;
+    margin-top: -15vmax;
+    
+    
+}
+
+
+
+
+
 .col-izq-header {
 
     display: flex;
@@ -33,55 +46,54 @@
     }
  
     .spanHeaderUno {
-        color: rgb(255, 255, 255);
-        font-family: "Alata", sans-serif;
-        font-size: 2.4vmax;
-        text-shadow: 8px 5px 4px rgba(0, 0, 0, 0.836);
-    
+        color: $color-light-one;
+        font-family: $fuente-terc;
+        font-weight: 500;
+        font-size: $size-small;
+
+       /* sombra que rodea todo el borde de la letra */
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.904);
     }
 
     h1 {
-        color: rgb(255, 255, 255);
-        font-family: "Notable", sans-serif;
-        font-weight: 300;
-        font-size: 5.4vmax;
-        text-shadow: 4px 8px 8px rgba(0, 0, 0, 0.836);
+        color: $color-light-one;
+        font-family: $fuente-terc;
+        // font-family: $fuente-header;
+        font-size: $size-header;
+        text-shadow: 6px 8px 8px rgb(0, 0, 0);
         letter-spacing: 1.5px;
     }
 
     .botonHeader {
-        color: #ffffff;
-        background-color: #247452;
-        padding: 0.5vmax 2vmax;
-        border-radius: 5px;
+
         text-decoration: none;
-        // font-family: "Montserrat", sans-serif;
-        font-family: "Alata", sans-serif;
-        letter-spacing: 1.5px;
-        font-weight: 700;
-        font-size: 1.4vmax;
-        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.836);
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.836);
-        margin-top: 2.5vmax;
+        background-color: $color-botones;
+        color: $color-dark-two;
+        padding: 0.6vmax 2.6vmax;
+        font-family: $fuente-terc;
+        font-size: $size-xxs;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px black;
+        margin-top: 1.5vmax;
+ 
+        /* para el zoom del hover */
+        transition: transform 0.4s ease, filter 0.4s ease;
 
     }
 
     .botonHeader:hover {
-        color:#21273a;
-        background-color: #3edb9a;
+        color:$color-contrast-one;
+        background-color: $color-light-three;
         text-shadow: none;
+        transform: scale(1.1); /* Zoom */
+
+
+
+       
+
     }
-} */
+} 
 
-
-
-.bandaHeader {
-    width: 100%;
-    padding: 0;
-    margin-top: -20vmax;
-    
-    
-}
 
 
 
@@ -132,6 +144,19 @@
 
 @media screen and (max-width:992px) {
     
+    .headerContenedor {
+        height: 45vmax;
+        padding: 6vmax;
+    }
+    
+    
+    
+    .bandaHeader {
+    
+        margin-top: -16vmax;
+        
+        
+    }
     
    
 }
@@ -143,6 +168,39 @@
 @media screen and (max-width:768px) {
 
 
+    .headerContenedor {
+        height: 55vmax;
+        padding: 6vmax;
+    }
+    
+    
+    .bandaHeader {
+    
+        margin-top: -14vmax;
+        
+        
+    }
+
+
+/* 
+    .col-izq-header {
+        padding: 5vmax;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+
+        .spanHeaderUno {
+            font-size: $size-terc;
+            padding: 0.5vmax 2vmax;
+        }
+
+        h1 {
+            font-size: $size-header-movile;
+        }
+
+        
+    } */
 }
 
 
@@ -153,8 +211,38 @@
 @media screen and (max-width:576px) {
 
     
+    .headerContenedor {
+        height: 65vmax;
+        padding: 6vmax;
+    }
 
+
+
+    
+    .bandaHeader {
+    
+        margin-top: -11vmax;
+        
+        
+    }
+
+   /*  
+    .col-izq-header {
+        
+        .spanHeaderUno {
+            font-size: $size-cuarto;
+        
+        }
+
+        h1 {
+            font-size: $size-header-movile;
+
+        }
+
+        
+    } */
 }
+
 
 
 
@@ -162,5 +250,10 @@
 
 @media screen and (max-width:320px) {
 
+    
+    .headerContenedor {
+        height: 70vmax;
+        padding: 6vmax;
+    }
 
 }
