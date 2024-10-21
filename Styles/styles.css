@@ -70,7 +70,7 @@ body {
     margin: 0 auto;
   }
   .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandImg {
-    width: 2vmax;
+    width: 2vmax !important;
   }
   .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandText {
     font-size: 2vmax;
