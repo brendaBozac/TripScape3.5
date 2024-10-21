@@ -60,7 +60,7 @@ body {
 /* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
 /* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
 /* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .navbar .ContainerNavbar .nav-izquierda {
     min-height: 2vmax;
     display: flex;
@@ -136,7 +136,7 @@ body {
 .headerContenedor {
   height: 40vmax;
   width: 100%;
-  background-image: url("../../Img/uno.jpg");
+  background-image: url("../Img/uno.jpg");
   background-size: cover;
   background-position: center top 70%;
   margin-top: 0;
