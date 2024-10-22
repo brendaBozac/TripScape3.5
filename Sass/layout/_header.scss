@@ -12,17 +12,11 @@
 }
 
 
-
 .bandaHeader {
     width: 100%;
     padding: 0;
     margin-top: -15vmax;
-    
-    
 }
-
-
-
 
 
 .col-izq-header {
@@ -145,8 +139,8 @@
 @media screen and (max-width:992px) {
     
     .headerContenedor {
-        height: 45vmax;
-        padding: 6vmax;
+        height: 48vmax;
+        padding: 6vmax 6vmax 2vmax 6vmax;
     }
     
     
@@ -159,6 +153,36 @@
     }
     
    
+    
+    .col-izq-header {
+       
+
+
+        .spanHeaderUno {
+            font-size: $size-cuarto;
+            // padding: 0.5vmax 2vmax;
+        }
+
+        h1 {
+            font-size: $size-header;
+            padding-bottom: 1vmax;
+        }
+
+        
+        .botonHeader {
+
+            
+            padding: 0.6vmax 2.6vmax;
+            
+            font-size: $size-xs;
+            
+            margin-top: 1vmax;
+     
+          
+        }
+    } 
+
+   
 }
 
 
@@ -169,14 +193,14 @@
 
 
     .headerContenedor {
-        height: 55vmax;
-        padding: 6vmax;
+        height: 60vmax;
+        padding: 10vmax 6vmax 2vmax 6vmax;
     }
     
     
     .bandaHeader {
     
-        margin-top: -14vmax;
+        margin-top: -16vmax;
         
         
     }
@@ -184,7 +208,7 @@
 
 
     .col-izq-header {
-        padding: 2vmax;
+       
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -196,10 +220,22 @@
         }
 
         h1 {
-            font-size: $size-header-movile;
+            font-size: $size-header;
+            padding-bottom: 1.5vmax;
         }
 
         
+        .botonHeader {
+
+            
+            padding: 0.6vmax 2.6vmax;
+            
+            font-size: $size-xs;
+            
+            margin-top: 1.5vmax;
+     
+          
+        }
     } 
 }
 
@@ -213,7 +249,6 @@
     
     .headerContenedor {
         height: 65vmax;
-        padding: 6vmax;
     }
 
 
@@ -221,7 +256,7 @@
     
     .bandaHeader {
     
-        margin-top: -11vmax;
+        margin-top: -12vmax;
         
         
     }
@@ -235,7 +270,7 @@
         }
 
         h1 {
-            font-size: $size-header-movile;
+            font-size: $size-large;
             padding-bottom: 1.5vmax;
 
         }

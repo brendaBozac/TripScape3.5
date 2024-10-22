@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #c78465;
+  background-color: #f1ebe1;
   padding-top: 4vmax;
 }
 
@@ -209,24 +209,35 @@ body {
 /* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 992px) {
   .headerContenedor {
-    height: 45vmax;
-    padding: 6vmax;
+    height: 48vmax;
+    padding: 6vmax 6vmax 2vmax 6vmax;
   }
   .bandaHeader {
     margin-top: -16vmax;
+  }
+  .col-izq-header .spanHeaderUno {
+    font-size: 2.6vmax;
+  }
+  .col-izq-header h1 {
+    font-size: 6vmax;
+    padding-bottom: 1vmax;
+  }
+  .col-izq-header .botonHeader {
+    padding: 0.6vmax 2.6vmax;
+    font-size: 1.8vmax;
+    margin-top: 1vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 768px) {
   .headerContenedor {
-    height: 55vmax;
-    padding: 6vmax;
+    height: 60vmax;
+    padding: 10vmax 6vmax 2vmax 6vmax;
   }
   .bandaHeader {
-    margin-top: -14vmax;
+    margin-top: -16vmax;
   }
   .col-izq-header {
-    padding: 2vmax;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -237,22 +248,27 @@ body {
   }
   .col-izq-header h1 {
     font-size: 6vmax;
+    padding-bottom: 1.5vmax;
+  }
+  .col-izq-header .botonHeader {
+    padding: 0.6vmax 2.6vmax;
+    font-size: 1.8vmax;
+    margin-top: 1.5vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 576px) {
   .headerContenedor {
     height: 65vmax;
-    padding: 6vmax;
   }
   .bandaHeader {
-    margin-top: -11vmax;
+    margin-top: -12vmax;
   }
   .col-izq-header .spanHeaderUno {
     font-size: 2.6vmax;
   }
   .col-izq-header h1 {
-    font-size: 6vmax;
+    font-size: 5vmax;
     padding-bottom: 1.5vmax;
   }
 }
