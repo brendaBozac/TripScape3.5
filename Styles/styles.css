@@ -266,7 +266,7 @@ body {
 @media screen and (max-width: 576px) {
   .headerContenedor {
     height: 65vmax;
-    padding: 14vmax 4vmax 2vmax 4vmax;
+    padding: 10vmax 4vmax 2vmax 4vmax;
   }
   .bandaHeader {
     margin-top: -13vmax;
@@ -289,7 +289,7 @@ body {
 @media screen and (max-width: 320px) {
   .headerContenedor {
     height: 70vmax;
-    padding: 12vmax 2vmax 2vmax 2vmax;
+    padding: 10vmax 2vmax 2vmax 2vmax;
   }
   h1 {
     font-size: 5vmax;
