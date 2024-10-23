@@ -1,0 +1,307 @@
+.sectionPackages {
+   
+    margin: 0 0 5vmax 0;
+
+   .PackagesRow {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+
+                
+        .titulosPackages {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            padding: 0 5vmax;
+
+            h2 {
+                @include h2-styles($fuente-principal, $size-principal, $color-dark-one);
+                margin-top: -7vmax;
+                margin-bottom: 1.5vmax;
+                padding: 0 8vmax;
+                font-weight: 600;
+            
+            }
+
+            h3 {
+                @include h2-styles($fuente-principal, $size-small, $color-dark-two);
+                margin-bottom: 2vmax;
+                padding: 0 3vmax;
+            }
+        }
+   }
+
+}
+
+
+/* div contenedor de las tres columnas que tienen las fotos */
+.primerCardsGroup {
+    height: 40vmax;
+    overflow: hidden;
+    // margin-bottom: 3vmax;
+    
+}
+
+/* contenedor de cada imagen mas su texto hover */
+.cardsDiv {
+    width: 100%;
+    position: relative; /* Necesario para que el texto se posicione sobre la imagen */
+    overflow: hidden;   /* Para que el zoom no cambie el tamaño visible */
+    transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
+
+    
+}
+
+
+
+
+.cardsDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
+}
+  
+  /* Efecto hover para zoom y filtro */
+.cardsDiv:hover img {
+    transform: scale(1.1); /* Zoom */
+    filter: brightness(0.8); /* Filtro de brillo para oscurecer ligeramente */
+}
+  
+
+/* Texto que aparece en hover */
+.cardsDiv .cardText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.4s ease; /* Transición suave para aparición del texto */
+}
+
+.cardsDiv:hover .cardText {
+    opacity: 1; /* Texto aparece cuando se hace hover */
+}
+
+    /* Efecto de link clicable sobre el texto */
+.cardsDiv .cardText a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;    
+}
+
+.cardsDiv .cardText a:hover {
+    color: #ffd700; /* Cambia el color del enlace en hover */
+}
+
+
+ 
+
+.cardsDivLados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.cardsDerDiv,
+.cardsIzqDiv,
+.cardCentralDiv {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 1vmax;
+
+}
+
+
+.contenedorCentralPalmeras {
+    padding: 0;
+
+        
+    .cardCentralDiv {
+        height: 40vmax;
+        padding: 0;
+        margin: 0;
+
+        .cardCentral {
+            height: 100%;
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* media queries */
+/* estructura */
+
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (min-width:1401px) {
+    
+    
+}
+
+
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:1400px) {
+    
+    
+}
+
+
+
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:1200px) {
+    
+
+    
+}
+
+
+
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:992px) {
+    
+    
+   
+}
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:767px) {
+
+    .primerCardsGroup {
+        flex-direction: column; /* Cambia la dirección de las columnas a vertical */
+        height: auto;
+        padding: 3vmax;
+    }
+    
+
+    .contenedorCentralPalmeras {
+    order: -1; /* Mueve la columna central por encima de todo */
+    
+        .cardCentralDiv {
+            height: 25vmax; /* Ajusta la altura a algo más razonable en pantallas pequeñas */
+            padding: 0;
+            margin: 0 0 1vmax 0;
+             /* Ajuste de la imagen central en pantallas pequeñas */
+            .cardCentral {
+                height: auto; /* Ajusta la altura automáticamente */
+                width: 100%; /* Ocupa todo el ancho del contenedor */
+                object-fit: cover; /* Asegúrate de que la imagen se recorte correctamente */
+                padding: 0;
+                margin: 0;
+            
+            }
+        
+        
+        
+        }
+
+            
+    }
+
+    .cardsIzqDiv, .cardsDerDiv {
+        order: 0; /* Mantén las otras columnas en su orden original */
+        flex-flow: row nowrap;
+        height: 25vmax;
+        padding: 0;
+        margin: 0 0 1vmax 0;
+    }
+    
+     
+
+      
+
+
+
+
+}
+
+
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:576px) {
+
+    
+    
+
+}
+
+
+
+/* medida especial */
+@media screen and (max-width:500px) {
+
+    .titulosPackages {
+        
+        padding: 0 3vmax;
+
+        h2 {
+            padding: 1vmax 3vmax;
+        }
+
+    }
+
+
+    .cardCentralDiv {
+        height: 20vmax; /* Ajusta la altura a algo más razonable en pantallas pequeñas */
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .cardsIzqDiv, .cardsDerDiv {
+        flex-flow: column nowrap;
+        height: 40vmax;
+        padding: 0;
+        margin: 0 0 1vmax 0;
+    }
+    
+
+
+
+
+}
+
+
+
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:320px) {
+
+
+}

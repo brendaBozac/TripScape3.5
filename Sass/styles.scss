@@ -1,4 +1,6 @@
 @import 'variables';
+@import 'mixin';
 @import 'global';
-@import 'layout/navbar';
-@import 'layout/header';
+@import './layout/navbar';
+@import './layout/header';
+@import './layout/packages';
