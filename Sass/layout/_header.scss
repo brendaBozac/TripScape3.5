@@ -251,7 +251,7 @@
     
     .headerContenedor {
         height: 65vmax;
-        padding: 10vmax 4vmax 2vmax 4vmax;
+        padding: 12vmax 4vmax 2vmax 4vmax;
     }
 
 
@@ -288,8 +288,14 @@
     } 
 }
 
-
-
+/* @media screen and (max-width:500px) {
+    
+    .headerContenedor {
+        height: 70vmax;
+        padding: 10vmax 2vmax 2vmax 2vmax!important;
+    }
+    
+} */
 
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 
@@ -298,7 +304,7 @@
     
     .headerContenedor {
         height: 70vmax;
-        padding: 10vmax 2vmax 2vmax 2vmax;
+        padding: 14vmax 2vmax 2vmax 2vmax;
     }
 
     
