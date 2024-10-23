@@ -15,13 +15,13 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            gap: 2vmax;
 
             padding: 0 5vmax;
 
             h2 {
                 @include h2-styles($fuente-principal, $size-principal, $color-dark-one);
-                margin-top: -7vmax;
-                margin-bottom: 1.5vmax;
+                margin: -5vmax 0 0 0;
                 padding: 0 8vmax;
                 font-weight: 600;
             
@@ -193,6 +193,23 @@
 @media screen and (max-width:992px) {
     
     
+    .titulosPackages {
+        
+        padding: 0 3vmax!important;
+
+       
+        h2 {
+            margin-top: -5vmax;
+            padding: 0 2vmax!important;
+            font-size: $size-secundario!important;
+        }
+
+        h3 {
+            font-size: $size-small!important;
+        }
+    }
+
+
    
 }
 
@@ -208,6 +225,25 @@
         padding: 3vmax;
     }
     
+
+    
+    .titulosPackages {
+        
+        padding: 0 1vmax!important;
+
+       
+        h2 {
+            margin-top: -5vmax;
+            padding: 0 2vmax!important;
+            font-size: $size-secundario!important;
+        }
+
+        h3 {
+            font-size: $size-small!important;
+        }
+    }
+
+
 
     .contenedorCentralPalmeras {
     order: -1; /* Mueve la columna central por encima de todo */
@@ -258,23 +294,40 @@
 @media screen and (max-width:576px) {
 
     
-    
+    .titulosPackages {
+        
+        padding: 0 1vmax!important;
 
+       
+        h2 {
+            padding: 0 1vmax!important;
+            font-size: $size-terc!important;
+        }
+
+        h3 {
+            font-size: $size-xs!important;
+        }
+    }
 }
-
 
 
 /* medida especial */
 @media screen and (max-width:500px) {
 
+   
     .titulosPackages {
         
-        padding: 0 3vmax;
+        padding: 0 1vmax!important;
 
+       
         h2 {
-            padding: 1vmax 3vmax;
+            padding: 0 1vmax!important;
+            font-size: $size-terc!important;
         }
 
+        h3 {
+            font-size: $size-xs!important;
+        }
     }
 
 
@@ -292,16 +345,38 @@
     }
     
 
-
-
-
 }
 
+/* medida especial hasta 456 */
+@media screen and (max-width:453px) {
 
+    .titulosPackages {
+        
+        padding: 0!important;
+
+       
+        h2 {
+            padding: 0 1vmax!important;
+            font-size: $size-secundario!important;
+        }
+
+    }
+
+}
 
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 
 @media screen and (max-width:320px) {
+
+
+    
+    .titulosPackages {
+        
+
+        h3 {
+            font-size: $size-xs!important;
+        }
+    }
 
 
 }

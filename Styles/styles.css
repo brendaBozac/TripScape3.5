@@ -269,7 +269,7 @@ body {
     padding: 14vmax 4vmax 2vmax 4vmax;
   }
   .bandaHeader {
-    margin-top: -12vmax;
+    margin-top: -13vmax;
   }
   .col-izq-header {
     display: flex;
@@ -309,14 +309,14 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 2vmax;
   padding: 0 5vmax;
 }
 .sectionPackages .PackagesRow .titulosPackages h2 {
   font-family: "Alata", sans-serif;
   font-size: 4.2vmax;
   color: #11262c;
-  margin-top: -7vmax;
-  margin-bottom: 1.5vmax;
+  margin: -5vmax 0 0 0;
   padding: 0 8vmax;
   font-weight: 600;
 }
@@ -422,12 +422,36 @@ body {
 /* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
 /* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
 /* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 992px) {
+  .titulosPackages {
+    padding: 0 3vmax !important;
+  }
+  .titulosPackages h2 {
+    margin-top: -5vmax;
+    padding: 0 2vmax !important;
+    font-size: 3.6vmax !important;
+  }
+  .titulosPackages h3 {
+    font-size: 2.2vmax !important;
+  }
+}
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 767px) {
   .primerCardsGroup {
     flex-direction: column; /* Cambia la dirección de las columnas a vertical */
     height: auto;
     padding: 3vmax;
+  }
+  .titulosPackages {
+    padding: 0 1vmax !important;
+  }
+  .titulosPackages h2 {
+    margin-top: -5vmax;
+    padding: 0 2vmax !important;
+    font-size: 3.6vmax !important;
+  }
+  .titulosPackages h3 {
+    font-size: 2.2vmax !important;
   }
   .contenedorCentralPalmeras {
     order: -1; /* Mueve la columna central por encima de todo */
@@ -454,13 +478,29 @@ body {
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 576px) {
+  .titulosPackages {
+    padding: 0 1vmax !important;
+  }
+  .titulosPackages h2 {
+    padding: 0 1vmax !important;
+    font-size: 3vmax !important;
+  }
+  .titulosPackages h3 {
+    font-size: 1.8vmax !important;
+  }
+}
 /* medida especial */
 @media screen and (max-width: 500px) {
   .titulosPackages {
-    padding: 0 3vmax;
+    padding: 0 1vmax !important;
   }
   .titulosPackages h2 {
-    padding: 1vmax 3vmax;
+    padding: 0 1vmax !important;
+    font-size: 3vmax !important;
+  }
+  .titulosPackages h3 {
+    font-size: 1.8vmax !important;
   }
   .cardCentralDiv {
     height: 20vmax; /* Ajusta la altura a algo más razonable en pantallas pequeñas */
@@ -474,6 +514,21 @@ body {
     margin: 0 0 1vmax 0;
   }
 }
+/* medida especial hasta 456 */
+@media screen and (max-width: 453px) {
+  .titulosPackages {
+    padding: 0 !important;
+  }
+  .titulosPackages h2 {
+    padding: 0 1vmax !important;
+    font-size: 3.6vmax !important;
+  }
+}
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 320px) {
+  .titulosPackages h3 {
+    font-size: 1.8vmax !important;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
