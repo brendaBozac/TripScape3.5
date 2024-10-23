@@ -266,24 +266,33 @@ body {
 @media screen and (max-width: 576px) {
   .headerContenedor {
     height: 65vmax;
-    padding: 14vmax 6vmax 2vmax 6vmax;
+    padding: 14vmax 4vmax 2vmax 4vmax;
   }
   .bandaHeader {
     margin-top: -12vmax;
   }
+  .col-izq-header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmax;
+  }
   .col-izq-header .spanHeaderUno {
-    font-size: 2.6vmax;
+    font-size: 2.2vmax;
   }
   .col-izq-header h1 {
     font-size: 6vmax;
-    padding-bottom: 1.5vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 320px) {
   .headerContenedor {
     height: 70vmax;
-    padding: 6vmax;
+    padding: 12vmax 2vmax 2vmax 2vmax;
+  }
+  h1 {
+    font-size: 5vmax;
   }
 }
 .sectionPackages {
