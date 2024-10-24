@@ -370,7 +370,6 @@ body {
   color: white;
   background-color: rgba(165, 58, 8, 0.7529411765);
   border-radius: 15px;
-  padding: 0.2vmax 2vmax;
   font-size: 1.5vmax;
   font-family: "Alata", sans-serif;
   text-align: center;
@@ -563,6 +562,12 @@ body {
   }
   .cardCentralDiv .cardTextCentral {
     font-size: 2.6vmax;
+  }
+  .cardsDiv .cardText {
+    font-size: 1.8vmax;
+  }
+  .cardCentralDiv .cardTextCentral {
+    font-size: 1.8vmax;
   }
 }
 /* medida especial */

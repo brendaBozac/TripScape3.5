@@ -81,7 +81,7 @@
     color: white;
     background-color: $color-contrast-opacity;
     border-radius: 15px;
-    padding: 0.2vmax 2vmax;
+    // padding: 0.2vmax 2vmax;
     font-size: $size-xxs;
     font-family: $fuente-principal;
     text-align: center;
@@ -404,11 +404,22 @@
 
     .cardsDiv .cardText {
         font-size: $size-cuarto; 
+    }
+       
+ 
+    .cardCentralDiv .cardTextCentral {
+        font-size: $size-cuarto; 
+         
+    }
+
+    
+    .cardsDiv .cardText {
+        font-size: $size-xs; 
      }
        
  
      .cardCentralDiv .cardTextCentral {
-         font-size: $size-cuarto; 
+         font-size: $size-xs; 
          
      }
 }
