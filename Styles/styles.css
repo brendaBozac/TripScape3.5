@@ -414,6 +414,8 @@ body {
 
 .contenedorCentralPalmeras {
   padding: 0;
+  object-fit: cover;
+  object-position: center bottom;
 }
 .contenedorCentralPalmeras .cardCentralDiv {
   height: 40vmax;
@@ -437,7 +439,6 @@ body {
   color: white;
   background-color: rgba(165, 58, 8, 0.7529411765);
   border-radius: 15px;
-  padding: 0.2vmax 2vmax;
   font-size: 1.5vmax;
   font-family: "Alata", sans-serif;
   text-align: center;
@@ -522,6 +523,10 @@ body {
     padding: 0;
     margin: 0 0 1vmax 0;
   }
+  .cardsDivLados {
+    justify-content: space-around;
+    margin-top: 0.5vmax;
+  }
   .cardsDiv .cardText {
     font-size: 2.2vmax;
   }
@@ -540,6 +545,18 @@ body {
   }
   .titulosPackages h3 {
     font-size: 1.8vmax !important;
+  }
+  .cardCentralDiv {
+    border: 3px solid red;
+    /* img central */
+  }
+  .cardCentralDiv .cardCentral {
+    height: auto; /* Ajusta la altura automáticamente */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    object-fit: cover; /* Asegúrate de que la imagen se recorte correctamente */
+    object-position: center bottom;
+    padding: 0;
+    margin: 0;
   }
   .cardsDiv .cardText {
     font-size: 2.6vmax;
