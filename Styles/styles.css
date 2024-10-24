@@ -371,7 +371,7 @@ body {
   background-color: rgba(165, 58, 8, 0.7529411765);
   border-radius: 15px;
   padding: 0.2vmax 2vmax;
-  font-size: 2.2vmax;
+  font-size: 1.5vmax;
   font-family: "Alata", sans-serif;
   text-align: center;
   opacity: 0; /* Inicialmente oculto */
@@ -392,7 +392,6 @@ body {
 
 .cardsDiv .cardText a:hover {
   color: #c7aa05;
-  text-shadow: 1px 2px 3px #11262c;
 }
 
 .cardsDivLados {
@@ -439,7 +438,7 @@ body {
   background-color: rgba(165, 58, 8, 0.7529411765);
   border-radius: 15px;
   padding: 0.2vmax 2vmax;
-  font-size: 2.2vmax;
+  font-size: 1.5vmax;
   font-family: "Alata", sans-serif;
   text-align: center;
   opacity: 0; /* Inicialmente oculto */
@@ -460,7 +459,6 @@ body {
 
 .cardTextCentral a:hover {
   color: #c7aa05;
-  text-shadow: 1px 2px 3px #11262c;
 }
 
 /* media queries */
@@ -524,6 +522,12 @@ body {
     padding: 0;
     margin: 0 0 1vmax 0;
   }
+  .cardsDiv .cardText {
+    font-size: 2.2vmax;
+  }
+  .cardCentralDiv .cardTextCentral {
+    font-size: 2.2vmax;
+  }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 576px) {
@@ -536,6 +540,12 @@ body {
   }
   .titulosPackages h3 {
     font-size: 1.8vmax !important;
+  }
+  .cardsDiv .cardText {
+    font-size: 2.6vmax;
+  }
+  .cardCentralDiv .cardTextCentral {
+    font-size: 2.6vmax;
   }
 }
 /* medida especial */
