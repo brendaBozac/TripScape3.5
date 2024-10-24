@@ -370,6 +370,7 @@ body {
   color: white;
   background-color: rgba(165, 58, 8, 0.7529411765);
   border-radius: 15px;
+  padding: 0.2vmax 2vmax;
   font-size: 1.5vmax;
   font-family: "Alata", sans-serif;
   text-align: center;
@@ -438,6 +439,7 @@ body {
   color: white;
   background-color: rgba(165, 58, 8, 0.7529411765);
   border-radius: 15px;
+  padding: 0.2vmax 2vmax;
   font-size: 1.5vmax;
   font-family: "Alata", sans-serif;
   text-align: center;
@@ -546,7 +548,6 @@ body {
     font-size: 1.8vmax !important;
   }
   .cardCentralDiv {
-    border: 3px solid red;
     /* img central */
   }
   .cardCentralDiv .cardCentral {
