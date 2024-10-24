@@ -344,14 +344,12 @@ body {
 
 /* contenedor de cada imagen mas su texto hover */
 .cardsDiv {
-  width: 100%;
   position: relative; /* Necesario para que el texto se posicione sobre la imagen */
   overflow: hidden; /* Para que el zoom no cambie el tamaño visible */
   transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
 }
 
 .cardsDiv img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
@@ -370,9 +368,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
-  padding: 10px;
-  font-size: 1.5rem;
+  background-color: rgba(165, 58, 8, 0.7529411765);
+  border-radius: 15px;
+  padding: 0.2vmax 2vmax;
+  font-size: 2.2vmax;
+  font-family: "Alata", sans-serif;
   text-align: center;
   opacity: 0; /* Inicialmente oculto */
   transition: opacity 0.4s ease; /* Transición suave para aparición del texto */
@@ -384,14 +384,15 @@ body {
 
 /* Efecto de link clicable sobre el texto */
 .cardsDiv .cardText a {
-  color: white;
+  color: #f0f0f0;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .cardsDiv .cardText a:hover {
-  color: #ffd700; /* Cambia el color del enlace en hover */
+  color: #c7aa05;
+  text-shadow: 1px 2px 3px #11262c;
 }
 
 .cardsDivLados {
@@ -400,7 +401,7 @@ body {
   justify-content: space-between;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 19vmax;
 }
 
 .cardsDerDiv,
@@ -419,9 +420,47 @@ body {
   height: 40vmax;
   padding: 0;
   margin: 0;
+  /* es la imagen */
 }
 .contenedorCentralPalmeras .cardCentralDiv .cardCentral {
   height: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.cardCentralDiv .cardTextCentral {
+  width: unset !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(165, 58, 8, 0.7529411765);
+  border-radius: 15px;
+  padding: 0.2vmax 2vmax;
+  font-size: 2.2vmax;
+  font-family: "Alata", sans-serif;
+  text-align: center;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.4s ease;
+}
+
+.cardCentralDiv:hover .cardTextCentral {
+  opacity: 1; /* Texto aparece cuando se hace hover */
+}
+
+/* Efecto de link clicable sobre el texto */
+.cardTextCentral a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.cardTextCentral a:hover {
+  color: #c7aa05;
+  text-shadow: 1px 2px 3px #11262c;
 }
 
 /* media queries */
@@ -465,7 +504,7 @@ body {
     order: -1; /* Mueve la columna central por encima de todo */
   }
   .contenedorCentralPalmeras .cardCentralDiv {
-    height: 25vmax; /* Ajusta la altura a algo más razonable en pantallas pequeñas */
+    height: 19vmax; /* Ajusta la altura a algo más razonable en pantallas pequeñas */
     padding: 0;
     margin: 0 0 1vmax 0;
     /* Ajuste de la imagen central en pantallas pequeñas */
@@ -474,13 +513,14 @@ body {
     height: auto; /* Ajusta la altura automáticamente */
     width: 100%; /* Ocupa todo el ancho del contenedor */
     object-fit: cover; /* Asegúrate de que la imagen se recorte correctamente */
+    object-position: center center;
     padding: 0;
     margin: 0;
   }
   .cardsIzqDiv, .cardsDerDiv {
     order: 0; /* Mantén las otras columnas en su orden original */
     flex-flow: row nowrap;
-    height: 25vmax;
+    height: 19vmax;
     padding: 0;
     margin: 0 0 1vmax 0;
   }
