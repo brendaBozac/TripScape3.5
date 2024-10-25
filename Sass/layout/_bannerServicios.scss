@@ -1,0 +1,249 @@
+.section-servicios {
+    padding: 2vmax;
+    margin-bottom: 2vmax;
+    background-color: $color-arena;
+    // background-color: cadetblue;
+
+}
+
+.bannerContainerTitulos {
+
+    .div-titulo-banner h3 {
+        text-align: center;
+        padding-bottom: 1vmax;
+        font-family: "Alata", sans-serif;
+        font-size: $size-cuarto;
+    }
+}
+
+.bannerBandaContainer {
+
+    // background-color: cadetblue;
+    background-color: $color-arena;
+    width: 100%;
+    padding: 2vmax 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+
+    .div-icono-servicio {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1vmax;
+
+        .contenedorImg {
+            padding: 1.5vmax;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 1px 3px 6px rgba(2, 2, 2, 0.521);
+            background-color: rgb(243, 240, 228);
+
+            
+            .bannerServicioImg {
+                width: 4vmax;
+            
+            }
+
+        }
+
+        .servicioParrafDiv {
+
+            display: flex;
+            flex-flow: row nowrap;
+            
+            p {
+                text-align: center;
+                font-size: $size-xxxs;
+
+                font-weight: bold;
+
+
+                font-family: "Alata", sans-serif;
+
+
+            }
+
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+/* estructura */
+
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (min-width:1401px) {
+    
+    
+}
+
+
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:1400px) {
+    
+    
+}
+
+
+
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:1200px) {
+    
+
+    
+}
+
+
+
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:992px) {
+
+
+        
+    .bannerContainerTitulos {
+
+        .div-titulo-banner h3 {
+            text-align: center;
+            padding-bottom: 1vmax;
+            font-family: "Alata", sans-serif;
+            font-size: $size-cuarto;
+        }
+    }
+
+
+    .bannerBandaContainer {
+
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        
+        margin: 0 auto;
+
+        .div-icono-servicio {
+            display: flex;
+            flex-flow: row wrap!important;
+            justify-content: flex-start;
+            margin-bottom: 2vmax;
+           
+
+                
+            .contenedorImg {
+           
+                
+                .bannerServicioImg {
+                    width: 4vmax;
+                
+                }
+
+            }
+
+            .servicioParrafDiv {
+
+                p {
+                    margin-bottom: 0;
+                    font-size: $size-xs;
+                }
+            }
+            
+        }
+    }
+}
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:768px) {
+
+
+    .bannerBandaContainer {
+        // padding: 2vmax 3vmax;
+
+        .div-icono-servicio {
+            justify-content: flex-start;
+        }
+    }
+
+    
+    .servicioParrafDiv {
+
+        p {
+            margin-bottom: 0;
+            font-size: $size-xxs;
+        }
+    }
+    
+
+}
+
+
+/* medida especial */
+
+
+@media screen and (max-width:650px) {
+
+
+    
+    .bannerBandaContainer {
+        padding: 2vmax 5vmax;
+
+        .div-icono-servicio {
+            justify-content: flex-start;
+        }
+    }
+    
+    .servicioParrafDiv {
+
+        p {
+            margin-bottom: 0;
+            font-size: $size-xxs;
+        }
+    }
+    
+
+}
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:576px) {
+
+    
+
+}
+
+
+
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:320px) {
+
+
+}

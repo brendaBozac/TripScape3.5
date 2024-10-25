@@ -1,6 +1,6 @@
 .sectionPackages {
    
-    margin: 0 0 5vmax 0;
+    margin: 0 0 2vmax 0;
 
    .PackagesRow {
         margin: 0;
@@ -411,12 +411,12 @@
 
     
     .cardsDiv .cardText {
-        font-size: $size-xs; 
+        font-size: $size-small; 
      }
        
  
      .cardCentralDiv .cardTextCentral {
-         font-size: $size-xs; 
+         font-size: $size-small; 
          
      }
 }

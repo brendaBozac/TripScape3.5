@@ -304,7 +304,7 @@ body {
   }
 }
 .sectionPackages {
-  margin: 0 0 5vmax 0;
+  margin: 0 0 2vmax 0;
 }
 .sectionPackages .PackagesRow {
   margin: 0;
@@ -565,10 +565,10 @@ body {
     font-size: 2.6vmax;
   }
   .cardsDiv .cardText {
-    font-size: 1.8vmax;
+    font-size: 2.2vmax;
   }
   .cardCentralDiv .cardTextCentral {
-    font-size: 1.8vmax;
+    font-size: 2.2vmax;
   }
 }
 /* medida especial */
@@ -611,5 +611,113 @@ body {
     font-size: 1.8vmax !important;
   }
 }
+.section-servicios {
+  padding: 2vmax;
+  margin-bottom: 2vmax;
+  background-color: #f1ebe1;
+}
+
+.bannerContainerTitulos .div-titulo-banner h3 {
+  text-align: center;
+  padding-bottom: 1vmax;
+  font-family: "Alata", sans-serif;
+  font-size: 2.6vmax;
+}
+
+.bannerBandaContainer {
+  background-color: #f1ebe1;
+  width: 100%;
+  padding: 2vmax 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.bannerBandaContainer .div-icono-servicio {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1vmax;
+}
+.bannerBandaContainer .div-icono-servicio .contenedorImg {
+  padding: 1.5vmax;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 1px 3px 6px rgba(2, 2, 2, 0.521);
+  background-color: rgb(243, 240, 228);
+}
+.bannerBandaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+  width: 4vmax;
+}
+.bannerBandaContainer .div-icono-servicio .servicioParrafDiv {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.bannerBandaContainer .div-icono-servicio .servicioParrafDiv p {
+  text-align: center;
+  font-size: 1.2vmax;
+  font-weight: bold;
+  font-family: "Alata", sans-serif;
+}
+
+/* media queries */
+/* estructura */
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 992px) {
+  .bannerContainerTitulos .div-titulo-banner h3 {
+    text-align: center;
+    padding-bottom: 1vmax;
+    font-family: "Alata", sans-serif;
+    font-size: 2.6vmax;
+  }
+  .bannerBandaContainer {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 0 auto;
+  }
+  .bannerBandaContainer .div-icono-servicio {
+    display: flex;
+    flex-flow: row wrap !important;
+    justify-content: flex-start;
+    margin-bottom: 2vmax;
+  }
+  .bannerBandaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 4vmax;
+  }
+  .bannerBandaContainer .div-icono-servicio .servicioParrafDiv p {
+    margin-bottom: 0;
+    font-size: 1.8vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 768px) {
+  .bannerBandaContainer .div-icono-servicio {
+    justify-content: flex-start;
+  }
+  .servicioParrafDiv p {
+    margin-bottom: 0;
+    font-size: 1.5vmax;
+  }
+}
+/* medida especial */
+@media screen and (max-width: 650px) {
+  .bannerBandaContainer {
+    padding: 2vmax 5vmax;
+  }
+  .bannerBandaContainer .div-icono-servicio {
+    justify-content: flex-start;
+  }
+  .servicioParrafDiv p {
+    margin-bottom: 0;
+    font-size: 1.5vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 
 /*# sourceMappingURL=styles.css.map */
