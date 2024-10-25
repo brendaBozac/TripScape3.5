@@ -1,6 +1,9 @@
 .sectionPackages {
    
-    margin: 0 0 2vmax 0;
+    margin: 0;
+    padding-bottom: 4vmax;
+    background-color: $color-arena;
+   
 
    .PackagesRow {
         margin: 0;
@@ -40,6 +43,7 @@
 
 /* div contenedor de las tres columnas que tienen las fotos */
 .primerCardsGroup {
+    
     height: 40vmax;
     overflow: hidden;
     // border: solid 2px yellow;

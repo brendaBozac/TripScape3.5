@@ -2,8 +2,6 @@
     padding: 2vmax;
     margin-bottom: 2vmax;
     background-color: $color-arena;
-    // background-color: cadetblue;
-
 }
 
 .bannerContainerTitulos {
@@ -13,12 +11,12 @@
         padding-bottom: 1vmax;
         font-family: "Alata", sans-serif;
         font-size: $size-cuarto;
+        color: $color-dark-one;
     }
 }
 
 .bannerBandaContainer {
 
-    // background-color: cadetblue;
     background-color: $color-arena;
     width: 100%;
     padding: 2vmax 0;
@@ -26,6 +24,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+
 
 
     .div-icono-servicio {
@@ -39,8 +38,8 @@
             padding: 1.5vmax;
             border: none;
             border-radius: 50%;
-            box-shadow: 1px 3px 6px rgba(2, 2, 2, 0.521);
-            background-color: rgb(243, 240, 228);
+            box-shadow: 1px 3px 6px $color-dark-two;
+            background-color: $color-light-one;
 
             
             .bannerServicioImg {
@@ -58,9 +57,7 @@
             p {
                 text-align: center;
                 font-size: $size-xxxs;
-
-                font-weight: bold;
-
+                color: $color-dark-one;
 
                 font-family: "Alata", sans-serif;
 
@@ -71,15 +68,6 @@
 
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -141,17 +129,18 @@
     .bannerBandaContainer {
 
         display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
         align-content: center;
-        
+        width: 85%;
         margin: 0 auto;
+        
 
         .div-icono-servicio {
+
             display: flex;
-            flex-flow: row wrap!important;
-            justify-content: flex-start;
+            justify-content: center;
             margin-bottom: 2vmax;
-           
+            width: 30%;
 
                 
             .contenedorImg {
@@ -211,11 +200,13 @@
 
 
     
+    
     .bannerBandaContainer {
         padding: 2vmax 5vmax;
 
         .div-icono-servicio {
             justify-content: flex-start;
+            width: 50%;
         }
     }
     
@@ -235,11 +226,61 @@
 
 @media screen and (max-width:576px) {
 
+
     
+        
+    .bannerContainerTitulos {
+
+        .div-titulo-banner h3 {
+    
+            text-align: center;
+            font-size: $size-terc;
+            margin-top: -3vmax;
+        }
+    }
+
+
+
+    
+    .bannerBandaContainer {
+
+        .div-icono-servicio {
+
+            .contenedorImg {
+           
+                .bannerServicioImg {
+                    width: 8vmax;
+                
+                }
+
+            }
+
+            .servicioParrafDiv {
+
+                p {
+                    margin-bottom: 0;
+                    font-size: $size-small;
+                }
+            }
+            
+        }
+    }
 
 }
 
+/* medida especial */
 
+@media screen and (max-width:478px) {
+    
+
+    
+    .bannerBandaContainer {
+
+        .div-icono-servicio {
+            width: 100%;
+        }
+    }
+}
 
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 

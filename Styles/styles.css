@@ -304,7 +304,9 @@ body {
   }
 }
 .sectionPackages {
-  margin: 0 0 2vmax 0;
+  margin: 0;
+  padding-bottom: 4vmax;
+  background-color: #f1ebe1;
 }
 .sectionPackages .PackagesRow {
   margin: 0;
@@ -622,6 +624,7 @@ body {
   padding-bottom: 1vmax;
   font-family: "Alata", sans-serif;
   font-size: 2.6vmax;
+  color: #11262c;
 }
 
 .bannerBandaContainer {
@@ -644,8 +647,8 @@ body {
   padding: 1.5vmax;
   border: none;
   border-radius: 50%;
-  box-shadow: 1px 3px 6px rgba(2, 2, 2, 0.521);
-  background-color: rgb(243, 240, 228);
+  box-shadow: 1px 3px 6px #294e5a;
+  background-color: #f0f0f0;
 }
 .bannerBandaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
   width: 4vmax;
@@ -657,7 +660,7 @@ body {
 .bannerBandaContainer .div-icono-servicio .servicioParrafDiv p {
   text-align: center;
   font-size: 1.2vmax;
-  font-weight: bold;
+  color: #11262c;
   font-family: "Alata", sans-serif;
 }
 
@@ -676,15 +679,16 @@ body {
   }
   .bannerBandaContainer {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-content: center;
+    width: 85%;
     margin: 0 auto;
   }
   .bannerBandaContainer .div-icono-servicio {
     display: flex;
-    flex-flow: row wrap !important;
-    justify-content: flex-start;
+    justify-content: center;
     margin-bottom: 2vmax;
+    width: 30%;
   }
   .bannerBandaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
     width: 4vmax;
@@ -711,6 +715,7 @@ body {
   }
   .bannerBandaContainer .div-icono-servicio {
     justify-content: flex-start;
+    width: 50%;
   }
   .servicioParrafDiv p {
     margin-bottom: 0;
@@ -718,6 +723,26 @@ body {
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 576px) {
+  .bannerContainerTitulos .div-titulo-banner h3 {
+    text-align: center;
+    font-size: 3vmax;
+    margin-top: -3vmax;
+  }
+  .bannerBandaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 8vmax;
+  }
+  .bannerBandaContainer .div-icono-servicio .servicioParrafDiv p {
+    margin-bottom: 0;
+    font-size: 2.2vmax;
+  }
+}
+/* medida especial */
+@media screen and (max-width: 478px) {
+  .bannerBandaContainer .div-icono-servicio {
+    width: 100%;
+  }
+}
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 
 /*# sourceMappingURL=styles.css.map */
