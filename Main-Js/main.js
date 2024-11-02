@@ -65,3 +65,32 @@ prevButton.addEventListener('click', () => {
 // Inicializamos el carrusel en la carga
 actualizarCarousel();
 
+
+
+
+
+/* animaciones para textos - identificar cuando ingresan los elementos en pantalla para realizar el efecto */
+
+
+
+// Función para manejar las animaciones de scroll
+function initScrollAnimations() {
+    const elements = document.querySelectorAll('.animate-on-scroll');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            } else {
+                entry.target.classList.remove('visible'); // Elimina la clase cuando sale de la vista
+            }
+        });
+    }, { threshold: 0.1 });
+
+    elements.forEach((el) => observer.observe(el));
+}
+
+// Asegúrate de que el DOM esté listo antes de inicializar
+document.addEventListener('DOMContentLoaded', function() {
+    initScrollAnimations();
+});

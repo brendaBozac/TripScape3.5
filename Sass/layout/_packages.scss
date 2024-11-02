@@ -1,7 +1,7 @@
 .sectionPackages {
    
     margin: 0;
-    padding-bottom: 4vmax;
+    padding-bottom: 2.5vmax;
     background-color: $color-arena;
    
 
@@ -26,19 +26,47 @@
                 @include h2-styles($fuente-principal, $size-principal, $color-dark-one);
                 margin: -5vmax 0 0 0;
                 padding: 0 8vmax;
-                font-weight: 600;
-            
+                font-weight: 400;
+
             }
 
             h3 {
                 @include h2-styles($fuente-principal, $size-small, $color-dark-two);
                 margin-bottom: 2vmax;
                 padding: 0 3vmax;
+
             }
+
+
         }
    }
 
 }
+
+/* Estilos de animación */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease, transform 0.8s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
 
 
 /* div contenedor de las tres columnas que tienen las fotos */

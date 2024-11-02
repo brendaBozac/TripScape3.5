@@ -13,6 +13,29 @@
         font-size: $size-cuarto;
         color: $color-dark-one;
     }
+
+
+        
+    /* Estilos de animación */
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(-50px);
+        transition: opacity 0.5s ease, transform 0.8s ease;
+    }
+
+    .visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
 }
 
 .bannerBandaContainer {

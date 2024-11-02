@@ -26,18 +26,18 @@
     justify-content: center;
     align-items: start;
 
+    /* 
+        transform: scale(0.8);
+        opacity: 0;
+        animation: zoomIn 1.5s ease-out forwards;
 
-    transform: scale(0.8);
-    opacity: 0;
-    animation: zoomIn 1.5s ease-out forwards;
 
-
-    @keyframes zoomIn {
-        to {
-          transform: scale(1);
-          opacity: 1;
-        }
-    }
+        @keyframes zoomIn {
+            to {
+            transform: scale(1);
+            opacity: 1;
+            }
+        } */
  
     .spanHeaderUno {
         color: $color-light-one;
@@ -47,6 +47,12 @@
 
        /* sombra que rodea todo el borde de la letra */
         text-shadow: 0 0 8px rgba(0, 0, 0, 0.904);
+
+
+        opacity: 0;
+        transform: translateY(-20px);
+        animation: fadeInUp 1s ease-out forwards;
+        animation-delay: 0.3s; /* Aparición del primer elemento con un pequeño retraso */
     }
 
     h1 {
@@ -56,6 +62,12 @@
         font-size: $size-header;
         text-shadow: 6px 8px 8px rgb(0, 0, 0);
         letter-spacing: 1.5px;
+
+
+        opacity: 0;
+        transform: translateY(-20px);
+        animation: fadeInUp 1s ease-out forwards;
+        animation-delay: 0.6s; /* Aparición del título después del párrafo */
     }
 
     .botonHeader {
@@ -69,9 +81,12 @@
         border-radius: 10px;
         box-shadow: 0 3px 8px black;
         margin-top: 1.5vmax;
- 
-        /* para el zoom del hover */
-        transition: transform 0.4s ease, filter 0.4s ease;
+    
+        opacity: 0;
+        transform: translateY(-20px);
+        animation: fadeInUp 1s ease-out forwards;
+        animation-delay: 0.9s; /* Aparición del botón al final */
+
 
     }
 
@@ -79,16 +94,32 @@
         color:$color-contrast-one;
         background-color: $color-botones-dos;
         text-shadow: none;
-        transform: scale(1.1); /* Zoom */
-
-
-
-       
-
+        font-size: 1.6vmax;
+        
     }
-} 
+
+    /* Definición de la animación */
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    } 
 
 
+    .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(-50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+
+}
 
 
 

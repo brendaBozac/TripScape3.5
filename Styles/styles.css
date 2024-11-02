@@ -157,15 +157,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  transform: scale(0.8);
-  opacity: 0;
-  animation: zoomIn 1.5s ease-out forwards;
-}
-@keyframes zoomIn {
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+  /* 
+      transform: scale(0.8);
+      opacity: 0;
+      animation: zoomIn 1.5s ease-out forwards;
+
+
+      @keyframes zoomIn {
+          to {
+          transform: scale(1);
+          opacity: 1;
+          }
+      } */
+  /* Definición de la animación */
 }
 .col-izq-header .spanHeaderUno {
   color: #f0f0f0;
@@ -174,6 +178,10 @@ body {
   font-size: 2.2vmax;
   /* sombra que rodea todo el borde de la letra */
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.904);
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.3s; /* Aparición del primer elemento con un pequeño retraso */
 }
 .col-izq-header h1 {
   color: #f0f0f0;
@@ -181,6 +189,10 @@ body {
   font-size: 6vmax;
   text-shadow: 6px 8px 8px rgb(0, 0, 0);
   letter-spacing: 1.5px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.6s; /* Aparición del título después del párrafo */
 }
 .col-izq-header .botonHeader {
   text-decoration: none;
@@ -192,14 +204,31 @@ body {
   border-radius: 10px;
   box-shadow: 0 3px 8px black;
   margin-top: 1.5vmax;
-  /* para el zoom del hover */
-  transition: transform 0.4s ease, filter 0.4s ease;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.9s; /* Aparición del botón al final */
 }
 .col-izq-header .botonHeader:hover {
   color: #c24003;
   background-color: #3edb9a;
   text-shadow: none;
-  transform: scale(1.1); /* Zoom */
+  font-size: 1.6vmax;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.col-izq-header .animate-on-scroll {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.col-izq-header .visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* media queries */
@@ -305,7 +334,7 @@ body {
 }
 .sectionPackages {
   margin: 0;
-  padding-bottom: 4vmax;
+  padding-bottom: 2.5vmax;
   background-color: #f1ebe1;
 }
 .sectionPackages .PackagesRow {
@@ -328,7 +357,7 @@ body {
   color: #11262c;
   margin: -5vmax 0 0 0;
   padding: 0 8vmax;
-  font-weight: 600;
+  font-weight: 400;
 }
 .sectionPackages .PackagesRow .titulosPackages h3 {
   font-family: "Alata", sans-serif;
@@ -336,6 +365,24 @@ body {
   color: #294e5a;
   margin-bottom: 2vmax;
   padding: 0 3vmax;
+}
+
+/* Estilos de animación */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease, transform 0.8s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* div contenedor de las tres columnas que tienen las fotos */
@@ -619,12 +666,30 @@ body {
   background-color: #f1ebe1;
 }
 
+.bannerContainerTitulos {
+  /* Estilos de animación */
+}
 .bannerContainerTitulos .div-titulo-banner h3 {
   text-align: center;
   padding-bottom: 1vmax;
   font-family: "Alata", sans-serif;
   font-size: 2.6vmax;
   color: #11262c;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.bannerContainerTitulos .animate-on-scroll {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease, transform 0.8s ease;
+}
+.bannerContainerTitulos .visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .bannerBandaContainer {
@@ -744,10 +809,6 @@ body {
   }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
-/* .Deals-Excursiones-Section {
-
-
-} */
 .wave-deals {
   margin-top: -4vmax;
 }
@@ -842,6 +903,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%); /* Ajusta el centro del enlace al medio */
   background-color: rgb(253, 122, 144);
+  box-shadow: 0 2px 5px #f0f0f0;
   color: white;
   padding: 0.3vmax 0.5vmax;
   border-radius: 5px;

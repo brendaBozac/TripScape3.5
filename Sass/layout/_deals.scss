@@ -1,9 +1,3 @@
-/* .Deals-Excursiones-Section {
-
-   
-} */
-
-
 .wave-deals {
     margin-top: -4vmax;
 }
@@ -124,6 +118,7 @@
     left: 50%;
     transform: translate(-50%, -50%); /* Ajusta el centro del enlace al medio */
     background-color: $color-botones;
+    box-shadow: 0 2px 5px $color-light-one;
     color: white;
     padding: 0.3vmax 0.5vmax;
     border-radius: 5px;
