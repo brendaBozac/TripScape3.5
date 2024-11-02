@@ -8,11 +8,11 @@ const prevButton = document.querySelector('.prev');
 
 // Objeto que guarda las URLs de las ofertas con IDs únicos
 const offers = {
-    0: { url: './deals.html#excursion-1', name: 'Playa del Carmen' },
-    1: { url: './deals.html#excursion-2', name: 'Cancún' },
-    2: { url: './deals.html#excursion-3', name: 'Tulum' },
-    3: { url: './deals.html#excursion-4', name: 'Puerto Vallarta' },
-    4: { url: './deals.html#excursion-5', name: 'Los Cabos' }
+    0: { url: './deals.html#excursion-1', name: "Aruba Aqua Adventure" },
+    1: { url: './deals.html#excursion-2', name: "Tuscany Food Trail" },
+    2: { url: './deals.html#excursion-3', name: "Lush Mexico" },
+    3: { url: './deals.html#excursion-4', name: "Parisian Delights" },
+    4: { url: './deals.html#excursion-5', name: "Italian Art" }
 }
 // Inicialmente, mostramos las primeras cinco imágenes en el orden dado
 let visibleImages = [...images];

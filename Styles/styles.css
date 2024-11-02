@@ -184,8 +184,8 @@ body {
 }
 .col-izq-header .botonHeader {
   text-decoration: none;
-  background-color: #3edb9a;
-  color: #11262c;
+  background-color: rgb(253, 122, 144);
+  color: #f0f0f0;
   padding: 0.6vmax 2.6vmax;
   font-family: "Archivo Black", sans-serif;
   font-size: 1.5vmax;
@@ -197,7 +197,7 @@ body {
 }
 .col-izq-header .botonHeader:hover {
   color: #c24003;
-  background-color: #f3d9ce;
+  background-color: #3edb9a;
   text-shadow: none;
   transform: scale(1.1); /* Zoom */
 }
@@ -744,6 +744,30 @@ body {
   }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+/* .Deals-Excursiones-Section {
+
+
+} */
+.wave-deals {
+  margin-top: -4vmax;
+}
+
+.Deals-Titles-Container h2 {
+  font-family: "Alata", sans-serif;
+  font-size: 3.6vmax;
+  color: #11262c;
+  margin: -5vmax 0 1.5vmax 0;
+  font-weight: 400;
+  text-align: center;
+}
+.Deals-Titles-Container h3 {
+  font-family: "Alata", sans-serif;
+  font-size: 2.2vmax;
+  color: #294e5a;
+  margin-bottom: 2vmax;
+  text-align: center;
+}
+
 .carousel-container {
   /* border: solid 3px rgb(230, 98, 120); */
   padding: 2.5vmax 2vmax;
@@ -752,7 +776,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 10vmax;
-  background-color: blanchedalmond;
+  background: linear-gradient(to bottom, #f1ebe1 0%, #f3d9ce 50%, #f1ebe1 100%);
+  margin-bottom: 5vmax;
 }
 
 .carousel-track-container {
@@ -782,22 +807,6 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.774); /* Sombra suave */
 }
 
-.offer-link {
-  font-size: 1vmax;
-  font-weight: bold;
-  position: absolute; /* Posicionamiento absoluto */
-  top: 50%; /* Centrar verticalmente */
-  left: 50%; /* Centrar horizontalmente */
-  transform: translate(-50%, -50%); /* Ajusta el centro del enlace al medio */
-  background-color: rgba(230, 98, 120, 0.897); /* Fondo semi-transparente */
-  color: white; /* Color del texto */
-  padding: 10px 15px; /* Espaciado interno */
-  border-radius: 5px; /* Esquinas redondeadas */
-  text-decoration: none; /* Sin subrayado */
-  z-index: 4; /* Asegura que el enlace esté por encima de otras capas */
-  display: none; /* Oculta inicialmente */
-}
-
 /* La imagen central será más grande y destacada */
 .carousel-image.center {
   transform: scale(1.5);
@@ -820,9 +829,35 @@ body {
 
 /* Las imágenes en los extremos */
 .carousel-image.extreme {
-  transform: scale(1); /* Tamaño normal para las imágenes en los extremos */
-  opacity: 0.4; /* Menor opacidad */
-  z-index: 1; /* Más abajo en la jerarquía visual */
+  transform: scale(1);
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.offer-link {
+  font-size: 1.2vmax;
+  font-weight: bold;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Ajusta el centro del enlace al medio */
+  background-color: rgb(253, 122, 144);
+  color: white;
+  padding: 0.3vmax 0.5vmax;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 4;
+  display: none;
+  transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
+}
+
+.offer-link:hover {
+  background-color: #c24003;
+  color: white;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
 .botonCaousel {
@@ -838,5 +873,44 @@ body {
 .botonCaousel:hover {
   background-color: rgb(210, 80, 100); /* Color de fondo al pasar el mouse */
 }
+
+/* media queries */
+/* estructura */
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 768px) {
+  .carousel-image {
+    width: 15vmax; /* Ancho fijo para todas las imágenes */
+  }
+  .offer-link {
+    font-size: 1.5vmax;
+    font-weight: 400;
+    padding: 0.4vmax 0.8vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 576px) {
+  /* 
+
+  .carousel-container {
+      width: 80%;
+      margin: 0 auto;
+  } */
+  .carousel-track {
+    gap: 0;
+  }
+  .carousel-image {
+    width: 13vmax; /* Ancho fijo para todas las imágenes */
+  }
+  .offer-link {
+    font-size: 1.5vmax;
+    font-weight: 400;
+    padding: 0.3vmax 0.6vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 
 /*# sourceMappingURL=styles.css.map */

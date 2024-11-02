@@ -235,12 +235,20 @@
             </div>
         </div>
 
-
-
-
-
     </section>
+    
 
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave-deals">
+        <defs>
+          <linearGradient id="myGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#f1ebe1; stop-opacity:1" />
+            <stop offset="40%" style="stop-color:#f3d9ce; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f3d9ce; stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#myGradient)" d="M0,128L48,122.7C96,117,192,107,288,112C384,117,480,139,576,165.3C672,192,768,224,864,202.7C960,181,1056,107,1152,85.3C1248,64,1344,96,1392,112L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+    </svg>
+      
 
 
     <!-- cards de cuatro viajes en oferta -->
@@ -248,8 +256,8 @@
    <section class="Deals-Excursiones-Section">
 
         <div class="Deals-Titles-Container">
-            <h2>EXCURSIONES A PRECIO PROMOCIONAL</h2>
-            <h3>FIVE DEALS FOR YOU</h3>
+            <h2>Unforgettable Adventures Await!</h2>
+            <h3>Join us on five thrilling excursions to extraordinary places</h3>
         </div>
 
 
@@ -258,15 +266,17 @@
             <button class="prev botonCaousel">⟵</button>
                 <div class="carousel-track-container">
                     <div class="carousel-track">
-                        <img src="./img/image1.jpg" alt="Image 1" class="carousel-image">
-                        <img src="./img/image2.jpg" alt="Image 2" class="carousel-image">
-                        <img src="./img/image3.jpg" alt="Image 3" class="carousel-image">
-                        <img src="./img/image4.jpg" alt="Image 4" class="carousel-image">
-                        <img src="./img/image5.jpg" alt="Image 5" class="carousel-image">
+                        <img src="./Img/aruba-carousel.jpg" alt="Image 1" class="carousel-image">
+                        <img src="./Img/gastronomia-carousel.jpg" alt="Image 2" class="carousel-image">
+                        <img src="./Img/cenotes-carousel.jpg" alt="Image 3" class="carousel-image">
+                        <img src="./Img/paris-carousel.jpg" alt="Image 4" class="carousel-image">
+                        <img src="./Img/firenze-carousel.jpg" alt="Image 5" class="carousel-image">
                     </div>
 
                     <!-- Enlace de oferta sobre la imagen central -->
-                    <a id="offer-link" href="#" class="offer-link" style="display: none;"></a>    
+                    <div class="offer-link-container">
+                        <a id="offer-link" href="#" class="offer-link" style="display: none;"></a>    
+                    </div>
                 </div>
             <button class="next botonCaousel">⟶</button>
             

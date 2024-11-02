@@ -62,7 +62,7 @@
 
         text-decoration: none;
         background-color: $color-botones;
-        color: $color-dark-one;
+        color: $color-light-one;
         padding: 0.6vmax 2.6vmax;
         font-family: $fuente-terc;
         font-size: $size-xxs;
@@ -77,7 +77,7 @@
 
     .botonHeader:hover {
         color:$color-contrast-one;
-        background-color: $color-light-three;
+        background-color: $color-botones-dos;
         text-shadow: none;
         transform: scale(1.1); /* Zoom */
 
