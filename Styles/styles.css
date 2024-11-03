@@ -813,6 +813,12 @@ body {
   margin-top: -4vmax;
 }
 
+/* 
+.Deals-Excursiones-Section {
+
+    padding: 0 4vmax;
+}
+ */
 .Deals-Titles-Container h2 {
   font-family: "Alata", sans-serif;
   font-size: 3.6vmax;
@@ -828,17 +834,29 @@ body {
   margin-bottom: 2vmax;
   text-align: center;
 }
+.Deals-Titles-Container .descripcionCarouselDiv {
+  width: 75%;
+  margin: 1vmax auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2vmax;
+  font-weight: 400;
+  color: #11262c;
+}
 
 .carousel-container {
-  /* border: solid 3px rgb(230, 98, 120); */
-  padding: 2.5vmax 2vmax;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  margin-top: 10vmax;
+  gap: -15vmax;
   background: linear-gradient(to bottom, #f1ebe1 0%, #f3d9ce 50%, #f1ebe1 100%);
-  margin-bottom: 5vmax;
+  width: 100%;
+  margin: 10vmax auto;
 }
 
 .carousel-track-container {
@@ -855,8 +873,6 @@ body {
   justify-content: center;
   align-items: center;
   /* transition: transform 0.5s ease; */
-  gap: 2vmax;
-  width: 100%;
 }
 
 .carousel-image {
@@ -914,15 +930,17 @@ body {
 }
 
 .offer-link:hover {
-  background-color: #c24003;
-  color: white;
+  /* background-color: $color-contrast-one;
+  color: white; */
+  background-color: #3edb9a;
+  color: #c24003;
   position: absolute;
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1.2);
 }
 
-.botonCaousel {
+.botonCarousel {
   background-color: rgb(230, 98, 120); /* Color de fondo del botón */
   color: white; /* Color del texto */
   border: none; /* Sin borde */
@@ -932,8 +950,8 @@ body {
   margin: 1vmax;
 }
 
-.botonCaousel:hover {
-  background-color: rgb(210, 80, 100); /* Color de fondo al pasar el mouse */
+.botonCarousel:hover {
+  background-color: #c24003; /* Color de fondo al pasar el mouse */
 }
 
 /* media queries */
@@ -955,22 +973,37 @@ body {
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 576px) {
-  /* 
-
   .carousel-container {
-      width: 80%;
-      margin: 0 auto;
-  } */
+    width: 80%;
+    margin: 16vmax auto;
+  }
   .carousel-track {
+    width: 56vmax;
     gap: 0;
   }
   .carousel-image {
     width: 13vmax; /* Ancho fijo para todas las imágenes */
   }
+  /* La imagen central será más grande y destacada */
+  .carousel-image.center {
+    transform: scale(2.4);
+    opacity: 1;
+    z-index: 3; /* Asegura que la imagen central esté por encima de las demás */
+  }
+  /* Las imágenes adyacentes (izquierda y derecha de la central) */
+  .carousel-image.next,
+  .carousel-image.prev {
+    transform: scale(1.8); /* Tamaño intermedio para las imágenes adyacentes */
+    opacity: 0.7; /* Mayor opacidad para destacar */
+    z-index: 2; /* Asegura que estén por debajo de la imagen central */
+  }
   .offer-link {
     font-size: 1.5vmax;
     font-weight: 400;
     padding: 0.3vmax 0.6vmax;
+  }
+  .botonCarousel {
+    z-index: 3;
   }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/

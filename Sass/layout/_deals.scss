@@ -1,6 +1,13 @@
 .wave-deals {
     margin-top: -4vmax;
 }
+/* 
+.Deals-Excursiones-Section {
+
+    padding: 0 4vmax;
+}
+ */
+
 
 
 .Deals-Titles-Container {
@@ -14,28 +21,43 @@
     }
 
     h3 {
-        @include h2-styles($fuente-principal, $size-small, $color-dark-two);
+        @include h3-styles($fuente-principal, $size-small, $color-dark-two);
         margin-bottom: 2vmax;
         text-align: center;
     }
 
-    
+    .descripcionCarouselDiv {
+        width: 75%;
+        margin: 1vmax auto;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        font-family: $fuente-secundaria;
+        font-size: $size-xxxs;
+        font-weight: 400;
+        color: $color-dark-one;
+
+    }
 
 }
 
 
 .carousel-container {
-    /* border: solid 3px rgb(230, 98, 120); */
-    padding: 2.5vmax 2vmax;
+    // border: solid 3px rgb(230, 98, 120);
+    // padding: 2.5vmax 2vmax;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    margin-top: 10vmax;
+    gap: -15vmax;
     // background-color: $color-light-three;
     background: linear-gradient(to bottom, #f1ebe1 0%, #f3d9ce 50%, #f1ebe1 100%);
-    margin-bottom: 5vmax;
-    
+    // margin-bottom: 10vmax;
+    // margin-top: 10vmax;
+    width: 100%;
+    margin: 10vmax auto;
 }
 
 
@@ -54,8 +76,7 @@
     justify-content: center;
     align-items: center;
     /* transition: transform 0.5s ease; */
-    gap: 2vmax; 
-    width: 100%;
+    // gap: 2vmax; 
 }
 
 .carousel-image {
@@ -126,12 +147,18 @@
     z-index: 4;
     display: none;
     transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
+
+    
 }
 
 
 .offer-link:hover {
-    background-color: $color-contrast-one;
-    color: white;
+    /* background-color: $color-contrast-one;
+    color: white; */
+
+    background-color: $color-botones-dos;
+    color: $color-contrast-one;
+
     position: absolute;
     top: 15%;
     left: 50%;
@@ -141,7 +168,7 @@
 }
 
 
-.botonCaousel {
+.botonCarousel {
     background-color: rgb(230, 98, 120); /* Color de fondo del botón */
     color: white; /* Color del texto */
     border: none; /* Sin borde */
@@ -151,8 +178,8 @@
     margin: 1vmax;
 }
 
-.botonCaousel:hover {
-    background-color: rgb(210, 80, 100); /* Color de fondo al pasar el mouse */
+.botonCarousel:hover {
+    background-color: $color-contrast-one; /* Color de fondo al pasar el mouse */
 }
 
 
@@ -241,15 +268,16 @@
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
 
 @media screen and (max-width:576px) {
-/* 
 
 .carousel-container {
     width: 80%;
-    margin: 0 auto;
-} */
+    margin: 16vmax auto;
+
+} 
 
 .carousel-track {
-  
+    
+    width: 56vmax;
     gap: 0; 
 }
 
@@ -262,6 +290,30 @@
 
 
 
+
+/* La imagen central será más grande y destacada */
+.carousel-image.center {
+    transform: scale(2.4);
+    opacity: 1;
+    z-index: 3; /* Asegura que la imagen central esté por encima de las demás */
+}
+
+
+
+
+
+/* Las imágenes adyacentes (izquierda y derecha de la central) */
+.carousel-image.next,
+.carousel-image.prev {
+    transform: scale(1.8); /* Tamaño intermedio para las imágenes adyacentes */
+    opacity: 0.7; /* Mayor opacidad para destacar */
+    z-index: 2; /* Asegura que estén por debajo de la imagen central */
+}
+
+
+
+
+
 .offer-link {
     font-size: $size-xxs;
     font-weight: 400;
@@ -271,6 +323,11 @@
 
 
     
+
+.botonCarousel {
+    z-index: 3;
+}
+
 
 }
 
