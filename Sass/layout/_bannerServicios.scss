@@ -141,9 +141,7 @@
     .bannerContainerTitulos {
 
         .div-titulo-banner h3 {
-            text-align: center;
-            padding-bottom: 1vmax;
-            font-family: "Alata", sans-serif;
+           
             font-size: $size-cuarto;
         }
     }
@@ -254,10 +252,13 @@
         
     .bannerContainerTitulos {
 
+        display: flex;
+        justify-content: center;
+
         .div-titulo-banner h3 {
     
             text-align: center;
-            font-size: $size-terc;
+            font-size: $size-secundario;
             margin-top: -3vmax;
         }
     }
@@ -268,6 +269,8 @@
     .bannerBandaContainer {
 
         .div-icono-servicio {
+
+            
 
             .contenedorImg {
            
@@ -295,12 +298,31 @@
 
 @media screen and (max-width:478px) {
     
-
-    
     .bannerBandaContainer {
+        padding: 2vmax 2vmax;
+        width: 100%;
 
         .div-icono-servicio {
-            width: 100%;
+
+            width: 50%;
+
+            .contenedorImg {
+           
+                .bannerServicioImg {
+                    width: 5vmax;
+                
+                }
+
+            }
+
+            .servicioParrafDiv {
+
+                p {
+                    margin-bottom: 0;
+                    font-size: $size-xs;
+                }
+            }
+            
         }
     }
 }

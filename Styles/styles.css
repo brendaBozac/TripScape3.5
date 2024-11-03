@@ -737,9 +737,6 @@ body {
 /* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 992px) {
   .bannerContainerTitulos .div-titulo-banner h3 {
-    text-align: center;
-    padding-bottom: 1vmax;
-    font-family: "Alata", sans-serif;
     font-size: 2.6vmax;
   }
   .bannerBandaContainer {
@@ -789,9 +786,13 @@ body {
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 576px) {
+  .bannerContainerTitulos {
+    display: flex;
+    justify-content: center;
+  }
   .bannerContainerTitulos .div-titulo-banner h3 {
     text-align: center;
-    font-size: 3vmax;
+    font-size: 3.6vmax;
     margin-top: -3vmax;
   }
   .bannerBandaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
@@ -804,8 +805,19 @@ body {
 }
 /* medida especial */
 @media screen and (max-width: 478px) {
-  .bannerBandaContainer .div-icono-servicio {
+  .bannerBandaContainer {
+    padding: 2vmax 2vmax;
     width: 100%;
+  }
+  .bannerBandaContainer .div-icono-servicio {
+    width: 50%;
+  }
+  .bannerBandaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 5vmax;
+  }
+  .bannerBandaContainer .div-icono-servicio .servicioParrafDiv p {
+    margin-bottom: 0;
+    font-size: 1.8vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
@@ -813,12 +825,6 @@ body {
   margin-top: -4vmax;
 }
 
-/* 
-.Deals-Excursiones-Section {
-
-    padding: 0 4vmax;
-}
- */
 .Deals-Titles-Container {
   margin-top: 2vmax;
 }
@@ -875,30 +881,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transition: transform 0.5s ease; */
 }
 
 .carousel-image {
-  width: 15vmax; /* Ancho fijo para todas las imágenes */
-  height: auto; /* Mantiene la proporción de la imagen */
-  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
-  border-radius: 10px; /* Esquinas redondeadas para un efecto más suave */
-  opacity: 0.5; /* Imágenes ligeramente atenuadas inicialmente */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.774); /* Sombra suave */
+  width: 15vmax;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0.5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.774);
 }
 
 /* La imagen central será más grande y destacada */
 .carousel-image.center {
   transform: scale(1.5);
   opacity: 1;
-  z-index: 3; /* Asegura que la imagen central esté por encima de las demás */
+  z-index: 3;
 }
 
+/* 
 .carousel-image.active {
-  opacity: 1; /* Imagen activa (central) con opacidad completa */
-  transform: scale(1.1); /* Aumentar ligeramente el tamaño de la imagen activa */
+    opacity: 1;
+    transform: scale(1.1);
 }
 
+ */
 /* Las imágenes adyacentes (izquierda y derecha de la central) */
 .carousel-image.next,
 .carousel-image.prev {
@@ -933,8 +940,6 @@ body {
 }
 
 .offer-link:hover {
-  /* background-color: $color-contrast-one;
-  color: white; */
   background-color: #3edb9a;
   color: #c24003;
   position: absolute;
@@ -1010,6 +1015,10 @@ body {
     font-size: 1.5vmax;
     font-weight: 400;
     padding: 0.3vmax 0.6vmax;
+    top: 0;
+  }
+  .offer-link:hover {
+    top: 0;
   }
   .botonCarousel {
     z-index: 3;
