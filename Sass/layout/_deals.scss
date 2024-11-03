@@ -348,6 +348,13 @@
 
 @media screen and (max-width:476px) {
 
+    .Deals-Titles-Container {
+
+        margin-top: 4vmax;
+        padding: 0 4vmax;
+    }    
+
+
 
     .descripcionCarouselDiv {
         width: 85%;
@@ -364,14 +371,14 @@
 
 .carousel-track {
     
-    width: 46vmax;
+    width: 34vmax;
     gap: 0; 
 } 
 
        
 .carousel-image {
 
-    width: 12vmax; /* Ancho fijo para todas las imágenes */
+    width: 8vmax; /* Ancho fijo para todas las imágenes */
 
 }
 
@@ -417,12 +424,7 @@
 
 @media screen and (max-width:378px) {
 
-    .Deals-Titles-Container {
-
-        margin-top: 4vmax;
-        padding: 0 4vmax;
-    }    
-
+    
 
         
         
@@ -434,14 +436,14 @@
 
     .carousel-track {
         
-        width: 40vmax;
+        width: 30vmax;
         gap: 0; 
     } 
 
         
     .carousel-image {
 
-        width: 10vmax; /* Ancho fijo para todas las imágenes */
+        width: 8vmax; /* Ancho fijo para todas las imágenes */
 
     }
 
@@ -462,7 +464,7 @@
     /* Las imágenes adyacentes (izquierda y derecha de la central) */
     .carousel-image.next,
     .carousel-image.prev {
-        transform: scale(1.6); /* Tamaño intermedio para las imágenes adyacentes */
+        transform: scale(1.5); /* Tamaño intermedio para las imágenes adyacentes */
         opacity: 0.7; /* Mayor opacidad para destacar */
         z-index: 2; /* Asegura que estén por debajo de la imagen central */
     }
