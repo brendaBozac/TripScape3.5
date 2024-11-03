@@ -800,7 +800,7 @@ body {
   }
   .bannerBandaContainer .div-icono-servicio .servicioParrafDiv p {
     margin-bottom: 0;
-    font-size: 2.2vmax;
+    font-size: 1.8vmax;
   }
 }
 /* medida especial */
@@ -817,7 +817,7 @@ body {
   }
   .bannerBandaContainer .div-icono-servicio .servicioParrafDiv p {
     margin-bottom: 0;
-    font-size: 1.8vmax;
+    font-size: 1.5vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
@@ -982,7 +982,7 @@ body {
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 576px) {
   .descripcionCarouselDiv {
-    width: 75%;
+    width: 85%;
     margin: 1vmax auto;
     font-size: 2.2vmax;
     font-weight: 400;
@@ -1031,7 +1031,7 @@ body {
     padding: 0 4vmax;
   }
   .descripcionCarouselDiv {
-    width: 85%;
+    font-size: 2.6vmax;
   }
   .carousel-container {
     width: 80%;
