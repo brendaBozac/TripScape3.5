@@ -387,7 +387,7 @@
 
 /* La imagen central será más grande y destacada */
 .carousel-image.center {
-    transform: scale(2);
+    transform: scale(2.4);
     opacity: 1;
     z-index: 3; /* Asegura que la imagen central esté por encima de las demás */
 }
@@ -399,7 +399,7 @@
 /* Las imágenes adyacentes (izquierda y derecha de la central) */
 .carousel-image.next,
 .carousel-image.prev {
-    transform: scale(1.4); /* Tamaño intermedio para las imágenes adyacentes */
+    transform: scale(1.8); /* Tamaño intermedio para las imágenes adyacentes */
     opacity: 0.7; /* Mayor opacidad para destacar */
     z-index: 2; /* Asegura que estén por debajo de la imagen central */
 }
