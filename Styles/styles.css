@@ -819,6 +819,9 @@ body {
     padding: 0 4vmax;
 }
  */
+.Deals-Titles-Container {
+  margin-top: 2vmax;
+}
 .Deals-Titles-Container h2 {
   font-family: "Alata", sans-serif;
   font-size: 3.6vmax;
@@ -973,6 +976,12 @@ body {
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 576px) {
+  .descripcionCarouselDiv {
+    width: 75%;
+    margin: 1vmax auto;
+    font-size: 2.2vmax;
+    font-weight: 400;
+  }
   .carousel-container {
     width: 80%;
     margin: 16vmax auto;
@@ -1004,6 +1013,71 @@ body {
   }
   .botonCarousel {
     z-index: 3;
+  }
+}
+/* ++++++++++++++++++++++++ media query  | MEDIDA ESPECIAL |   ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 476px) {
+  .descripcionCarouselDiv {
+    width: 85%;
+  }
+  .carousel-container {
+    width: 80%;
+    margin: 10vmax auto;
+  }
+  .carousel-track {
+    width: 46vmax;
+    gap: 0;
+  }
+  .carousel-image {
+    width: 12vmax; /* Ancho fijo para todas las imágenes */
+  }
+  /* La imagen central será más grande y destacada */
+  .carousel-image.center {
+    transform: scale(2);
+    opacity: 1;
+    z-index: 3; /* Asegura que la imagen central esté por encima de las demás */
+  }
+  /* Las imágenes adyacentes (izquierda y derecha de la central) */
+  .carousel-image.next,
+  .carousel-image.prev {
+    transform: scale(1.4); /* Tamaño intermedio para las imágenes adyacentes */
+    opacity: 0.7; /* Mayor opacidad para destacar */
+    z-index: 2; /* Asegura que estén por debajo de la imagen central */
+  }
+  .botonCarousel {
+    padding: 0.5vmax; /* Espaciado interno */
+    margin: 0.5vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query  | Medida Especial |   ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 378px) {
+  .Deals-Titles-Container {
+    margin-top: 4vmax;
+    padding: 0 4vmax;
+  }
+  .carousel-container {
+    width: 80%;
+    margin: 8vmax auto;
+  }
+  .carousel-track {
+    width: 40vmax;
+    gap: 0;
+  }
+  .carousel-image {
+    width: 10vmax; /* Ancho fijo para todas las imágenes */
+  }
+  /* La imagen central será más grande y destacada */
+  .carousel-image.center {
+    transform: scale(2);
+    opacity: 1;
+    z-index: 3; /* Asegura que la imagen central esté por encima de las demás */
+  }
+  /* Las imágenes adyacentes (izquierda y derecha de la central) */
+  .carousel-image.next,
+  .carousel-image.prev {
+    transform: scale(1.6); /* Tamaño intermedio para las imágenes adyacentes */
+    opacity: 0.7; /* Mayor opacidad para destacar */
+    z-index: 2; /* Asegura que estén por debajo de la imagen central */
   }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
