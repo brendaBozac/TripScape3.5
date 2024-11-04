@@ -15,7 +15,7 @@ body {
   margin-top: 0;
   position: fixed;
   top: 0;
-  z-index: 4;
+  z-index: 8;
 }
 .navbar .ContainerNavbar {
   background-color: #f1ebe1;
@@ -664,6 +664,7 @@ body {
   padding: 2vmax;
   margin-bottom: 2vmax;
   background-color: #f1ebe1;
+  z-index: 2;
 }
 
 .bannerContainerTitulos {
@@ -727,6 +728,11 @@ body {
   font-size: 1.2vmax;
   color: #11262c;
   font-family: "Alata", sans-serif;
+}
+
+.wave-deals {
+  margin-top: -10vmax;
+  z-index: 1;
 }
 
 /* media queries */
@@ -821,10 +827,6 @@ body {
   }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
-.wave-deals {
-  margin-top: -4vmax;
-}
-
 .Deals-Titles-Container {
   margin-top: 2vmax;
 }
@@ -844,17 +846,22 @@ body {
   text-align: center;
 }
 .Deals-Titles-Container .descripcionCarouselDiv {
-  width: 75%;
-  margin: 1vmax auto;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
+  /*  width: 75%;
+   margin: 1vmax auto;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+   text-align: justify;
+   font-family: $fuente-secundaria;
+   font-size: $size-xxxs;
+   font-weight: 400;
+   color: $color-dark-one; */
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2vmax;
-  font-weight: 400;
-  color: #11262c;
+  font-size: 1.5vmax;
+  color: #294e5a;
+  margin: 1vmax 7vmax 3vmax 7vmax;
+  text-align: justify;
 }
 
 .carousel-container {
@@ -1090,5 +1097,106 @@ body {
   }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+.svg-hoteleria-primero {
+  margin-top: -10vmax;
+}
+
+.Hoteleria-Section {
+  height: auto;
+  background-color: #f3d9ce;
+  margin-top: -2vmax;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.Hoteleria-Section .titulosHoteleriaDiv h2 {
+  font-family: "Alata", sans-serif;
+  font-size: 3.6vmax;
+  color: #11262c;
+  margin: 0 1.5vmax 0;
+  font-weight: 400;
+  text-align: center;
+}
+.Hoteleria-Section .titulosHoteleriaDiv h3 {
+  font-family: "Alata", sans-serif;
+  font-size: 3vmax;
+  color: #11262c;
+  margin: 1.5vmax 3vmax;
+  font-weight: 400;
+  text-align: center;
+}
+.Hoteleria-Section .titulosHoteleriaDiv p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vmax;
+  color: #294e5a;
+  margin: 3vmax 7vmax 5vmax 7vmax;
+  text-align: justify;
+}
+
+.stars-container {
+  margin-top: -4vmax;
+  margin-bottom: 2vmax;
+}
+.stars-container .div-five-stars {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 1vmax;
+  padding-bottom: 1vmax;
+}
+.stars-container .div-five-stars img {
+  width: 3vmax;
+  filter: drop-shadow(1px 2px 1px rgba(17, 38, 44, 0.6862745098));
+}
+
+.bannerHoteleriaContainer {
+  z-index: 4;
+}
+.bannerHoteleriaContainer .div-icono-servicio {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1vmax;
+  padding-top: 2vmax;
+}
+.bannerHoteleriaContainer .div-icono-servicio .contenedorImg {
+  padding: 1vmax;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 1px 3px 6px #11262c;
+  background-color: rgb(243, 240, 228);
+}
+.bannerHoteleriaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+  width: 3vmax;
+}
+.bannerHoteleriaContainer .div-icono-servicio p {
+  text-align: center;
+  font-size: xxxs;
+  color: #11262c;
+  font-weight: 300;
+  font-family: "Alata", sans-serif;
+}
+
+.svg-hoteleria-segundo {
+  z-index: 3;
+  margin-top: -5vmax;
+}
+
+.container-img-hotel {
+  width: 100%;
+  height: 35vmax;
+  background-image: url(../../Img/hoteldos.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  margin: -16vmax 0 5vmax 0;
+  z-index: 1;
+}
+
+.svg-hoteleria-bottom {
+  margin-top: -20vmax;
+  z-index: 3;
+}
 
 /*# sourceMappingURL=styles.css.map */

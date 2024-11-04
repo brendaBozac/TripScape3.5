@@ -1,0 +1,146 @@
+.svg-hoteleria-primero {
+
+    margin-top: -10vmax;
+}
+
+.Hoteleria-Section {
+    height: auto;
+    background-color: $color-light-three;
+    margin-top: -2vmax;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+    .titulosHoteleriaDiv {
+        h2 {
+            @include h2-styles($fuente-principal, $size-secundario, $color-dark-one);
+            margin: 0 1.5vmax 0;
+            font-weight: 400;
+            text-align: center
+        }
+    
+        h3 {
+            @include h2-styles($fuente-principal, $size-terc, $color-dark-one);
+            margin: 1.5vmax 3vmax;
+            font-weight: 400;
+            text-align: center
+        }
+
+        p {
+
+            @include h3-styles($fuente-secundaria, $size-xxs, $color-dark-two);
+            margin: 3vmax 7vmax 5vmax 7vmax;
+            text-align: justify;
+        }
+    }
+}
+
+
+.stars-container {
+    
+
+    margin-top: -4vmax;
+    margin-bottom: 2vmax;
+
+
+    .div-five-stars {
+
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 1vmax;
+        padding-bottom: 1vmax;
+
+        img {
+            width: 3vmax;
+            filter: drop-shadow(1px 2px 1px #11262caf);
+            
+        }
+
+    }
+}
+
+
+
+.bannerHoteleriaContainer {
+
+
+    z-index: 4;
+        
+    .div-icono-servicio {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1vmax;
+        padding-top: 2vmax;
+
+
+
+        .contenedorImg {
+            padding: 1vmax;
+            border:none;
+            border-radius: 50%;
+            box-shadow: 1px 3px 6px $color-dark-one;
+            background-color: rgb(243, 240, 228);
+
+            
+            .bannerServicioImg {
+                width: 3vmax;
+            
+            }
+
+        }
+
+
+        p {
+            text-align: center;
+            font-size: xxxs;
+            color: $color-dark-one;
+            font-weight: 300;
+
+
+            font-family: "Alata", sans-serif;
+
+
+        }
+    }
+
+
+}
+
+
+.svg-hoteleria-segundo {
+   z-index: 3;
+   margin-top: -5vmax;
+}
+
+
+.container-img-hotel {
+    width: 100%;
+    height: 35vmax;
+    background-image: url(../../Img/hoteldos.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    margin: -16vmax 0 5vmax 0;
+    z-index: 1;
+   
+    
+}
+
+.svg-hoteleria-bottom {
+    margin-top: -20vmax;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+

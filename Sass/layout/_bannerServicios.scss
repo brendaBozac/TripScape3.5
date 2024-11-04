@@ -2,6 +2,7 @@
     padding: 2vmax;
     margin-bottom: 2vmax;
     background-color: $color-arena;
+    z-index: 2;
 }
 
 .bannerContainerTitulos {
@@ -93,6 +94,11 @@
 }
 
 
+.wave-deals {
+    margin-top: -10vmax;
+
+    z-index: 1;
+}
 
 
 
