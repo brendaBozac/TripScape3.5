@@ -135,7 +135,7 @@ body {
 /* medida personalizada 420 */
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 .headerContenedor {
-  height: 40vmax;
+  height: 45vmax;
   width: 100%;
   background-image: url("../Img/uno.jpg");
   background-size: cover;
@@ -1199,7 +1199,7 @@ body {
 .container-img-hotel {
   width: 100%;
   height: 35vmax;
-  background-image: url("../../Img/hoteldos.jpg");
+  background-image: url("../Img/hoteldos.jpg");
   background-position: center bottom;
   background-size: cover;
   margin: -16vmax 0 5vmax 0;
