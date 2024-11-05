@@ -1199,7 +1199,7 @@ body {
 .container-img-hotel {
   width: 100%;
   height: 35vmax;
-  background-image: url(../../Img/hoteldos.jpg);
+  background-image: url(../Img/hoteldos.jpg);
   background-position: center bottom;
   background-size: cover;
   margin: -16vmax 0 5vmax 0;
