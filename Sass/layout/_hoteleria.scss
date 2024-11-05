@@ -65,6 +65,24 @@
 
 
 
+.div-five-stars-dos {
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 1vmax;
+    padding-bottom: 1vmax;
+
+    img {
+        width: 1.5vmax;
+        filter: drop-shadow(1px 2px 1px #11262caf);
+        
+    }
+
+}
+
+
 .bannerHoteleriaContainer {
 
 
