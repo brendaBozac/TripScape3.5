@@ -1212,7 +1212,9 @@ body {
 }
 
 .FooterSection {
+  margin-top: -5px;
   height: 30vmax;
+  background: linear-gradient(to bottom, #f1ebe1 60%, #c24003 100%);
 }
 
 /*# sourceMappingURL=styles.css.map */
