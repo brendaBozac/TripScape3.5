@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* #f1ebe1; */
+/* sombra celestita en las waves */
 * {
   padding: 0;
   margin: 0;
@@ -1043,7 +1044,11 @@ body {
 }
 
 .bannerHoteleriaContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   z-index: 4;
+  width: 90%;
 }
 .bannerHoteleriaContainer .div-icono-servicio {
   display: flex;
@@ -1064,11 +1069,14 @@ body {
 .bannerHoteleriaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
   width: 3vmax;
 }
-.bannerHoteleriaContainer .div-icono-servicio p {
+.bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
   text-align: center;
-  font-size: xxxs;
+  font-size: 1.2vmax;
   color: #11262c;
-  font-weight: 300;
   font-family: "Alata", sans-serif;
 }
 
@@ -1137,6 +1145,132 @@ body {
   z-index: 3;
 }
 
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 992px) {
+  .bannerHoteleriaContainer {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    gap: 1vmax;
+    padding-top: 1vmax;
+    padding-bottom: 2vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg {
+    padding: 1.5vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 5vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
+    font-size: 1.5vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 768px) {
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg {
+    padding: 1vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 6vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
+    font-size: 1.8vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 576px) {
+  .bannerHoteleriaContainer {
+    width: 100%;
+    padding-bottom: 3vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio {
+    width: 30%;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg {
+    padding: 2vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 7vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
+    font-size: 2.2vmax;
+  }
+}
+/* medida especial */
+@media screen and (max-width: 478px) {
+  .bannerHoteleriaContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 3vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio {
+    width: 40%;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg {
+    padding: 1.5vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 8vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
+    padding-top: 0.5vmax;
+    font-size: 2.6vmax;
+  }
+}
+@media screen and (max-width: 420px) {
+  .bannerHoteleriaContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90%;
+    padding-bottom: 3vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio {
+    width: 50%;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg {
+    padding: 2vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 6vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
+    font-size: 2.2vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 340px) {
+  .bannerHoteleriaContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 3vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio {
+    width: 50%;
+    padding-bottom: 0.8vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg {
+    padding: 1.5vmax 1.8vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 4vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
+    font-size: 1.8vmax;
+  }
+}
 .FooterSection {
   margin-top: -5px;
   height: 30vmax;

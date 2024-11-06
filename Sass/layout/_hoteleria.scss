@@ -86,8 +86,11 @@
 
 .bannerHoteleriaContainer {
 
-
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     z-index: 4;
+    width: 90%;
         
     .div-icono-servicio {
         display: flex;
@@ -115,26 +118,35 @@
         }
 
 
-        p {
-            text-align: center;
-            font-size: xxxs;
-            color: $color-dark-one;
-            font-weight: 300;
+        
+        .hotelbannerParrafDiv {
+
+            display: flex;
+            flex-flow: row nowrap;
+            
+            p {
+                text-align: center;
+                font-size: $size-xxxs;
+                color: $color-dark-one;
+
+                font-family: "Alata", sans-serif;
 
 
-            font-family: "Alata", sans-serif;
-
+            }
 
         }
+
     }
-
-
 }
+
+
+
 
 
 .svg-hoteleria-segundo {
    z-index: 3;
    margin-top: -5vmax;
+
 }
 
 /* 
@@ -153,8 +165,20 @@
 
 
 
+ 
+
+
+
+
+
+
+
 
 /* efecto flotante */
+
+
+
+
 
 .img-fondo {
     background-image: url('../Img/hoteltres.jpg');
@@ -216,3 +240,323 @@
 
 
 
+
+
+
+
+
+
+
+
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:992px) {
+
+    
+    .bannerHoteleriaContainer {
+        width: 80%;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        width: 85%;
+        margin: 0 auto;
+
+        .div-icono-servicio {
+
+            display: flex;
+            justify-content: center;
+            width: 30%;
+            gap: 1vmax;
+            padding-top: 1vmax;
+            padding-bottom: 2vmax;
+
+
+                
+            .contenedorImg {
+                padding: 1.5vmax;
+                
+                .bannerServicioImg {
+                    width: 5vmax;
+                
+                }
+
+            }
+
+
+                
+            .hotelbannerParrafDiv {
+
+                p {
+    
+                    font-size: $size-xxs;
+                    // color: brown;
+                
+
+
+                }
+
+            }
+        }
+
+    }
+
+        
+        
+}
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:768px) {
+
+    
+    .bannerHoteleriaContainer {
+       
+
+        .div-icono-servicio {
+
+               
+            .contenedorImg {
+                padding: 1vmax;
+                
+                .bannerServicioImg {
+                    width: 6vmax;
+                
+                }
+
+            }
+
+                
+            .hotelbannerParrafDiv {
+
+                p {
+    
+                    font-size: $size-xs;
+                    // color: rgb(14, 10, 255);
+
+
+                }
+
+            }
+
+
+        }
+
+        
+    }
+
+
+
+}
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:576px) {
+
+
+    .bannerHoteleriaContainer {
+       
+        width: 100%;
+        padding-bottom: 3vmax;
+
+        .div-icono-servicio {
+
+            width: 30%;
+
+            .contenedorImg {
+                padding: 2vmax;
+                
+                .bannerServicioImg {
+                    width: 7vmax;
+                
+                }
+
+            }
+
+
+                
+            .hotelbannerParrafDiv {
+
+                
+
+                p {
+    
+                    font-size: $size-small;
+                    // color: rgb(255, 13, 53);
+
+
+                }
+
+            }
+
+        }
+
+        
+        
+    }
+
+
+
+}
+
+
+/* medida especial */
+
+@media screen and (max-width:478px) {
+
+
+    .bannerHoteleriaContainer {
+
+        // border: solid 3px orangered;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        width: 100%;
+        padding-bottom: 3vmax;
+
+        .div-icono-servicio {
+
+            width: 40%;
+
+            .contenedorImg {
+                padding: 1.5vmax;
+                
+                .bannerServicioImg {
+                    width: 8vmax;
+                
+                }
+
+            }
+
+            .hotelbannerParrafDiv {
+
+                
+
+                p {
+    
+                    padding-top: 0.5vmax;
+                    font-size: $size-cuarto;
+                    // color: rgb(17, 83, 11);
+
+
+                }
+
+            }
+
+        }
+
+        
+        
+    }
+
+}
+
+
+
+@media screen and (max-width:420px) {
+
+    .bannerHoteleriaContainer {
+
+        // border: solid 3px orangered;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        width: 90%;
+        padding-bottom: 3vmax;
+
+        .div-icono-servicio {
+
+            width: 50%;
+
+            .contenedorImg {
+                padding: 2vmax;
+                
+                .bannerServicioImg {
+                    width: 6vmax;
+                
+                }
+
+            }
+
+            .hotelbannerParrafDiv {
+
+                
+
+                p {
+    
+                    font-size: $size-small;
+                    // color: rgb(70, 182, 185);
+
+
+                }
+
+            }
+
+        }
+
+        
+        
+    }
+
+
+}
+
+
+
+
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:340px) {
+
+    .bannerHoteleriaContainer {
+
+        // border: solid 3px orangered;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        width: 100%;
+        padding-bottom: 3vmax;
+
+        .div-icono-servicio {
+
+            width: 50%;
+            padding-bottom: 0.8vmax;
+
+            .contenedorImg {
+                padding: 1.5vmax 1.8vmax;
+                
+                .bannerServicioImg {
+                    width: 4vmax;
+                
+                }
+
+            }
+
+            .hotelbannerParrafDiv {
+
+                
+
+                p {
+    
+                    font-size: $size-xs;
+                    // color: rgb(184, 125, 38);
+
+
+                }
+
+            }
+
+        }
+
+        
+        
+    }
+
+
+}
