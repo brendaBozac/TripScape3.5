@@ -1,6 +1,6 @@
 .section-servicios {
     padding: 2vmax;
-    margin-bottom: 2vmax;
+    margin: 5vmax 0 0 0;
     background-color: $color-arena;
     z-index: 2;
 }
@@ -9,9 +9,9 @@
 
     .div-titulo-banner h3 {
         text-align: center;
-        padding-bottom: 1vmax;
+        padding-bottom: 2vmax;
         font-family: "Alata", sans-serif;
-        font-size: $size-cuarto;
+        font-size: $size-terc;
         color: $color-dark-one;
     }
 
@@ -27,7 +27,7 @@
 
     .animate-on-scroll {
         opacity: 0;
-        transform: translateY(-50px);
+        transform: translateY(-80px);
         transition: opacity 0.5s ease, transform 0.8s ease;
     }
 
@@ -95,8 +95,8 @@
 
 
 .wave-deals {
-    margin-top: -10vmax;
-
+    margin-top: -5vmax;
+    background-color: rgba(218, 236, 241, 0.466);
     z-index: 1;
 }
 

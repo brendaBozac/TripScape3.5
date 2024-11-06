@@ -1,8 +1,9 @@
 .sectionPackages {
    
-    margin: 0;
+    margin: -1vmax;
     padding-bottom: 2.5vmax;
-    background-color: $color-arena;
+    background: #F9E8DF;
+
    
 
    .PackagesRow {
@@ -24,7 +25,7 @@
 
             h2 {
                 @include h2-styles($fuente-principal, $size-principal, $color-dark-one);
-                margin: -5vmax 0 0 0;
+                margin: 8vmax 0 0 0;
                 padding: 0 8vmax;
                 font-weight: 400;
 
@@ -32,8 +33,9 @@
 
             h3 {
                 @include h2-styles($fuente-principal, $size-small, $color-dark-two);
-                margin-bottom: 2vmax;
-                padding: 0 3vmax;
+                margin: 3vmax 0 8vmax 0;
+                padding: 0 5vmax;
+            
 
             }
 
@@ -41,6 +43,10 @@
         }
    }
 
+}
+
+.adornoUno {
+    font-size: $size-large;
 }
 
 /* Estilos de animación */
@@ -53,7 +59,7 @@
 
 .animate-on-scroll {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-80px);
     transition: opacity 0.5s ease, transform 0.8s ease;
 }
 
@@ -74,7 +80,7 @@
     
     height: 40vmax;
     overflow: hidden;
-    // border: solid 2px yellow;
+    margin: 0 5vmax;
 }
 
 /* contenedor de cada imagen mas su texto hover */

@@ -1,0 +1,68 @@
+.carousel-paisajes-container {
+    position: relative;
+    height: 40vmax;
+    overflow: hidden;
+}
+
+
+.imgFondoCar {
+    height: 40vmax;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.travelerContainer {
+    position: absolute;
+    bottom: -5vmax; /* Alinea la imagen PNG con el borde inferior del carousel */
+    left: 60%; /* Desplaza la imagen un poco hacia la derecha */
+    transform: translateX(-30%); /* Ajusta la posición horizontal para centrar mejor */
+    z-index: 2;
+}
+
+.travelerContainer img {
+    width: 25vmax;
+    height: auto;
+    filter: drop-shadow(1px 2px px rgb(8, 7, 7));
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    z-index: 4;
+    width: 20vmax;
+    text-align: start;
+
+}
+
+.carousel-caption h3 {
+    font-size: 6vmax;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 4px 4px black;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: start;
+    margin-bottom: 2vmax;
+}
+
+.carousel-caption a {
+    font-size: 1-8vmax;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    background-color: rgb(238, 133, 35);
+    border-radius: 15px;
+    padding: 0.8vmax 1.6vmax;
+    box-shadow: 1px 3px 4px white;
+   
+}
+
+
+.wave-viajera {
+    margin-top: -15vmax;
+    z-index: 6;
+    position: absolute
+}

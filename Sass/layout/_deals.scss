@@ -1,6 +1,13 @@
+.Deals-Excursiones-Section {
+    background-color: rgba(218, 236, 241, 0.466);
+    margin-top: 0;
+    // border: solid 2px blue;
+}
+
+
 .Deals-Titles-Container {
 
-    margin-top: 2vmax;
+    margin-top: 5vmax;
 
     h2 {
         @include h2-styles($fuente-principal, $size-secundario, $color-dark-one);
@@ -32,7 +39,9 @@
         @include h3-styles($fuente-secundaria, $size-xxs, $color-dark-two);
             margin: 1vmax 7vmax 3vmax 7vmax;
             text-align: justify;
+    
 
+    
     }
 
 }
@@ -45,7 +54,9 @@
     justify-content: center;
     align-items: center;
     gap: -15vmax;
-    background: linear-gradient(to bottom, #f1ebe1 0%, #f3d9ce 50%, #f1ebe1 100%);
+    background: linear-gradient(to bottom, rgba(218, 236, 241, 0.322) 0%, #f3d9ce 50%, rgba(218, 236, 241, 0.301) 100%);
+    // background-color: rgba(218, 236, 241, 0.466);
+
     width: 100%;
     margin: 10vmax auto;
 }

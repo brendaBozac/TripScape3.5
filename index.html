@@ -78,13 +78,11 @@
     </nav>
 
 
-
-
-    <header class="container-fluid headerContenedor">
+    <!-- HEADER ORIGINAL -->
+    <!-- <header class="container-fluid headerContenedor">
 
         <div class="row">
 
-            <!-- columna izquierda header-->
             <div class="col-12 col-izq-header">
                 <p class="spanHeaderUno animate-on-scroll">Discover the places beyond the horizon.</p>
                 <h1 class="animate-on-scroll">Pick Your Next Trip Scape</h1>
@@ -92,28 +90,92 @@
             </div>
 
 
+        </div>
 
-
-    </header>
+    </header> -->
 
 
     <!-- este bloque "banda-ola" esta editado dentro de header.scss -->
-    <svg class="bandaHeader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <!-- <svg class="bandaHeader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#f1ebe1" fill-opacity="1"
             d="M0,160L40,160C80,160,160,160,240,160C320,160,400,160,480,149.3C560,139,640,117,720,122.7C800,128,880,160,960,176C1040,192,1120,192,1200,181.3C1280,171,1360,149,1400,138.7L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
         </path>
-    </svg>
+    </svg> -->
+
+
+
+    <!-- NUEVO HEADER -->
+
+
+    <header>
+            
+        <div class="carousel-paisajes-container">
+            <!-- Carousel Bootstrap -->
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/newzeland.jpg" class="d-block w-100 imgFondoCar" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>NEW ZELAND MOUNTAINS</h3>
+                            <a href="#">I Wanna Go !</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/venice.jpg" class="d-block w-100 imgFondoCar" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>VENECIA TOUR</h3>
+                            <a href="#">I Wanna Go !</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/playa.jpg" class="d-block w-100 imgFondoCar" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>MÉXICO PARADISE</h3>
+                            <a href="#">I Wanna Go !</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- PNG Fixed Image -->
+            <div class="travelerContainer">
+                <img src="./img/efect-uno.png" alt="">
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave-viajera">
+            <defs>
+                <linearGradient id="gradienteViajera" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="20%" stop-color="#2C88A0" />
+                    <stop offset="100%" stop-color="#F9E8DF" />
+                </linearGradient>
+            </defs>
+            <path fill="url(#gradienteViajera)" fill-opacity="1"
+                d="M0,160L48,170.7C96,181,192,203,288,202.7C384,203,480,181,576,176C672,171,768,181,864,192C960,203,1056,213,1152,197.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        
+
+
+    </header>
 
 
 
 
 
     <!-- section packages -->
-
     <section class="sectionPackages container-fluid">
         <div class="row PackagesRow">
             <div class="col-12 titulosPackages">
-                <h2 class="animate-on-scroll">Explore the Most Popular Destinations of This Season</h2>
+                <h2 class="animate-on-scroll"><span class="adornoUno">Explore</span> the Most Popular Destinations of This <span class="adornoUno">Season</span></h2>
                 <h3 class="animate-on-scroll">From the vibrant streets of Italy to the serene beaches of Thailand,
                     explore the best experiences
                     this season has to offer.</h3>
@@ -159,7 +221,7 @@
     </section>
 
 
-
+    <!-- banner Servicios -->
     <section class="container-fluid section-servicios">
 
 
@@ -239,10 +301,11 @@
     </section>
 
 
+    <!-- get-wave esfumada -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave-deals">
         <defs>
             <linearGradient id="myGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" style="stop-color:#f1ebe1; stop-opacity:1" />
+                <stop offset="0%" style="stop-color:#F9E8DF; stop-opacity:1" />
                 <stop offset="40%" style="stop-color:#f3d9ce; stop-opacity:1" />
                 <stop offset="100%" style="stop-color:#f3d9ce; stop-opacity:1" />
             </linearGradient>
@@ -252,10 +315,10 @@
         </path>
     </svg>
 
+    
 
 
-    <!-- cards de cuatro viajes en oferta -->
-
+    <!-- cards de cuatro viajes en oferta    DEALS  -->
     <section class="Deals-Excursiones-Section">
 
         <div class="Deals-Titles-Container">
@@ -300,6 +363,7 @@
 
     <!--  SECTION HOTELERIA  { SVG - SECTION <TITULOS  <BANNER HOTERIA   < -SVG -IMG HOTEL -SVG   } -->
 
+    
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-hoteleria-primero">
         <path fill="#f3d9ce" fill-opacity="1"
             d="M0,192L40,202.7C80,213,160,235,240,213.3C320,192,400,128,480,117.3C560,107,640,149,720,160C800,171,880,149,960,122.7C1040,96,1120,64,1200,48C1280,32,1360,32,1400,32L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
@@ -307,7 +371,7 @@
     </svg>
 
 
-
+    <!-- hoteleria section central -->
     <section class="Hoteleria-Section">
 
         <div class="titulosHoteleriaDiv">
@@ -405,12 +469,24 @@
             </path>
         </svg>
 
+
+
         <!-- aqui esta la imaegn del hotel como background -->
-        <div class="container-img-hotel animate-on-scroll">
+        <!-- <div class="container-img-hotel animate-on-scroll">
 
 
 
+        </div> -->
+
+
+
+        <!-- intento flotante -->
+
+        <div class="img-fondo flotan-text1">
+            <!-- <h2 class="">TU CAFÉ ESTÁ SERVIDO...</h2>
+            <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> -->
         </div>
+
 
         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-hoteleria-bottom">
             <path fill="#f3d9ce" fill-opacity="1"
@@ -438,7 +514,7 @@
 
 
 
-
+    <!-- FOOTER -->
     <footer class="FooterSection">
 
     </footer>
