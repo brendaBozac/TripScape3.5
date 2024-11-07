@@ -60,6 +60,17 @@
    
 }
 
+.carousel-control-prev, .carousel-control-next {
+    width: 8vmax;
+    margin: 2vmax;
+    
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-size: 100%, 100%; /* Tamaño de icono más grande */
+    filter: brightness(0) invert(1); /* Cambia el color del ícono */
+}
+
 
 .wave-viajera {
     margin-top: -15vmax;
