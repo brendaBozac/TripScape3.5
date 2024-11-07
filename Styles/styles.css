@@ -1212,6 +1212,7 @@ body {
     justify-content: center;
     width: 100%;
     padding-bottom: 3vmax;
+    margin-bottom: 8vmax;
   }
   .bannerHoteleriaContainer .div-icono-servicio {
     width: 40%;
@@ -1220,11 +1221,11 @@ body {
     padding: 1.5vmax;
   }
   .bannerHoteleriaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
-    width: 8vmax;
+    width: 7vmax;
   }
   .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
     padding-top: 0.5vmax;
-    font-size: 2.6vmax;
+    font-size: 2.2vmax;
   }
 }
 @media screen and (max-width: 420px) {

@@ -417,6 +417,7 @@
 
         width: 100%;
         padding-bottom: 3vmax;
+        margin-bottom: 8vmax;
 
         .div-icono-servicio {
 
@@ -426,7 +427,7 @@
                 padding: 1.5vmax;
                 
                 .bannerServicioImg {
-                    width: 8vmax;
+                    width: 7vmax;
                 
                 }
 
@@ -439,7 +440,7 @@
                 p {
     
                     padding-top: 0.5vmax;
-                    font-size: $size-cuarto;
+                    font-size: $size-small;
                     // color: rgb(17, 83, 11);
 
 
