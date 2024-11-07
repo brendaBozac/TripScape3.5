@@ -23,23 +23,32 @@
 .travelerContainer img {
     width: 25vmax;
     height: auto;
-    filter: drop-shadow(1px 2px px rgb(8, 7, 7));
+    filter: drop-shadow(5px 2px 8px rgb(8, 7, 7));
 }
 
 .carousel-caption {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 15%;
-    z-index: 4;
-    width: 20vmax;
+    width: 40%;
     text-align: start;
+    // border: solid 3px rgb(255, 0, 43);
+    
+    /* display: flex;
+    flex-flow: column wrap;
+    width: 20vmax;
+    
+    justify-content: center; */
+}
 
+.headerSpan {
+    font-size: 4vmax;
 }
 
 .carousel-caption h3 {
     font-size: 6vmax;
     color: rgb(255, 255, 255);
-    text-shadow: 2px 4px 4px black;
+    text-shadow: 8px 4px 8px black;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: start;
@@ -47,7 +56,7 @@
 }
 
 .carousel-caption a {
-    font-size: 1-8vmax;
+    font-size: 1.4vmax;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black;
     font-weight: bold;
@@ -56,7 +65,7 @@
     background-color: rgb(238, 133, 35);
     border-radius: 15px;
     padding: 0.8vmax 1.6vmax;
-    box-shadow: 1px 3px 4px white;
+    box-shadow: 2px 4px 6px rgb(0, 0, 0);
    
 }
 
@@ -65,12 +74,12 @@
     margin: 2vmax;
     
 }
-
+/* 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    background-size: 100%, 100%; /* Tamaño de icono más grande */
-    filter: brightness(0) invert(1); /* Cambia el color del ícono */
+    background-size: 100%, 100%;
+    filter: brightness(0) invert(1); 
 }
-
+ */
 
 .wave-viajera {
     margin-top: -15vmax;
