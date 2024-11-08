@@ -313,6 +313,9 @@ body {
   .headerSpan {
     font-size: 3.8vmax;
   }
+  .wave-viajera {
+    margin-top: -13vmax;
+  }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 480px) {
@@ -326,9 +329,9 @@ body {
     bottom: -2vmax;
   }
   .carousel-caption {
-    top: 18%;
-    left: 15%;
-    width: 50%;
+    top: 24%;
+    left: 10%;
+    width: 45%;
   }
   .headerSpan {
     font-size: 3.4vmax;
@@ -338,6 +341,10 @@ body {
   }
   .travelerContainer img {
     width: 23vmax;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    width: 5vmax;
+    margin: 0;
   }
   .wave-viajera {
     margin-top: -10vmax;
@@ -382,6 +389,11 @@ body {
   .carousel-caption h3 {
     font-size: 4vmax;
     margin-bottom: 2vmax;
+  }
+  .wave-viajera {
+    margin-top: -10vmax;
+    z-index: 3;
+    position: absolute;
   }
 }
 /* 

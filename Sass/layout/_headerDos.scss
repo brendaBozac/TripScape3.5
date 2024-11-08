@@ -323,6 +323,11 @@
     
 
 
+    .wave-viajera {
+        margin-top: -13vmax;
+       
+    }
+
 
 }
 
@@ -354,9 +359,9 @@
    
     .carousel-caption {
      
-        top: 18%;
-        left: 15%;
-        width: 50%;
+        top: 24%;
+        left: 10%;
+        width: 45%;
      
          
     }
@@ -378,7 +383,15 @@
       
     }
 
+    
+        
+    .carousel-control-prev, .carousel-control-next {
+        width: 5vmax;
+        margin: 0;
        
+    }
+
+
     .wave-viajera {
         margin-top: -10vmax;
        
@@ -470,7 +483,14 @@
 
     }
     
-
+    
+        
+    .wave-viajera {
+        margin-top: -10vmax;
+        z-index: 3;
+        position: absolute;
+        // border: solid 3px red;
+    }
     
 }
 
