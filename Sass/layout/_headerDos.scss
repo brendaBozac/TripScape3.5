@@ -185,11 +185,25 @@
     
     .carousel-caption {
 
-        top: 12%;
+        top: 18%;
         width: 40%;
         // border: solid 3px rgb(255, 180, 41);
          
     }
+
+
+    
+       
+    .headerSpan {
+        font-size: 3.8vmax;
+
+    }
+    
+
+    .carousel-caption h3 {
+        font-size: 6vmax;
+    }
+
 }
 
 
@@ -378,12 +392,12 @@
 
     }
     
-    .travelerContainer img {
+   /*  .travelerContainer img {
         width: 23vmax;
       
     }
 
-    
+     */
         
     .carousel-control-prev, .carousel-control-next {
         width: 5vmax;
@@ -413,6 +427,13 @@
         bottom: -2vmax;
          
     }
+
+    
+    .travelerContainer img {
+        width: 23vmax;
+      
+    }
+
    
     .carousel-caption {
      

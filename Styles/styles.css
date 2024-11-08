@@ -241,8 +241,14 @@ body {
     height: 48vmax;
   }
   .carousel-caption {
-    top: 12%;
+    top: 18%;
     width: 40%;
+  }
+  .headerSpan {
+    font-size: 3.8vmax;
+  }
+  .carousel-caption h3 {
+    font-size: 6vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
@@ -339,9 +345,12 @@ body {
   .carousel-caption h3 {
     font-size: 5vmax;
   }
-  .travelerContainer img {
-    width: 23vmax;
-  }
+  /*  .travelerContainer img {
+       width: 23vmax;
+
+   }
+
+    */
   .carousel-control-prev, .carousel-control-next {
     width: 5vmax;
     margin: 0;
@@ -353,6 +362,9 @@ body {
 @media screen and (max-width: 380px) {
   .travelerContainer {
     bottom: -2vmax;
+  }
+  .travelerContainer img {
+    width: 23vmax;
   }
   .carousel-caption {
     top: 18%;
