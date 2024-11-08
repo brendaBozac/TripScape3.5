@@ -1,18 +1,1429 @@
-/* Error: unmatched "}".
- *     ,
- * 202 | }
- *     | ^
- *     '
- *   Sass\layout\_headerDos.scss 202:1  @import
- *   Sass\styles.scss 5:9               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: unmatched "}".\a     \2577 \a 202 \2502  }\d\a     \2502  ^\a     \2575 \a   Sass\\layout\\_headerDos.scss 202:1  @import\a   Sass\\styles.scss 5:9               root stylesheet';
+@charset "UTF-8";
+/* #f1ebe1; */
+/* sombra celestita en las waves */
+* {
+  padding: 0;
+  margin: 0;
 }
+
+body {
+  background-color: #F9E8DF;
+  padding-top: 4vmax;
+}
+
+.navbar {
+  min-height: 4vmax;
+  background-color: #70ADB6;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  z-index: 8;
+}
+.navbar .ContainerNavbar {
+  background-color: #F9E8DF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar-brand {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2vmax;
+}
+.navbar-brand .brandImg {
+  width: 2vmax;
+  color: #294e5a;
+}
+.navbar-brand .brandText {
+  margin-bottom: 0;
+  color: #294e5a;
+  font-weight: 400;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #294e5a;
+  font-family: "Alata", sans-serif;
+}
+
+.dropdown-menu-end li {
+  color: #f3d9ce;
+}
+.dropdown-menu-end li a {
+  font-family: "Alata", sans-serif;
+  color: #70ADB6;
+}
+
+/* media queries */
+/* estructura */
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 991px) {
+  .navbar .ContainerNavbar .nav-izquierda {
+    min-height: 2vmax;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandImg {
+    width: 2vmax !important;
+  }
+  .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandText {
+    font-size: 2vmax;
+  }
+  .navbar-toggler {
+    border: none;
+    user-select: none;
+    padding: 0;
+    margin-bottom: 0.3vmax;
+  }
+  .navbar-toggler .menuHamuguesa {
+    width: 3vmax;
+  }
+  .navbar-collapse {
+    background-color: #dae5e9;
+    margin: 2vmax;
+    padding: 1vmax;
+    border-radius: 10px;
+    padding-left: 2vmax;
+    z-index: 22;
+  }
+  .nav-link {
+    color: #70ADB6;
+    font-weight: bold;
+    font-size: 1.8vmax;
+  }
+  .nav-link:hover {
+    background-color: #f0f0f0;
+    color: #70ADB6;
+    border-radius: 5px;
+    padding-left: 0.5vmax;
+  }
+  .dropdown-menu {
+    background-color: #f0f0f0;
+    border: none;
+  }
+  .dropdown-menu li .dropdown-item {
+    font-weight: bold;
+    color: #294e5a;
+    font-size: 1.8vmax;
+  }
+  .dropdown-menu li .dropdown-item:hover {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    color: #70ADB6;
+    border-radius: 5px;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 768px) {
+  .nav-link {
+    font-size: 1.8vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 576px) {
+  .nav-link {
+    font-size: 1.8vmax;
+  }
+}
+/* medida personalizada 420 */
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+.carousel-paisajes-container {
+  position: relative;
+  height: 40vmax;
+  overflow: hidden;
+}
+
+.imgFondoCar {
+  height: 40vmax;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.travelerContainer {
+  position: absolute;
+  bottom: -3vmax; /* Alinea la imagen PNG con el borde inferior del carousel */
+  left: 60%; /* Desplaza la imagen un poco hacia la derecha */
+  transform: translateX(-30%); /* Ajusta la posición horizontal para centrar mejor */
+  z-index: 2;
+  user-select: none;
+}
+
+.travelerContainer img {
+  width: 25vmax;
+  height: auto;
+  filter: drop-shadow(5px 2px 8px rgb(8, 7, 7));
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  width: 30%;
+  text-align: start;
+  z-index: 6;
+}
+
+.headerSpan {
+  font-size: 4vmax;
+  font-family: "Lora", serif;
+}
+
+.carousel-caption h3 {
+  font-size: 7vmax;
+  color: rgb(255, 255, 255);
+  text-shadow: 8px 4px 8px black;
+  font-weight: bold;
+  font-family: "Bespoke Serif", serif;
+  text-align: start;
+  margin-bottom: 2vmax;
+  user-select: none;
+}
+
+.carousel-caption a {
+  font-size: 1.6vmax;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px black;
+  font-family: "Quilon", sans-serif;
+  text-decoration: none;
+  background-color: rgb(218, 106, 3);
+  border-radius: 15px;
+  padding: 0.8vmax 1.6vmax;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
+  z-index: 6 !important;
+  position: relative;
+  user-select: none;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 8vmax;
+  margin: 2vmax;
+}
+
+.wave-viajera {
+  margin-top: -15vmax;
+  z-index: 3;
+  position: absolute;
+}
+
+/* media queries */
+/* estructura */
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 992px) {
+  .carousel-paisajes-container {
+    height: 45vmax;
+  }
+  .imgFondoCar {
+    height: 45vmax;
+  }
+  .carousel-caption {
+    top: 10%;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 768px) {
+  .carousel-paisajes-container {
+    height: 47vmax;
+  }
+  .imgFondoCar {
+    height: 47vmax;
+  }
+  .carousel-caption {
+    top: 12%;
+  }
+  .carousel-caption a {
+    font-size: 2vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 576px) {
+  .carousel-paisajes-container {
+    height: 48vmax;
+  }
+  .imgFondoCar {
+    height: 48vmax;
+  }
+  .carousel-caption {
+    top: 13%;
+  }
+  .headerSpan {
+    font-size: 3.8vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 480px) {
+  .carousel-paisajes-container {
+    height: 48vmax;
+  }
+  .imgFondoCar {
+    height: 48vmax;
+  }
+  .travelerContainer {
+    bottom: -2vmax;
+  }
+  .carousel-caption {
+    top: 12%;
+    left: 15%;
+    width: 40%;
+  }
+  .headerSpan {
+    font-size: 3.8vmax;
+  }
+  .carousel-caption h3 {
+    font-size: 6vmax;
+  }
+}
+@media screen and (max-width: 380px) {
+  .travelerContainer {
+    bottom: -2vmax;
+  }
+  .carousel-caption {
+    top: 18%;
+    left: 15%;
+    width: 40%;
+  }
+  .headerSpan {
+    font-size: 3.6vmax;
+  }
+  .carousel-caption h3 {
+    font-size: 5vmax;
+    margin-bottom: 2vmax;
+  }
+  .wave-viajera {
+    margin-top: -12vmax;
+    z-index: 3;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 320px) {
+  .travelerContainer {
+    bottom: -2vmax;
+    left: 55%;
+  }
+  .carousel-caption {
+    top: 25%;
+    left: 18%;
+    width: 40%;
+  }
+  .headerSpan {
+    font-size: 3.2vmax;
+    padding-bottom: 2vmax;
+  }
+  .carousel-caption h3 {
+    font-size: 4vmax;
+    margin-bottom: 2vmax;
+  }
+  .wave-viajera {
+    margin-top: -10vmax;
+  }
+}
+/* 
+
+
+@media screen and (max-width:450px) {
+
+    .wave-viajera {
+        margin-top: -13vmax;
+    }
+
+}
+
+
+
+@media screen and (max-width:350px) {
+
+    .wave-viajera {
+        margin-top: -10vmax;
+    }
+
+} */
+.sectionPackages {
+  margin: -1vmax;
+  padding-bottom: 2.5vmax;
+  background: #F9E8DF;
+}
+.sectionPackages .PackagesRow {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sectionPackages .PackagesRow .titulosPackages {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2vmax;
+  padding: 0 5vmax;
+}
+.sectionPackages .PackagesRow .titulosPackages h2 {
+  font-family: "Alata", sans-serif;
+  font-size: 4.2vmax;
+  color: #11262c;
+  margin: 8vmax 0 0 0;
+  padding: 0 8vmax;
+  font-weight: 400;
+}
+.sectionPackages .PackagesRow .titulosPackages h3 {
+  font-family: "Alata", sans-serif;
+  font-size: 2.2vmax;
+  color: #294e5a;
+  margin: 3vmax 0 8vmax 0;
+  padding: 0 5vmax;
+}
+
+.adornoUno {
+  font-size: 5vmax;
+}
+
+/* Estilos de animación */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: opacity 0.5s ease, transform 0.8s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* div contenedor de las tres columnas que tienen las fotos */
+.primerCardsGroup {
+  height: 40vmax;
+  overflow: hidden;
+  margin: 0 5vmax;
+}
+
+/* contenedor de cada imagen mas su texto hover */
+.cardsDiv {
+  position: relative; /* Necesario para que el texto se posicione sobre la imagen */
+  overflow: hidden; /* Para que el zoom no cambie el tamaño visible */
+  transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
+}
+
+.cardsDiv img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
+}
+
+/* Efecto hover para zoom y filtro */
+.cardsDiv:hover img {
+  transform: scale(1.1); /* Zoom */
+  filter: brightness(0.8); /* Filtro de brillo para oscurecer ligeramente */
+}
+
+/* Texto que aparece en hover */
+.cardsDiv .cardText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(165, 58, 8, 0.7529411765);
+  border-radius: 15px;
+  padding: 0.2vmax 2vmax;
+  font-size: 1.5vmax;
+  font-family: "Alata", sans-serif;
+  text-align: center;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.4s ease; /* Transición suave para aparición del texto */
+}
+
+.cardsDiv:hover .cardText {
+  opacity: 1; /* Texto aparece cuando se hace hover */
+}
+
+/* Efecto de link clicable sobre el texto */
+.cardsDiv .cardText a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.cardsDiv .cardText a:hover {
+  color: #c7aa05;
+}
+
+.cardsDivLados {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+  height: 19vmax;
+}
+
+.cardsDerDiv,
+.cardsIzqDiv,
+.cardCentralDiv {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 1vmax;
+}
+
+.contenedorCentralPalmeras {
+  padding: 0;
+  object-fit: cover;
+  object-position: center bottom;
+}
+.contenedorCentralPalmeras .cardCentralDiv {
+  height: 40vmax;
+  padding: 0;
+  margin: 0;
+  /* es la imagen */
+}
+.contenedorCentralPalmeras .cardCentralDiv .cardCentral {
+  height: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.cardCentralDiv .cardTextCentral {
+  width: unset !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(165, 58, 8, 0.7529411765);
+  border-radius: 15px;
+  padding: 0.2vmax 2vmax;
+  font-size: 1.5vmax;
+  font-family: "Alata", sans-serif;
+  text-align: center;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.4s ease;
+}
+
+.cardCentralDiv:hover .cardTextCentral {
+  opacity: 1; /* Texto aparece cuando se hace hover */
+}
+
+/* Efecto de link clicable sobre el texto */
+.cardTextCentral a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.cardTextCentral a:hover {
+  color: #c7aa05;
+}
+
+/* media queries */
+/* estructura */
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 992px) {
+  .titulosPackages {
+    padding: 0 3vmax !important;
+  }
+  .titulosPackages h2 {
+    margin-top: -5vmax;
+    padding: 0 2vmax !important;
+    font-size: 3.6vmax !important;
+  }
+  .titulosPackages h3 {
+    font-size: 2.2vmax !important;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 767px) {
+  .primerCardsGroup {
+    flex-direction: column; /* Cambia la dirección de las columnas a vertical */
+    height: auto;
+    padding: 3vmax;
+  }
+  .titulosPackages {
+    padding: 0 1vmax !important;
+  }
+  .titulosPackages h2 {
+    margin-top: -5vmax;
+    padding: 0 2vmax !important;
+    font-size: 3.6vmax !important;
+  }
+  .titulosPackages h3 {
+    font-size: 2.2vmax !important;
+  }
+  .contenedorCentralPalmeras {
+    order: -1; /* Mueve la columna central por encima de todo */
+  }
+  .contenedorCentralPalmeras .cardCentralDiv {
+    height: 19vmax; /* Ajusta la altura a algo más razonable en pantallas pequeñas */
+    padding: 0;
+    margin: 0 0 1vmax 0;
+    /* Ajuste de la imagen central en pantallas pequeñas */
+  }
+  .contenedorCentralPalmeras .cardCentralDiv .cardCentral {
+    height: auto; /* Ajusta la altura automáticamente */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    object-fit: cover; /* Asegúrate de que la imagen se recorte correctamente */
+    object-position: center center;
+    padding: 0;
+    margin: 0;
+  }
+  .cardsIzqDiv, .cardsDerDiv {
+    order: 0; /* Mantén las otras columnas en su orden original */
+    flex-flow: row nowrap;
+    height: 19vmax;
+    padding: 0;
+    margin: 0 0 1vmax 0;
+  }
+  .cardsDivLados {
+    justify-content: space-around;
+    margin-top: 0.5vmax;
+  }
+  .cardsDiv .cardText {
+    font-size: 2.2vmax;
+  }
+  .cardCentralDiv .cardTextCentral {
+    font-size: 2.2vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 576px) {
+  .titulosPackages {
+    padding: 0 1vmax !important;
+  }
+  .titulosPackages h2 {
+    padding: 0 1vmax !important;
+    font-size: 3vmax !important;
+  }
+  .titulosPackages h3 {
+    font-size: 1.8vmax !important;
+  }
+  .cardCentralDiv {
+    /* img central */
+  }
+  .cardCentralDiv .cardCentral {
+    height: auto; /* Ajusta la altura automáticamente */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    object-fit: cover; /* Asegúrate de que la imagen se recorte correctamente */
+    object-position: center bottom;
+    padding: 0;
+    margin: 0;
+  }
+  .cardsDiv .cardText {
+    font-size: 2.6vmax;
+  }
+  .cardCentralDiv .cardTextCentral {
+    font-size: 2.6vmax;
+  }
+  .cardsDiv .cardText {
+    font-size: 2.2vmax;
+  }
+  .cardCentralDiv .cardTextCentral {
+    font-size: 2.2vmax;
+  }
+}
+/* medida especial */
+@media screen and (max-width: 500px) {
+  .titulosPackages {
+    padding: 0 1vmax !important;
+  }
+  .titulosPackages h2 {
+    padding: 0 1vmax !important;
+    font-size: 3vmax !important;
+  }
+  .titulosPackages h3 {
+    font-size: 1.8vmax !important;
+  }
+  .cardCentralDiv {
+    height: 20vmax; /* Ajusta la altura a algo más razonable en pantallas pequeñas */
+    overflow: hidden;
+    padding: 0;
+  }
+  .cardsIzqDiv, .cardsDerDiv {
+    flex-flow: column nowrap;
+    height: 40vmax;
+    padding: 0;
+    margin: 0 0 1vmax 0;
+  }
+}
+/* medida especial hasta 456 */
+@media screen and (max-width: 453px) {
+  .titulosPackages {
+    padding: 0 !important;
+  }
+  .titulosPackages h2 {
+    padding: 0 1vmax !important;
+    font-size: 3.6vmax !important;
+  }
+}
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 320px) {
+  .titulosPackages h3 {
+    font-size: 1.8vmax !important;
+  }
+}
+.section-servicios {
+  padding: 2vmax;
+  margin: 5vmax 0 0 0;
+  background-color: #F9E8DF;
+  z-index: 2;
+}
+
+.bannerContainerTitulos {
+  /* Estilos de animación */
+}
+.bannerContainerTitulos .div-titulo-banner h3 {
+  text-align: center;
+  padding-bottom: 2vmax;
+  font-family: "Alata", sans-serif;
+  font-size: 3vmax;
+  color: #11262c;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.bannerContainerTitulos .animate-on-scroll {
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: opacity 0.5s ease, transform 0.8s ease;
+}
+.bannerContainerTitulos .visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bannerBandaContainer {
+  background-color: #F9E8DF;
+  width: 100%;
+  padding: 2vmax 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.bannerBandaContainer .div-icono-servicio {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1vmax;
+}
+.bannerBandaContainer .div-icono-servicio .contenedorImg {
+  padding: 1.5vmax;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 1px 3px 6px #294e5a;
+  background-color: #f0f0f0;
+}
+.bannerBandaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+  width: 4vmax;
+}
+.bannerBandaContainer .div-icono-servicio .servicioParrafDiv {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.bannerBandaContainer .div-icono-servicio .servicioParrafDiv p {
+  text-align: center;
+  font-size: 1.2vmax;
+  color: #11262c;
+  font-family: "Alata", sans-serif;
+}
+
+.wave-deals {
+  margin-top: -5vmax;
+  background-color: rgba(218, 236, 241, 0.466);
+  z-index: 1;
+}
+
+/* media queries */
+/* estructura */
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 992px) {
+  .bannerContainerTitulos .div-titulo-banner h3 {
+    font-size: 2.6vmax;
+  }
+  .bannerBandaContainer {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .bannerBandaContainer .div-icono-servicio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vmax;
+    width: 30%;
+  }
+  .bannerBandaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 4vmax;
+  }
+  .bannerBandaContainer .div-icono-servicio .servicioParrafDiv p {
+    margin-bottom: 0;
+    font-size: 1.8vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 768px) {
+  .bannerBandaContainer .div-icono-servicio {
+    justify-content: flex-start;
+  }
+  .servicioParrafDiv p {
+    margin-bottom: 0;
+    font-size: 1.5vmax;
+  }
+}
+/* medida especial */
+@media screen and (max-width: 650px) {
+  .bannerBandaContainer {
+    padding: 2vmax 5vmax;
+  }
+  .bannerBandaContainer .div-icono-servicio {
+    justify-content: flex-start;
+    width: 50%;
+  }
+  .servicioParrafDiv p {
+    margin-bottom: 0;
+    font-size: 1.5vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 576px) {
+  .bannerContainerTitulos {
+    display: flex;
+    justify-content: center;
+  }
+  .bannerContainerTitulos .div-titulo-banner h3 {
+    text-align: center;
+    font-size: 3.6vmax;
+    margin-top: -3vmax;
+  }
+  .bannerBandaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 8vmax;
+  }
+  .bannerBandaContainer .div-icono-servicio .servicioParrafDiv p {
+    margin-bottom: 0;
+    font-size: 1.8vmax;
+  }
+}
+/* medida especial */
+@media screen and (max-width: 478px) {
+  .bannerBandaContainer {
+    padding: 2vmax 2vmax;
+    width: 100%;
+  }
+  .bannerBandaContainer .div-icono-servicio {
+    width: 50%;
+  }
+  .bannerBandaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 5vmax;
+  }
+  .bannerBandaContainer .div-icono-servicio .servicioParrafDiv p {
+    margin-bottom: 0;
+    font-size: 1.5vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+.Deals-Excursiones-Section {
+  background-color: rgba(218, 236, 241, 0.466);
+  margin-top: 0;
+}
+
+.Deals-Titles-Container {
+  margin-top: 5vmax;
+}
+.Deals-Titles-Container h2 {
+  font-family: "Alata", sans-serif;
+  font-size: 3.6vmax;
+  color: #11262c;
+  margin: -5vmax 0 1.5vmax 0;
+  font-weight: 400;
+  text-align: center;
+}
+.Deals-Titles-Container h3 {
+  font-family: "Alata", sans-serif;
+  font-size: 2.2vmax;
+  color: #294e5a;
+  margin-bottom: 2vmax;
+  text-align: center;
+}
+.Deals-Titles-Container .descripcionCarouselDiv {
+  /*  width: 75%;
+   margin: 1vmax auto;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+   text-align: justify;
+   font-family: $fuente-secundaria;
+   font-size: $size-xxxs;
+   font-weight: 400;
+   color: $color-dark-one; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vmax;
+  color: #294e5a;
+  margin: 1vmax 7vmax 3vmax 7vmax;
+  text-align: justify;
+}
+
+.carousel-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: -15vmax;
+  background: linear-gradient(to bottom, rgba(218, 236, 241, 0.322) 0%, #f3d9ce 50%, rgba(218, 236, 241, 0.301) 100%);
+  width: 100%;
+  margin: 10vmax auto;
+}
+
+.carousel-track-container {
+  height: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-image {
+  width: 15vmax;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0.5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.774);
+}
+
+/* La imagen central será más grande y destacada */
+.carousel-image.center {
+  transform: scale(1.5);
+  opacity: 1;
+  z-index: 3;
+}
+
+/* 
+.carousel-image.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+ */
+/* Las imágenes adyacentes (izquierda y derecha de la central) */
+.carousel-image.next,
+.carousel-image.prev {
+  transform: scale(1.3); /* Tamaño intermedio para las imágenes adyacentes */
+  opacity: 0.7; /* Mayor opacidad para destacar */
+  z-index: 2; /* Asegura que estén por debajo de la imagen central */
+}
+
+/* Las imágenes en los extremos */
+.carousel-image.extreme {
+  transform: scale(1);
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.offer-link {
+  font-size: 1.2vmax;
+  font-weight: bold;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Ajusta el centro del enlace al medio */
+  background-color: rgb(253, 122, 144);
+  box-shadow: 0 2px 5px #f0f0f0;
+  color: white;
+  padding: 0.3vmax 0.5vmax;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 4;
+  display: none;
+  transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
+}
+
+.offer-link:hover {
+  background-color: #3edb9a;
+  color: #c24003;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.botonCarousel {
+  background-color: rgb(230, 98, 120); /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Esquinas redondeadas */
+  padding: 1vmax; /* Espaciado interno */
+  cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+  margin: 1vmax;
+}
+
+.botonCarousel:hover {
+  background-color: #c24003; /* Color de fondo al pasar el mouse */
+}
+
+/* media queries */
+/* estructura */
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 768px) {
+  .carousel-image {
+    width: 15vmax; /* Ancho fijo para todas las imágenes */
+  }
+  .offer-link {
+    font-size: 1.5vmax;
+    font-weight: 400;
+    padding: 0.4vmax 0.8vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 576px) {
+  .descripcionCarouselDiv {
+    width: 85%;
+    margin: 1vmax auto;
+    font-size: 2.2vmax;
+    font-weight: 400;
+  }
+  .carousel-container {
+    width: 80%;
+    margin: 16vmax auto;
+  }
+  .carousel-track {
+    width: 56vmax;
+    gap: 0;
+  }
+  .carousel-image {
+    width: 13vmax; /* Ancho fijo para todas las imágenes */
+  }
+  /* La imagen central será más grande y destacada */
+  .carousel-image.center {
+    transform: scale(2.4);
+    opacity: 1;
+    z-index: 3; /* Asegura que la imagen central esté por encima de las demás */
+  }
+  /* Las imágenes adyacentes (izquierda y derecha de la central) */
+  .carousel-image.next,
+  .carousel-image.prev {
+    transform: scale(1.8); /* Tamaño intermedio para las imágenes adyacentes */
+    opacity: 0.7; /* Mayor opacidad para destacar */
+    z-index: 2; /* Asegura que estén por debajo de la imagen central */
+  }
+  .offer-link {
+    font-size: 1.5vmax;
+    font-weight: 400;
+    padding: 0.3vmax 0.6vmax;
+    top: 0;
+  }
+  .offer-link:hover {
+    top: 0;
+  }
+  .botonCarousel {
+    z-index: 3;
+  }
+}
+/* ++++++++++++++++++++++++ media query  | MEDIDA ESPECIAL |   ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 476px) {
+  .Deals-Titles-Container {
+    margin-top: 4vmax;
+    padding: 0 4vmax;
+  }
+  .descripcionCarouselDiv {
+    font-size: 2.6vmax;
+  }
+  .carousel-container {
+    width: 80%;
+    margin: 10vmax auto;
+  }
+  .carousel-track {
+    width: 34vmax;
+    gap: 0;
+  }
+  .carousel-image {
+    width: 8vmax; /* Ancho fijo para todas las imágenes */
+  }
+  /* La imagen central será más grande y destacada */
+  .carousel-image.center {
+    transform: scale(2.4);
+    opacity: 1;
+    z-index: 3; /* Asegura que la imagen central esté por encima de las demás */
+  }
+  /* Las imágenes adyacentes (izquierda y derecha de la central) */
+  .carousel-image.next,
+  .carousel-image.prev {
+    transform: scale(1.8); /* Tamaño intermedio para las imágenes adyacentes */
+    opacity: 0.7; /* Mayor opacidad para destacar */
+    z-index: 2; /* Asegura que estén por debajo de la imagen central */
+  }
+  .botonCarousel {
+    padding: 0.5vmax 1vmax; /* Espaciado interno */
+    margin: 0.5vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query  | Medida Especial |   ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 378px) {
+  .carousel-container {
+    width: 80%;
+    margin: 8vmax auto;
+  }
+  .carousel-track {
+    width: 30vmax;
+    gap: 0;
+  }
+  .carousel-image {
+    width: 8vmax; /* Ancho fijo para todas las imágenes */
+  }
+  /* La imagen central será más grande y destacada */
+  .carousel-image.center {
+    transform: scale(2);
+    opacity: 1;
+    z-index: 3; /* Asegura que la imagen central esté por encima de las demás */
+  }
+  /* Las imágenes adyacentes (izquierda y derecha de la central) */
+  .carousel-image.next,
+  .carousel-image.prev {
+    transform: scale(1.5); /* Tamaño intermedio para las imágenes adyacentes */
+    opacity: 0.7; /* Mayor opacidad para destacar */
+    z-index: 2; /* Asegura que estén por debajo de la imagen central */
+  }
+}
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+.svg-hoteleria-primero {
+  background-color: rgba(218, 236, 241, 0.466);
+  margin-top: -10vmax;
+}
+
+.Hoteleria-Section {
+  height: auto;
+  background-color: #f3d9ce;
+  margin-top: -2vmax;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.Hoteleria-Section .titulosHoteleriaDiv h2 {
+  font-family: "Alata", sans-serif;
+  font-size: 3.6vmax;
+  color: #11262c;
+  margin: 0 1.5vmax 0;
+  font-weight: 400;
+  text-align: center;
+}
+.Hoteleria-Section .titulosHoteleriaDiv h3 {
+  font-family: "Alata", sans-serif;
+  font-size: 3vmax;
+  color: #11262c;
+  margin: 1.5vmax 3vmax;
+  font-weight: 400;
+  text-align: center;
+}
+.Hoteleria-Section .titulosHoteleriaDiv p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vmax;
+  color: #294e5a;
+  margin: 3vmax 10vmax 5vmax 10vmax;
+  text-align: justify;
+}
+
+.stars-container {
+  margin-top: -4vmax;
+  margin-bottom: 2vmax;
+}
+.stars-container .div-five-stars {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 1vmax;
+  padding-bottom: 1vmax;
+}
+.stars-container .div-five-stars img {
+  width: 3vmax;
+  filter: drop-shadow(1px 2px 1px rgba(17, 38, 44, 0.6862745098));
+}
+
+.div-five-stars-dos {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 1vmax;
+  padding: 2.5vmax 0;
+}
+.div-five-stars-dos img {
+  width: 1.8vmax;
+  filter: drop-shadow(1px 2px 1px rgba(17, 38, 44, 0.6862745098));
+}
+
+.bannerHoteleriaContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  z-index: 4;
+  width: 90%;
+}
+.bannerHoteleriaContainer .div-icono-servicio {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1vmax;
+  padding-top: 2vmax;
+  padding-bottom: 5vmax;
+}
+.bannerHoteleriaContainer .div-icono-servicio .contenedorImg {
+  padding: 1vmax;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 1px 3px 6px #11262c;
+  background-color: rgb(243, 240, 228);
+}
+.bannerHoteleriaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+  width: 3vmax;
+}
+.bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
+  text-align: center;
+  font-size: 1.2vmax;
+  color: #11262c;
+  font-family: "Alata", sans-serif;
+}
+
+.svg-hoteleria-segundo {
+  z-index: 3;
+  margin-top: -5vmax;
+}
+
+/* 
+.container-img-hotel {
+    width: 100%;
+    height: 35vmax;
+    background-image: url('../Img/hoteldos.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    margin: -16vmax 0 5vmax 0;
+    z-index: 1;
+
+
+}
+ */
+/* efecto flotante */
+.img-fondo {
+  background-image: url("../Img/hoteltres.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 30vmax;
+  margin-top: -18vmax;
+  margin-bottom: 8vmax;
+}
+
+.flotan-text1 {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+.flotan-text1 h2 {
+    font-size: 5rem;
+    text-shadow: 2px 2px 4px black;
+    font-family: "Bebas Neue", sans-serif;
+
+    padding: 0.2rem 3rem;
+    background: rgba(0, 0, 0, 0.479);
+    border-radius: 1rem;
+}
+
+
+.flotan-text1 p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    background: rgba(0, 0, 0, 0.479);
+    border-radius: 1rem;
+}
+
+ */
+.svg-hoteleria-bottom {
+  margin-top: -20vmax;
+  z-index: 3;
+}
+
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 992px) {
+  .bannerHoteleriaContainer {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    gap: 1vmax;
+    padding-top: 1vmax;
+    padding-bottom: 2vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg {
+    padding: 1.5vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 5vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
+    font-size: 1.5vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 768px) {
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg {
+    padding: 1vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 6vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
+    font-size: 1.8vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 576px) {
+  .bannerHoteleriaContainer {
+    width: 100%;
+    padding-bottom: 3vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio {
+    width: 30%;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg {
+    padding: 2vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 7vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
+    font-size: 2.2vmax;
+  }
+}
+/* medida especial */
+@media screen and (max-width: 478px) {
+  .bannerHoteleriaContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 3vmax;
+    margin-bottom: 8vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio {
+    width: 40%;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg {
+    padding: 1.5vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 7vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
+    padding-top: 0.5vmax;
+    font-size: 2.2vmax;
+  }
+}
+@media screen and (max-width: 420px) {
+  .bannerHoteleriaContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90%;
+    padding-bottom: 3vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio {
+    width: 50%;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg {
+    padding: 2vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 6vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
+    font-size: 2.2vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 340px) {
+  .bannerHoteleriaContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 3vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio {
+    width: 50%;
+    padding-bottom: 0.8vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg {
+    padding: 1.5vmax 1.8vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
+    width: 4vmax;
+  }
+  .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
+    font-size: 1.8vmax;
+  }
+}
+.FooterSection {
+  margin-top: -5px;
+  height: 30vmax;
+  background: linear-gradient(to bottom, #F9E8DF 60%, #c24003 100%);
+}
+
+/*# sourceMappingURL=styles.css.map */
