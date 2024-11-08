@@ -2,7 +2,6 @@
     position: relative;
     height: 40vmax;
     overflow: hidden;
-    // user-select: none;
 }
 
 
@@ -15,71 +14,72 @@
 
 .travelerContainer {
     position: absolute;
-    bottom: -5vmax; /* Alinea la imagen PNG con el borde inferior del carousel */
+    bottom: -3vmax; /* Alinea la imagen PNG con el borde inferior del carousel */
     left: 60%; /* Desplaza la imagen un poco hacia la derecha */
     transform: translateX(-30%); /* Ajusta la posición horizontal para centrar mejor */
     z-index: 2;
-    // user-select: none;
-}
+    user-select: none;
 
+     
+}
+   
 .travelerContainer img {
     width: 25vmax;
     height: auto;
     filter: drop-shadow(5px 2px 8px rgb(8, 7, 7));
 }
 
+
 .carousel-caption {
     position: absolute;
-    top: 15%;
+    top: 5%;
     left: 15%;
-    width: 40%;
+    width: 30%;
     text-align: start;
     // border: solid 3px rgb(255, 0, 43);
-    
-    /* display: flex;
-    flex-flow: column wrap;
-    width: 20vmax;
-    
-    justify-content: center; */
-    z-index: 10;
+    z-index: 6;
+
+
+     
 }
 
+
+   
 .headerSpan {
     font-size: 4vmax;
+        
+    font-family: 'Lora', serif;
+    
 }
 
 .carousel-caption h3 {
-    font-size: 6vmax;
+    font-size: 7vmax;
     color: rgb(255, 255, 255);
     text-shadow: 8px 4px 8px black;
     font-weight: bold;
-    // font-family: Verdana, Geneva, Tahoma, sans-serif;
-    // font-family: 'Synonym', sans-serif;
-    // font-family: 'Clash Grotesk', sans-serif;
+    
     font-family: 'Bespoke Serif', serif;
     text-align: start;
     margin-bottom: 2vmax;
-    transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
+    user-select: none;
 }
+
+
 
 .carousel-caption a {
     font-size: 1.6vmax;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black;
-    font-weight: 550;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    // font-family: 'Pally', sans-serif;
-    // font-family: 'Pally', sans-serif;
-    // letter-spacing: 1px;
+    font-family: 'Quilon', sans-serif;
     text-decoration: none;
     background-color: rgb(218, 106, 3);
     border-radius: 15px;
     padding: 0.8vmax 1.6vmax;
     box-shadow: 2px 2px 4px rgb(0, 0, 0);
-    z-index: 10 !important;
+    z-index: 6 !important;
     position: relative;
-    
-   
+    user-select: none;
+
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -87,17 +87,12 @@
     margin: 2vmax;
     
 }
-/* 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-size: 100%, 100%;
-    filter: brightness(0) invert(1); 
-}
- */
 
 .wave-viajera {
     margin-top: -15vmax;
-    z-index: 6;
-    position: absolute
+    z-index: 3;
+    position: absolute;
+    // border: solid 3px red;
 }
 
 
@@ -105,6 +100,293 @@
 
 
 
+
+
+
+
+/* media queries */
+/* estructura */
+
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (min-width:1401px) {
+    
+    
+}
+
+
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:1400px) {
+    
+    
+}
+
+
+
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:1200px) {
+    
+
+    
+}
+
+
+
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:992px) {
+    
+    .carousel-paisajes-container {
+       
+        height: 45vmax;
+
+       
+    }
+    
+    
+    .imgFondoCar {
+        height: 45vmax;
+        
+    }
+    
+    
+    .carousel-caption {
+
+        top: 10%;
+       
+    }
+    
+    
+
+}
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:768px) {
+
+
+    
+    .carousel-paisajes-container {
+       
+        height: 47vmax;
+        
+    }
+    
+    .imgFondoCar {
+        height: 47vmax;
+      
+    }
+    }
+       
+    
+    .carousel-caption {
+
+        top: 12%;
+         
+    }
+    
+
+    
+    .carousel-caption a {
+        font-size: 2vmax;
+       
+    }
+    
+}
+
+
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:576px) {
+
+    
+    .carousel-paisajes-container {
+       
+        height: 48vmax;
+        
+    }
+    
+    
+    .imgFondoCar {
+        height: 48vmax;
+       
+    }
+   
+    .carousel-caption {
+     
+        top: 13%;
+       
+    }
+    
+       
+    .headerSpan {
+        font-size: 3.8vmax;
+
+    }
+    
+
+
+
+}
+
+
+
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:480px) {
+
+    
+    .carousel-paisajes-container {
+       
+        height: 48vmax;
+        
+    }
+    
+    
+    .imgFondoCar {
+        height: 48vmax;
+       
+    }
+    
+    .travelerContainer {
+     
+        // border: solid 3px rgb(15, 255, 243);
+        bottom: -2vmax;
+         
+    }
+   
+    .carousel-caption {
+     
+        top: 12%;
+        left: 15%;
+        width: 40%;
+     
+         
+    }
+    
+       
+    .headerSpan {
+        font-size: 3.8vmax;
+
+        
+    }
+    
+    .carousel-caption h3 {
+        font-size: 6vmax;
+
+    }
+    
+
+
+}
+
+
+
+@media screen and (max-width:380px){
+    
+
+    
+    
+    .travelerContainer {
+     
+        // border: solid 3px rgb(255, 15, 175);
+        bottom: -2vmax;
+         
+    }
+   
+    .carousel-caption {
+     
+        top: 18%;
+        left: 15%;
+        width: 40%;
+     
+         
+    }
+    
+       
+    .headerSpan {
+        font-size: 3.6vmax;
+
+        
+    }
+    
+    .carousel-caption h3 {
+        font-size: 5vmax;
+        
+        margin-bottom: 2vmax;
+
+    }
+    
+
+        
+    .wave-viajera {
+        margin-top: -12vmax;
+        z-index: 3;
+        position: absolute;
+        // border: solid 3px red;
+    }
+
+}
+
+@media screen and (max-width:320px){
+    
+    
+    .travelerContainer {
+     
+        // border: solid 3px rgb(255, 231, 15);
+        bottom: -2vmax;
+        left: 55%;
+         
+    }
+   
+    .carousel-caption {
+     
+        top: 25%;
+        left: 18%;
+        width: 40%;
+     
+         
+    }
+    
+       
+    .headerSpan {
+        font-size: 3.2vmax;
+        padding-bottom: 2vmax;
+
+        
+    }
+    
+    .carousel-caption h3 {
+        font-size: 4vmax;
+        
+        margin-bottom: 2vmax;
+
+    }
+    
+
+        
+    .wave-viajera {
+        margin-top: -10vmax;
+      
+    }
+    
+}
+
+
+
+
+
+
+/* 
 
 
 @media screen and (max-width:450px) {
@@ -123,4 +405,4 @@
         margin-top: -10vmax;
     }
 
-}
+} */
