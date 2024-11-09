@@ -1,10 +1,10 @@
 .sectionPackages {
    
-    margin: -1vmax;
+    margin: -1vmax 0 0 0;
     padding-bottom: 2.5vmax;
     background: #F9E8DF;
 
-   
+    // border: solid 4px red;
 
    .PackagesRow {
         margin: 0;
@@ -20,6 +20,9 @@
             align-items: center;
             text-align: center;
             gap: 2vmax;
+            // border: solid 3px blue;
+            // background-color: transparent;
+            // position: relative;
 
             padding: 0 5vmax;
 
@@ -28,7 +31,9 @@
                 margin: 8vmax 0 0 0;
                 padding: 0 8vmax;
                 font-weight: 400;
+                // border: solid 3px blueviolet;
 
+                
             }
 
             h3 {
@@ -36,6 +41,7 @@
                 margin: 3vmax 0 8vmax 0;
                 padding: 0 5vmax;
             
+                // border: 4px solid black;
 
             }
 
@@ -44,6 +50,7 @@
    }
 
 }
+
 
 .adornoUno {
     font-size: $size-large;
@@ -79,8 +86,13 @@
 .primerCardsGroup {
     
     height: 40vmax;
+    // width: 90%;
     overflow: hidden;
     margin: 0 5vmax;
+    // border: solid 2px rgb(252, 42, 77);
+    // padding: 0;
+    // border-radius: 25px;
+   
 }
 
 /* contenedor de cada imagen mas su texto hover */
@@ -89,7 +101,6 @@
     position: relative; /* Necesario para que el texto se posicione sobre la imagen */
     overflow: hidden;   /* Para que el zoom no cambie el tamaño visible */
     transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
-    // border: solid 3px rgb(202, 51, 76);
     
 }
 
@@ -117,11 +128,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    background-color: $color-contrast-opacity;
+    // background-color: $color-contrast-opacity;
+    background-color: rgb(218, 106, 3);
+
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 1px;
+
     border-radius: 15px;
     padding: 0.2vmax 2vmax;
-    font-size: $size-xxs;
-    font-family: $fuente-principal;
+    font-size: $size-xxxs;
+    // font-family: $fuente-principal;
+    font-family: 'Quilon', sans-serif;
+
     text-align: center;
     opacity: 0; /* Inicialmente oculto */
     transition: opacity 0.4s ease; /* Transición suave para aparición del texto */
@@ -159,10 +177,19 @@
     padding: 0;
     width: 100%;
     height: 19vmax;
-    // gap: 1vmax;
+    gap: 1vmax;
+    // border: solid 3px rgb(137, 253, 28);
+
+    filter: sepia(10%) brightness(1); /* Aplica un filtro sepia y oscurece la imagen */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transición suave para zoom y filtro */
+
 }
 
 
+.cardsDivLados:hover {
+    filter: none; /* Elimina el filtro en el hover */
+   
+}
 
 .cardsDerDiv,
 .cardsIzqDiv,
@@ -171,11 +198,9 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     gap: 1vmax;
+    // border: solid 3px rgb(137, 253, 28);
 
 }
-
-
-
 
 .contenedorCentralPalmeras {
     padding: 0;
@@ -188,25 +213,35 @@
         height: 40vmax;
         padding: 0;
         margin: 0;
-        
-       
-        
-        /* es la imagen */
-        .cardCentral {
-            height: 100%;
-            // width: 100%;
-           
-            padding: 0;
-            display: flex;
-            justify-content: center;
-         
-        }
+        filter: sepia(10%) brightness(1); /* Aplica un filtro sepia y oscurece la imagen */
+        transition: transform 0.3s ease, filter 0.3s ease; /* Transición suave para zoom y filtro */
+    }
+    
 
+    .cardCentralDiv:hover {
+
+        filter: none;
     }
 
-
+        
+       
+    
+    /* es la imagen */
+    .cardCentral {
+        height: 100%;
+        // width: 100%;
+        
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        
+    }
 
 }
+
+
+
+
 
 
 .cardCentralDiv .cardTextCentral {
@@ -216,11 +251,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    background-color: $color-contrast-opacity;
+    // background-color: $color-contrast-opacity;
+    background-color: rgb(218, 106, 3);
     border-radius: 15px;
     padding: 0.2vmax 2vmax;
-    font-size: $size-xxs;
-    font-family: $fuente-principal;
+    font-size: $size-xxxs;
+    // font-family: $fuente-principal;
+    font-family: 'Quilon', sans-serif;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 2px;
     text-align: center;
     opacity: 0; /* Inicialmente oculto */
     transition: opacity 0.4s ease;
@@ -287,7 +326,11 @@
 
 @media screen and (max-width:992px) {
     
-    
+    .primerCardsGroup {
+
+        margin: 0 3vmax;
+    }
+
     .titulosPackages {
         
         padding: 0 3vmax!important;
@@ -305,7 +348,7 @@
     }
 
 
-   
+    
 }
 
 
@@ -404,6 +447,12 @@
 @media screen and (max-width:576px) {
 
     
+    .primerCardsGroup {
+
+        margin: 0;
+    }
+
+    
     .titulosPackages {
         
         padding: 0 1vmax!important;
@@ -464,6 +513,13 @@
 @media screen and (max-width:500px) {
 
    
+    
+    .primerCardsGroup {
+
+        margin: 0;
+    }
+
+
     .titulosPackages {
         
         padding: 0 1vmax!important;
@@ -498,6 +554,13 @@
 
 /* medida especial hasta 456 */
 @media screen and (max-width:453px) {
+
+    
+    .primerCardsGroup {
+
+        margin: 0;
+    }
+
 
     .titulosPackages {
         

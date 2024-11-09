@@ -2,12 +2,31 @@
     background-color: rgba(218, 236, 241, 0.466);
     margin-top: 0;
     // border: solid 2px blue;
-}
+    position: relative;
 
+}
+/* 
+.decorativi {
+    border: solid 3px green;
+    width: 100%;
+    position: relative;
+    left: 0;
+    margin-top: -10vmax;
+ 
+
+    img {
+        width: 50vmax;
+        position: relative;
+        // left: 25%;
+        margin-top: -18vmax;
+       
+    }
+} */
 
 .Deals-Titles-Container {
 
     margin-top: 5vmax;
+    border: solid 3px green;
 
     h2 {
         @include h2-styles($fuente-principal, $size-secundario, $color-dark-one);
@@ -20,6 +39,7 @@
         @include h3-styles($fuente-principal, $size-small, $color-dark-two);
         margin-bottom: 2vmax;
         text-align: center;
+        
     }
 
     .descripcionCarouselDiv {
@@ -35,6 +55,7 @@
         font-weight: 400;
         color: $color-dark-one; */
 
+        border: 2px solid pink;
 
         @include h3-styles($fuente-secundaria, $size-xxs, $color-dark-two);
             margin: 1vmax 7vmax 3vmax 7vmax;
@@ -49,12 +70,15 @@
 
 .carousel-container {
    
+    border: solid 3px rgb(230, 4, 42);
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     gap: -15vmax;
-    background: linear-gradient(to bottom, rgba(218, 236, 241, 0.322) 0%, #f3d9ce 50%, rgba(218, 236, 241, 0.301) 100%);
+    background-color: transparent;
+    // background: linear-gradient(to bottom, rgba(218, 236, 241, 0.322) 0%, #f3d9ce 50%, rgba(218, 236, 241, 0.301) 100%);
     // background-color: rgba(218, 236, 241, 0.466);
 
     width: 100%;

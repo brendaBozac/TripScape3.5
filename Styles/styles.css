@@ -429,7 +429,7 @@ body {
 
 } */
 .sectionPackages {
-  margin: -1vmax;
+  margin: -1vmax 0 0 0;
   padding-bottom: 2.5vmax;
   background: #F9E8DF;
 }
@@ -518,11 +518,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background-color: rgba(165, 58, 8, 0.7529411765);
+  background-color: rgb(218, 106, 3);
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: 1px;
   border-radius: 15px;
   padding: 0.2vmax 2vmax;
-  font-size: 1.5vmax;
-  font-family: "Alata", sans-serif;
+  font-size: 1.2vmax;
+  font-family: "Quilon", sans-serif;
   text-align: center;
   opacity: 0; /* Inicialmente oculto */
   transition: opacity 0.4s ease; /* Transición suave para aparición del texto */
@@ -551,6 +553,13 @@ body {
   padding: 0;
   width: 100%;
   height: 19vmax;
+  gap: 1vmax;
+  filter: sepia(10%) brightness(1); /* Aplica un filtro sepia y oscurece la imagen */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Transición suave para zoom y filtro */
+}
+
+.cardsDivLados:hover {
+  filter: none; /* Elimina el filtro en el hover */
 }
 
 .cardsDerDiv,
@@ -566,14 +575,19 @@ body {
   padding: 0;
   object-fit: cover;
   object-position: center bottom;
+  /* es la imagen */
 }
 .contenedorCentralPalmeras .cardCentralDiv {
   height: 40vmax;
   padding: 0;
   margin: 0;
-  /* es la imagen */
+  filter: sepia(10%) brightness(1); /* Aplica un filtro sepia y oscurece la imagen */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Transición suave para zoom y filtro */
 }
-.contenedorCentralPalmeras .cardCentralDiv .cardCentral {
+.contenedorCentralPalmeras .cardCentralDiv:hover {
+  filter: none;
+}
+.contenedorCentralPalmeras .cardCentral {
   height: 100%;
   padding: 0;
   display: flex;
@@ -587,11 +601,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background-color: rgba(165, 58, 8, 0.7529411765);
+  background-color: rgb(218, 106, 3);
   border-radius: 15px;
   padding: 0.2vmax 2vmax;
-  font-size: 1.5vmax;
-  font-family: "Alata", sans-serif;
+  font-size: 1.2vmax;
+  font-family: "Quilon", sans-serif;
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: 2px;
   text-align: center;
   opacity: 0; /* Inicialmente oculto */
   transition: opacity 0.4s ease;
@@ -620,6 +636,9 @@ body {
 /* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
 /* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 992px) {
+  .primerCardsGroup {
+    margin: 0 3vmax;
+  }
   .titulosPackages {
     padding: 0 3vmax !important;
   }
@@ -687,6 +706,9 @@ body {
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 576px) {
+  .primerCardsGroup {
+    margin: 0;
+  }
   .titulosPackages {
     padding: 0 1vmax !important;
   }
@@ -723,6 +745,9 @@ body {
 }
 /* medida especial */
 @media screen and (max-width: 500px) {
+  .primerCardsGroup {
+    margin: 0;
+  }
   .titulosPackages {
     padding: 0 1vmax !important;
   }
@@ -747,6 +772,9 @@ body {
 }
 /* medida especial hasta 456 */
 @media screen and (max-width: 453px) {
+  .primerCardsGroup {
+    margin: 0;
+  }
   .titulosPackages {
     padding: 0 !important;
   }
@@ -766,6 +794,8 @@ body {
   margin: 5vmax 0 0 0;
   background-color: #F9E8DF;
   z-index: 2;
+  background-image: linear-gradient(to bottom, #F9E8DF 30%, rgba(138, 202, 216, 0.6980392157) 100%);
+  border: none;
 }
 
 .bannerContainerTitulos {
@@ -773,7 +803,7 @@ body {
 }
 .bannerContainerTitulos .div-titulo-banner h3 {
   text-align: center;
-  padding-bottom: 2vmax;
+  padding-bottom: 4vmax;
   font-family: "Alata", sans-serif;
   font-size: 3vmax;
   color: #11262c;
@@ -795,9 +825,9 @@ body {
 }
 
 .bannerBandaContainer {
-  background-color: #F9E8DF;
+  background-color: transparent;
   width: 100%;
-  padding: 2vmax 0;
+  padding: 2vmax 2vmax;
   margin: 0;
   display: flex;
   flex-flow: row wrap;
@@ -816,6 +846,7 @@ body {
   border-radius: 50%;
   box-shadow: 1px 3px 6px #294e5a;
   background-color: #f0f0f0;
+  background: linear-gradient(135deg, #f9f9f9, #facfdb);
 }
 .bannerBandaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
   width: 4vmax;
@@ -835,6 +866,9 @@ body {
   margin-top: -5vmax;
   background-color: rgba(218, 236, 241, 0.466);
   z-index: 1;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 /* media queries */
@@ -932,10 +966,29 @@ body {
 .Deals-Excursiones-Section {
   background-color: rgba(218, 236, 241, 0.466);
   margin-top: 0;
+  position: relative;
 }
 
+/* 
+.decorativi {
+    border: solid 3px green;
+    width: 100%;
+    position: relative;
+    left: 0;
+    margin-top: -10vmax;
+
+
+    img {
+        width: 50vmax;
+        position: relative;
+        // left: 25%;
+        margin-top: -18vmax;
+
+    }
+} */
 .Deals-Titles-Container {
   margin-top: 5vmax;
+  border: solid 3px green;
 }
 .Deals-Titles-Container h2 {
   font-family: "Alata", sans-serif;
@@ -964,6 +1017,7 @@ body {
    font-size: $size-xxxs;
    font-weight: 400;
    color: $color-dark-one; */
+  border: 2px solid pink;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5vmax;
   color: #294e5a;
@@ -972,12 +1026,13 @@ body {
 }
 
 .carousel-container {
+  border: solid 3px rgb(230, 4, 42);
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   gap: -15vmax;
-  background: linear-gradient(to bottom, rgba(218, 236, 241, 0.322) 0%, #f3d9ce 50%, rgba(218, 236, 241, 0.301) 100%);
+  background-color: transparent;
   width: 100%;
   margin: 10vmax auto;
 }
@@ -1212,7 +1267,7 @@ body {
 .Hoteleria-Section {
   height: auto;
   background-color: #f3d9ce;
-  margin-top: -2vmax;
+  margin-top: 50vmax;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
