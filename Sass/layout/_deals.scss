@@ -26,18 +26,18 @@
 .Deals-Titles-Container {
 
     margin-top: 5vmax;
-    border: solid 3px green;
+    // border: solid 3px green;
 
     h2 {
-        @include h2-styles($fuente-principal, $size-secundario, $color-dark-one);
-        margin: -5vmax 0 1.5vmax 0;
+        @include h2-styles($fuente-principal, $size-large, $color-dark-one);
+        margin: -5vmax 0 2vmax 0;
         font-weight: 400;
         text-align: center
     }
 
     h3 {
         @include h3-styles($fuente-principal, $size-small, $color-dark-two);
-        margin-bottom: 2vmax;
+        margin-bottom: 3vmax;
         text-align: center;
         
     }
@@ -55,7 +55,7 @@
         font-weight: 400;
         color: $color-dark-one; */
 
-        border: 2px solid pink;
+        // border: 2px solid pink;
 
         @include h3-styles($fuente-secundaria, $size-xxs, $color-dark-two);
             margin: 1vmax 7vmax 3vmax 7vmax;
@@ -70,7 +70,7 @@
 
 .carousel-container {
    
-    border: solid 3px rgb(230, 4, 42);
+    // border: solid 3px rgb(230, 4, 42);
 
     display: flex;
     flex-flow: row nowrap;

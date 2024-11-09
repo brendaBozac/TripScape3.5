@@ -988,13 +988,12 @@ body {
 } */
 .Deals-Titles-Container {
   margin-top: 5vmax;
-  border: solid 3px green;
 }
 .Deals-Titles-Container h2 {
   font-family: "Alata", sans-serif;
-  font-size: 3.6vmax;
+  font-size: 5vmax;
   color: #11262c;
-  margin: -5vmax 0 1.5vmax 0;
+  margin: -5vmax 0 2vmax 0;
   font-weight: 400;
   text-align: center;
 }
@@ -1002,7 +1001,7 @@ body {
   font-family: "Alata", sans-serif;
   font-size: 2.2vmax;
   color: #294e5a;
-  margin-bottom: 2vmax;
+  margin-bottom: 3vmax;
   text-align: center;
 }
 .Deals-Titles-Container .descripcionCarouselDiv {
@@ -1017,7 +1016,6 @@ body {
    font-size: $size-xxxs;
    font-weight: 400;
    color: $color-dark-one; */
-  border: 2px solid pink;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5vmax;
   color: #294e5a;
@@ -1026,7 +1024,6 @@ body {
 }
 
 .carousel-container {
-  border: solid 3px rgb(230, 4, 42);
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
