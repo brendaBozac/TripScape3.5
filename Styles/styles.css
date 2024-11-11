@@ -195,13 +195,19 @@ body {
   text-shadow: 1px 1px 2px black;
   font-family: "Quilon", sans-serif;
   text-decoration: none;
-  background-color: rgb(218, 106, 3);
+  background-color: #F77B00;
   border-radius: 15px;
   padding: 0.8vmax 1.6vmax;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
   z-index: 6 !important;
   position: relative;
   user-select: none;
+}
+
+.carousel-caption a:hover {
+  background-color: #FFB51C;
+  position: absolute;
+  transform: scale(1);
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -519,11 +525,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background-color: rgb(218, 106, 3);
+  background-color: #F77B00;
   text-shadow: 1px 1px 2px black;
   letter-spacing: 1px;
-  border-radius: 15px;
-  padding: 0.2vmax 2vmax;
+  border-radius: 10px;
+  padding: 0.2vmax 1.2vmax;
   font-size: 1.2vmax;
   font-family: "Quilon", sans-serif;
   text-align: center;
@@ -544,7 +550,7 @@ body {
 }
 
 .cardsDiv .cardText a:hover {
-  color: #c7aa05;
+  color: #ffdd1c;
 }
 
 .cardsDivLados {
@@ -602,9 +608,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background-color: rgb(218, 106, 3);
-  border-radius: 15px;
-  padding: 0.2vmax 2vmax;
+  background-color: #F77B00;
+  border-radius: 10px;
+  padding: 0.2vmax 1.2vmax;
   font-size: 1.2vmax;
   font-family: "Quilon", sans-serif;
   text-shadow: 1px 1px 2px black;
@@ -627,7 +633,7 @@ body {
 }
 
 .cardTextCentral a:hover {
-  color: #c7aa05;
+  color: #ffdd1c;
 }
 
 /* media queries */
@@ -1034,7 +1040,6 @@ body {
   width: 100%;
   margin: 5vmax auto 10vmax auto;
   padding: 5vmax 0;
-  border: solid 4px black;
 }
 
 .carousel-track-container {
@@ -1097,20 +1102,37 @@ body {
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%); /* Ajusta el centro del enlace al medio */
-  background-color: rgb(253, 122, 144);
-  box-shadow: 0 2px 5px #f0f0f0;
-  color: white;
-  padding: 0.3vmax 0.5vmax;
-  border-radius: 5px;
+  background-color: #F77B00;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px black;
+  padding: 0.8vmax 1.6vmax;
+  border-radius: 15px;
+  user-select: none;
   text-decoration: none;
   z-index: 4;
   display: none;
   transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
 }
 
+/* 
+
+    font-size: 1.6vmax;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Quilon', sans-serif;
+    text-decoration: none;
+    background-color: rgb(218, 106, 3);
+    border-radius: 15px;
+    padding: 0.8vmax 1.6vmax;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    z-index: 6 !important;
+    position: relative;
+    user-select: none;
+
+*/
 .offer-link:hover {
-  background-color: #3edb9a;
-  color: #c24003;
+  background-color: #FFB51C;
   position: absolute;
   top: 15%;
   left: 50%;
@@ -1118,7 +1140,7 @@ body {
 }
 
 .botonCarousel {
-  background-color: rgb(230, 98, 120); /* Color de fondo del botón */
+  background-color: rgb(218, 106, 3);
   color: white; /* Color del texto */
   border: none; /* Sin borde */
   border-radius: 5px; /* Esquinas redondeadas */
@@ -1128,7 +1150,7 @@ body {
 }
 
 .botonCarousel:hover {
-  background-color: #c24003; /* Color de fondo al pasar el mouse */
+  background-color: #FFB51C;
 }
 
 /* media queries */

@@ -84,7 +84,6 @@
     width: 100%;
     margin: 5vmax auto 10vmax auto;
     padding: 5vmax 0;
-    border: solid 4px black;
 }
 
 
@@ -165,11 +164,23 @@
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%); /* Ajusta el centro del enlace al medio */
-    background-color: $color-botones;
-    box-shadow: 0 2px 5px $color-light-one;
-    color: white;
-    padding: 0.3vmax 0.5vmax;
-    border-radius: 5px;
+    // background-color: $color-botones;
+    background-color: #F77B00;
+
+
+    // box-shadow: 0 2px 5px $color-light-one;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    // color: white;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+
+    // padding: 0.3vmax 0.5vmax;
+    padding: 0.8vmax 1.6vmax;
+    
+    // border-radius: 5px;
+    border-radius: 15px;
+    user-select: none;
+
     text-decoration: none;
     z-index: 4;
     display: none;
@@ -179,10 +190,29 @@
 }
 
 
+/* 
+
+    font-size: 1.6vmax;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    font-family: 'Quilon', sans-serif;
+    text-decoration: none;
+    background-color: rgb(218, 106, 3);
+    border-radius: 15px;
+    padding: 0.8vmax 1.6vmax;
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    z-index: 6 !important;
+    position: relative;
+    user-select: none;
+
+*/
+
+
 .offer-link:hover {
 
-    background-color: $color-botones-dos;
-    color: $color-contrast-one;
+    // background-color: $color-botones-dos;
+    background-color: #FFB51C;
+
 
     position: absolute;
     top: 15%;
@@ -194,7 +224,8 @@
 
 
 .botonCarousel {
-    background-color: rgb(230, 98, 120); /* Color de fondo del botón */
+    background-color: rgb(218, 106, 3);
+
     color: white; /* Color del texto */
     border: none; /* Sin borde */
     border-radius: 5px; /* Esquinas redondeadas */
@@ -204,7 +235,7 @@
 }
 
 .botonCarousel:hover {
-    background-color: $color-contrast-one; /* Color de fondo al pasar el mouse */
+    background-color:  #FFB51C;
 }
 
 

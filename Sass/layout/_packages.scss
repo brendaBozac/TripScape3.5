@@ -130,13 +130,15 @@
     transform: translate(-50%, -50%);
     color: white;
     // background-color: $color-contrast-opacity;
-    background-color: rgb(218, 106, 3);
+    // background-color: rgb(218, 106, 3);
+    background-color: $color-botones;
+
 
     text-shadow: 1px 1px 2px black;
     letter-spacing: 1px;
 
-    border-radius: 15px;
-    padding: 0.2vmax 2vmax;
+    border-radius: 10px;
+    padding: 0.2vmax 1.2vmax;
     font-size: $size-xxxs;
     // font-family: $fuente-principal;
     font-family: 'Quilon', sans-serif;
@@ -156,10 +158,13 @@
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;    
+
 }
 
 .cardsDiv .cardText a:hover {
-    color: #c7aa05; 
+    color: $color-botones-hover;
+    
+
     // text-shadow: 1px 2px 3px $color-dark-one;
 
 }
@@ -253,9 +258,12 @@
     transform: translate(-50%, -50%);
     color: white;
     // background-color: $color-contrast-opacity;
-    background-color: rgb(218, 106, 3);
-    border-radius: 15px;
-    padding: 0.2vmax 2vmax;
+    // background-color: rgb(218, 106, 3);
+    background-color: $color-botones;
+
+
+    border-radius: 10px;
+    padding: 0.2vmax 1.2vmax;
     font-size: $size-xxxs;
     // font-family: $fuente-principal;
     font-family: 'Quilon', sans-serif;
@@ -270,6 +278,7 @@
             
 .cardCentralDiv:hover .cardTextCentral {
     opacity: 1; /* Texto aparece cuando se hace hover */
+    
 }
 
     /* Efecto de link clicable sobre el texto */
@@ -281,7 +290,7 @@
 }
 
 .cardTextCentral a:hover {
-    color: #c7aa05; 
+    color: $color-botones-hover;
     // text-shadow: 1px 2px 3px $color-dark-one;
 
 }

@@ -72,13 +72,30 @@
     text-shadow: 1px 1px 2px black;
     font-family: 'Quilon', sans-serif;
     text-decoration: none;
-    background-color: rgb(218, 106, 3);
+    background-color: #F77B00;
     border-radius: 15px;
     padding: 0.8vmax 1.6vmax;
     box-shadow: 2px 2px 4px rgb(0, 0, 0);
     z-index: 6 !important;
     position: relative;
     user-select: none;
+
+}
+
+
+
+.carousel-caption a:hover {
+
+    // background-color: $color-botones-dos;
+    background-color: #FFB51C;
+
+
+    position: absolute;
+    // top: 15%;
+    // left: 50%;
+    transform: scale(1);
+    
+    // transform: ; /* Zoom */
 
 }
 
