@@ -1,9 +1,8 @@
 .Deals-Excursiones-Section {
     background-color: rgba(218, 236, 241, 0.466);
     margin-top: 0;
-    // border: solid 2px blue;
     position: relative;
-
+    padding-bottom: 10vmax;
 }
 /* 
 .decorativi {
@@ -32,7 +31,8 @@
         @include h2-styles($fuente-principal, $size-large, $color-dark-one);
         margin: -5vmax 0 2vmax 0;
         font-weight: 400;
-        text-align: center
+        text-align: center;
+
     }
 
     h3 {
@@ -43,7 +43,6 @@
     }
 
     .descripcionCarouselDiv {
-       /*  width: 75%;
         margin: 1vmax auto;
         display: flex;
         flex-flow: column wrap;
@@ -53,12 +52,13 @@
         font-family: $fuente-secundaria;
         font-size: $size-xxxs;
         font-weight: 400;
-        color: $color-dark-one; */
+        color: $color-dark-one;
+        padding: 1vmax 4vmax;
 
-        // border: 2px solid pink;
+   
 
         @include h3-styles($fuente-secundaria, $size-xxs, $color-dark-two);
-            margin: 1vmax 7vmax 3vmax 7vmax;
+            // margin: 1vmax 7vmax 3vmax 7vmax;
             text-align: justify;
     
 
@@ -70,7 +70,7 @@
 
 .carousel-container {
    
-    // border: solid 3px rgb(230, 4, 42);
+    
 
     display: flex;
     flex-flow: row nowrap;
@@ -82,11 +82,15 @@
     // background-color: rgba(218, 236, 241, 0.466);
 
     width: 100%;
-    margin: 10vmax auto;
+    margin: 5vmax auto 10vmax auto;
+    padding: 5vmax 0;
+    border: solid 4px black;
 }
 
 
 .carousel-track-container {
+
+    // border: solid 3px rgb(219, 109, 127);
     height: auto;
     display: flex;
     flex-flow: row nowrap;
@@ -245,17 +249,7 @@
 
 @media screen and (max-width:992px) {
     
-    
-   
-}
-
-
-/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
-
-
-@media screen and (max-width:768px) {
-
-    
+      
 .carousel-image {
 
     width: 15vmax; /* Ancho fijo para todas las imágenes */
@@ -263,26 +257,17 @@
 }
 
 
-
+/* 
 .offer-link {
     font-size: $size-xxs;
     font-weight: 400;
     padding: 0.4vmax 0.8vmax;
     
 }
+ */
 
 
-
-}
-
-
-
-
-/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
-
-@media screen and (max-width:576px) {
-
-
+ 
 .descripcionCarouselDiv {
     width: 85%;
     margin: 1vmax auto;
@@ -301,14 +286,14 @@
 
 .carousel-track {
     
-    width: 56vmax;
+    width: 46vmax;
     gap: 0; 
 } 
 
        
 .carousel-image {
 
-    width: 13vmax; /* Ancho fijo para todas las imágenes */
+    width: 10vmax; /* Ancho fijo para todas las imágenes */
 
 }
 
@@ -355,6 +340,144 @@
     z-index: 3;
 }
 
+   
+}
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:768px) {
+
+
+
+}
+
+
+
+/* medida especial 608 */
+@media screen and (max-width:608px) {
+
+
+
+    .Deals-Titles-Container {
+
+        margin-top: 5vmax;
+        // border: solid 3px green;
+    
+        h2 {
+            padding: 1vmax 6vmax;
+    
+        }
+    
+        h3 {
+            padding: 1vmax 4vmax;
+            
+        }
+    
+        
+    }
+    
+    
+    
+    .carousel-container {
+        width: 80%;
+        margin: 10vmax auto;
+
+
+    } 
+
+    .carousel-track {
+        
+        width: 45vmax;
+        gap: 0; 
+    } 
+
+        
+    .carousel-image {
+
+        width: 10vmax; /* Ancho fijo para todas las imágenes */
+
+
+    }
+}
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:576px) {
+
+
+        .Deals-Titles-Container {
+
+            margin-top: 4vmax;
+            padding: 0 4vmax;
+        }    
+
+
+
+        .descripcionCarouselDiv {
+            font-size: $size-terc;
+            width: 100%;
+        
+        
+        }     
+
+        
+    .carousel-container {
+        width: 80%;
+        margin: 10vmax auto;
+
+    } 
+
+    .carousel-track {
+        
+        width: 43vmax;
+        gap: 0; 
+
+    } 
+
+    
+
+        
+    .carousel-image {
+
+        width: 10vmax; /* Ancho fijo para todas las imágenes */
+
+    }
+
+
+
+
+    /* La imagen central será más grande y destacada */
+    .carousel-image.center {
+        transform: scale(2.4);
+        opacity: 1;
+        z-index: 3; /* Asegura que la imagen central esté por encima de las demás */
+    }
+
+
+
+
+
+    /* Las imágenes adyacentes (izquierda y derecha de la central) */
+    .carousel-image.next,
+    .carousel-image.prev {
+        transform: scale(1.8); /* Tamaño intermedio para las imágenes adyacentes */
+        opacity: 0.7; /* Mayor opacidad para destacar */
+        z-index: 2; /* Asegura que estén por debajo de la imagen central */
+    }
+
+        
+    .botonCarousel {
+        
+        padding: 1vmax 1vmax; /* Espaciado interno */
+    
+        margin: 0.5vmax;
+    }
+
+
+    
 
 }
 
@@ -363,90 +486,12 @@
 
 @media screen and (max-width:476px) {
 
-    .Deals-Titles-Container {
-
-        margin-top: 4vmax;
-        padding: 0 4vmax;
-    }    
-
-
-
-    .descripcionCarouselDiv {
-        font-size: $size-cuarto;
-
        
-    
-    }     
-
-    
-.carousel-container {
-    width: 80%;
-    margin: 10vmax auto;
-
-} 
-
-.carousel-track {
-    
-    width: 34vmax;
-    gap: 0; 
-} 
-
-       
-.carousel-image {
-
-    width: 8vmax; /* Ancho fijo para todas las imágenes */
-
-}
-
-
-
-
-/* La imagen central será más grande y destacada */
-.carousel-image.center {
-    transform: scale(2.4);
-    opacity: 1;
-    z-index: 3; /* Asegura que la imagen central esté por encima de las demás */
-}
-
-
-
-
-
-/* Las imágenes adyacentes (izquierda y derecha de la central) */
-.carousel-image.next,
-.carousel-image.prev {
-    transform: scale(1.8); /* Tamaño intermedio para las imágenes adyacentes */
-    opacity: 0.7; /* Mayor opacidad para destacar */
-    z-index: 2; /* Asegura que estén por debajo de la imagen central */
-}
-
-    
-.botonCarousel {
-      
-    padding: 0.5vmax 1vmax; /* Espaciado interno */
-   
-    margin: 0.5vmax;
-}
-
-
-}
-
-
-
-
-
-
-/* ++++++++++++++++++++++++ media query  | Medida Especial |   ++++++++++++++++++++++++++++++++++*/
-
-@media screen and (max-width:378px) {
-
-    
-
-        
         
     .carousel-container {
         width: 80%;
         margin: 8vmax auto;
+
 
     } 
 
@@ -459,7 +504,49 @@
         
     .carousel-image {
 
-        width: 8vmax; /* Ancho fijo para todas las imágenes */
+        width: 7vmax; /* Ancho fijo para todas las imágenes */
+
+    }
+     
+
+}
+
+
+
+
+
+
+/* ++++++++++++++++++++++++ media query  | Medida Especial |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:400px) {
+
+    
+    
+    h2 {
+        @include h2-styles($fuente-principal, $size-xxs, $color-dark-one);
+        margin: -5vmax 0 2vmax 0;
+        
+
+    }
+        
+        
+    .carousel-container {
+        width: 70%;
+        margin: 8vmax auto;
+
+
+    } 
+
+    .carousel-track {
+        
+        width: 30vmax;
+        gap: 0; 
+    } 
+
+        
+    .carousel-image {
+
+        width: 7vmax; /* Ancho fijo para todas las imágenes */
 
     }
 

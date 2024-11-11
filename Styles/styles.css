@@ -488,7 +488,6 @@ body {
 /* div contenedor de las tres columnas que tienen las fotos */
 .primerCardsGroup {
   height: 40vmax;
-  overflow: hidden;
   margin: 0 5vmax;
 }
 
@@ -497,6 +496,8 @@ body {
   position: relative; /* Necesario para que el texto se posicione sobre la imagen */
   overflow: hidden; /* Para que el zoom no cambie el tamaño visible */
   transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
+  box-shadow: 1px 4px 9px #11262c;
+  border-radius: 2vmax;
 }
 
 .cardsDiv img {
@@ -967,6 +968,7 @@ body {
   background-color: rgba(218, 236, 241, 0.466);
   margin-top: 0;
   position: relative;
+  padding-bottom: 10vmax;
 }
 
 /* 
@@ -1005,21 +1007,20 @@ body {
   text-align: center;
 }
 .Deals-Titles-Container .descripcionCarouselDiv {
-  /*  width: 75%;
-   margin: 1vmax auto;
-   display: flex;
-   flex-flow: column wrap;
-   justify-content: center;
-   align-items: center;
-   text-align: justify;
-   font-family: $fuente-secundaria;
-   font-size: $size-xxxs;
-   font-weight: 400;
-   color: $color-dark-one; */
+  margin: 1vmax auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2vmax;
+  font-weight: 400;
+  color: #11262c;
+  padding: 1vmax 4vmax;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5vmax;
   color: #294e5a;
-  margin: 1vmax 7vmax 3vmax 7vmax;
   text-align: justify;
 }
 
@@ -1031,7 +1032,9 @@ body {
   gap: -15vmax;
   background-color: transparent;
   width: 100%;
-  margin: 10vmax auto;
+  margin: 5vmax auto 10vmax auto;
+  padding: 5vmax 0;
+  border: solid 4px black;
 }
 
 .carousel-track-container {
@@ -1134,19 +1137,18 @@ body {
 /* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
 /* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
 /* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
-/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .carousel-image {
     width: 15vmax; /* Ancho fijo para todas las imágenes */
   }
+  /* 
   .offer-link {
-    font-size: 1.5vmax;
-    font-weight: 400;
-    padding: 0.4vmax 0.8vmax;
+      font-size: $size-xxs;
+      font-weight: 400;
+      padding: 0.4vmax 0.8vmax;
+
   }
-}
-/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
-@media screen and (max-width: 576px) {
+   */
   .descripcionCarouselDiv {
     width: 85%;
     margin: 1vmax auto;
@@ -1158,11 +1160,11 @@ body {
     margin: 16vmax auto;
   }
   .carousel-track {
-    width: 56vmax;
+    width: 46vmax;
     gap: 0;
   }
   .carousel-image {
-    width: 13vmax; /* Ancho fijo para todas las imágenes */
+    width: 10vmax; /* Ancho fijo para todas las imágenes */
   }
   /* La imagen central será más grande y destacada */
   .carousel-image.center {
@@ -1190,25 +1192,50 @@ body {
     z-index: 3;
   }
 }
-/* ++++++++++++++++++++++++ media query  | MEDIDA ESPECIAL |   ++++++++++++++++++++++++++++++++++*/
-@media screen and (max-width: 476px) {
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+/* medida especial 608 */
+@media screen and (max-width: 608px) {
   .Deals-Titles-Container {
-    margin-top: 4vmax;
-    padding: 0 4vmax;
+    margin-top: 5vmax;
   }
-  .descripcionCarouselDiv {
-    font-size: 2.6vmax;
+  .Deals-Titles-Container h2 {
+    padding: 1vmax 6vmax;
+  }
+  .Deals-Titles-Container h3 {
+    padding: 1vmax 4vmax;
   }
   .carousel-container {
     width: 80%;
     margin: 10vmax auto;
   }
   .carousel-track {
-    width: 34vmax;
+    width: 45vmax;
     gap: 0;
   }
   .carousel-image {
-    width: 8vmax; /* Ancho fijo para todas las imágenes */
+    width: 10vmax; /* Ancho fijo para todas las imágenes */
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 576px) {
+  .Deals-Titles-Container {
+    margin-top: 4vmax;
+    padding: 0 4vmax;
+  }
+  .descripcionCarouselDiv {
+    font-size: 3vmax;
+    width: 100%;
+  }
+  .carousel-container {
+    width: 80%;
+    margin: 10vmax auto;
+  }
+  .carousel-track {
+    width: 43vmax;
+    gap: 0;
+  }
+  .carousel-image {
+    width: 10vmax; /* Ancho fijo para todas las imágenes */
   }
   /* La imagen central será más grande y destacada */
   .carousel-image.center {
@@ -1224,12 +1251,12 @@ body {
     z-index: 2; /* Asegura que estén por debajo de la imagen central */
   }
   .botonCarousel {
-    padding: 0.5vmax 1vmax; /* Espaciado interno */
+    padding: 1vmax 1vmax; /* Espaciado interno */
     margin: 0.5vmax;
   }
 }
-/* ++++++++++++++++++++++++ media query  | Medida Especial |   ++++++++++++++++++++++++++++++++++*/
-@media screen and (max-width: 378px) {
+/* ++++++++++++++++++++++++ media query  | MEDIDA ESPECIAL |   ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 476px) {
   .carousel-container {
     width: 80%;
     margin: 8vmax auto;
@@ -1239,7 +1266,27 @@ body {
     gap: 0;
   }
   .carousel-image {
-    width: 8vmax; /* Ancho fijo para todas las imágenes */
+    width: 7vmax; /* Ancho fijo para todas las imágenes */
+  }
+}
+/* ++++++++++++++++++++++++ media query  | Medida Especial |   ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 400px) {
+  h2 {
+    font-family: "Alata", sans-serif;
+    font-size: 1.5vmax;
+    color: #11262c;
+    margin: -5vmax 0 2vmax 0;
+  }
+  .carousel-container {
+    width: 70%;
+    margin: 8vmax auto;
+  }
+  .carousel-track {
+    width: 30vmax;
+    gap: 0;
+  }
+  .carousel-image {
+    width: 7vmax; /* Ancho fijo para todas las imágenes */
   }
   /* La imagen central será más grande y destacada */
   .carousel-image.center {

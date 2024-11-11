@@ -87,7 +87,7 @@
     
     height: 40vmax;
     // width: 90%;
-    overflow: hidden;
+    // overflow: hidden;
     margin: 0 5vmax;
     // border: solid 2px rgb(252, 42, 77);
     // padding: 0;
@@ -101,7 +101,8 @@
     position: relative; /* Necesario para que el texto se posicione sobre la imagen */
     overflow: hidden;   /* Para que el zoom no cambie el tamaño visible */
     transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
-    
+    box-shadow: 1px 4px 9px #11262c;
+    border-radius: 2vmax;
 }
 
 
