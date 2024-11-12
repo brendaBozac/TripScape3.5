@@ -1,8 +1,9 @@
 .Deals-Excursiones-Section {
     background-color: rgba(218, 236, 241, 0.466);
     margin-top: 0;
-    position: relative;
-    padding-bottom: 10vmax;
+    padding-bottom: 7vmax;
+    margin-bottom: 0;
+    
 }
 /* 
 .decorativi {
@@ -53,7 +54,7 @@
         font-size: $size-xxxs;
         font-weight: 400;
         color: $color-dark-one;
-        padding: 1vmax 4vmax;
+        padding: 1vmax 8vmax;
 
    
 
@@ -71,17 +72,16 @@
 .carousel-container {
    
     
-
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    gap: -15vmax;
+    // gap: -15vmax;
     background-color: transparent;
     // background: linear-gradient(to bottom, rgba(218, 236, 241, 0.322) 0%, #f3d9ce 50%, rgba(218, 236, 241, 0.301) 100%);
     // background-color: rgba(218, 236, 241, 0.466);
 
-    width: 100%;
+    width: 80%;
     margin: 5vmax auto 10vmax auto;
     padding: 5vmax 0;
 }
@@ -89,13 +89,14 @@
 
 .carousel-track-container {
 
-    // border: solid 3px rgb(219, 109, 127);
     height: auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100%;
+
 }
 
 
@@ -103,6 +104,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
    
 }
 
@@ -283,24 +285,15 @@
       
 .carousel-image {
 
-    width: 15vmax; /* Ancho fijo para todas las imágenes */
+    width: 15vmax; 
 
 }
 
-
-/* 
-.offer-link {
-    font-size: $size-xxs;
-    font-weight: 400;
-    padding: 0.4vmax 0.8vmax;
-    
-}
- */
 
 
  
 .descripcionCarouselDiv {
-    width: 85%;
+    width: 90%;
     margin: 1vmax auto;
     
     font-size: $size-small;
@@ -318,7 +311,7 @@
 .carousel-track {
     
     width: 46vmax;
-    gap: 0; 
+    gap: 0vmax; 
 } 
 
        
@@ -380,7 +373,26 @@
 
 @media screen and (max-width:768px) {
 
+    
+    .carousel-container {
+        width: 80%;
+        margin: 10vmax auto;
 
+    } 
+
+    .carousel-track {
+        
+        width: 45vmax;
+        gap: 0;
+    } 
+
+        
+    .carousel-image {
+
+        width: 8vmax;
+
+
+    }
 
 }
 
@@ -394,7 +406,6 @@
     .Deals-Titles-Container {
 
         margin-top: 5vmax;
-        // border: solid 3px green;
     
         h2 {
             padding: 1vmax 6vmax;
@@ -415,19 +426,18 @@
         width: 80%;
         margin: 10vmax auto;
 
-
     } 
 
     .carousel-track {
         
         width: 45vmax;
-        gap: 0; 
+        gap: 2vmax; 
     } 
 
         
     .carousel-image {
 
-        width: 10vmax; /* Ancho fijo para todas las imágenes */
+        width: 10vmax;
 
 
     }
@@ -464,7 +474,8 @@
     .carousel-track {
         
         width: 43vmax;
-        gap: 0; 
+        gap: 2vmax; 
+
 
     } 
 
@@ -473,8 +484,7 @@
         
     .carousel-image {
 
-        width: 10vmax; /* Ancho fijo para todas las imágenes */
-
+        width: 10vmax;
     }
 
 
@@ -515,12 +525,12 @@
 
 /* ++++++++++++++++++++++++ media query  | MEDIDA ESPECIAL |   ++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width:476px) {
+@media screen and (max-width:480px) {
 
        
         
     .carousel-container {
-        width: 80%;
+        width: 85%;
         margin: 8vmax auto;
 
 
@@ -528,18 +538,17 @@
 
     .carousel-track {
         
-        width: 30vmax;
+        width: 32vmax;
         gap: 0; 
     } 
 
         
     .carousel-image {
 
-        width: 7vmax; /* Ancho fijo para todas las imágenes */
+        width: 8vmax; /* Ancho fijo para todas las imágenes */
 
     }
-     
-
+   
 }
 
 
@@ -562,16 +571,15 @@
         
         
     .carousel-container {
-        width: 70%;
-        margin: 8vmax auto;
-
+        width: 90%;
+        margin: 5vmax auto;
 
     } 
 
     .carousel-track {
         
-        width: 30vmax;
-        gap: 0; 
+        width: 25vmax;
+        gap: 0;
     } 
 
         
@@ -586,9 +594,9 @@
 
     /* La imagen central será más grande y destacada */
     .carousel-image.center {
-        transform: scale(2);
-        opacity: 1;
-        z-index: 3; /* Asegura que la imagen central esté por encima de las demás */
+        transform: scale(2.5);
+     /*    opacity: 1;
+        z-index: 3;  */
     }
 
 
@@ -598,9 +606,9 @@
     /* Las imágenes adyacentes (izquierda y derecha de la central) */
     .carousel-image.next,
     .carousel-image.prev {
-        transform: scale(1.5); /* Tamaño intermedio para las imágenes adyacentes */
-        opacity: 0.7; /* Mayor opacidad para destacar */
-        z-index: 2; /* Asegura que estén por debajo de la imagen central */
+        transform: scale(1.8);
+      /*   opacity: 0.7; 
+        z-index: 2; */
     }
 
     
@@ -613,7 +621,26 @@
 
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:375px) {
 
+
+
+    .carousel-container {
+        width: 90%;
+        margin: 5vmax auto;
+
+    } 
+
+    .carousel-track {
+        width: 7vmax;
+        gap: 0;
+    } 
+
+         
+    .carousel-image {
+
+        width: 7vmax;
+
+    }  
 
 }

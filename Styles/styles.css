@@ -190,7 +190,7 @@ body {
 }
 
 .carousel-caption a {
-  font-size: 1.6vmax;
+  font-size: 1.8vmax;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 2px black;
   font-family: "Quilon", sans-serif;
@@ -200,14 +200,11 @@ body {
   padding: 0.8vmax 1.6vmax;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
   z-index: 6 !important;
-  position: relative;
   user-select: none;
 }
 
 .carousel-caption a:hover {
   background-color: #FFB51C;
-  position: absolute;
-  transform: scale(1);
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -530,7 +527,7 @@ body {
   letter-spacing: 1px;
   border-radius: 10px;
   padding: 0.2vmax 1.2vmax;
-  font-size: 1.2vmax;
+  font-size: 1.5vmax;
   font-family: "Quilon", sans-serif;
   text-align: center;
   opacity: 0; /* Inicialmente oculto */
@@ -611,7 +608,7 @@ body {
   background-color: #F77B00;
   border-radius: 10px;
   padding: 0.2vmax 1.2vmax;
-  font-size: 1.2vmax;
+  font-size: 1.5vmax;
   font-family: "Quilon", sans-serif;
   text-shadow: 1px 1px 2px black;
   letter-spacing: 2px;
@@ -973,8 +970,8 @@ body {
 .Deals-Excursiones-Section {
   background-color: rgba(218, 236, 241, 0.466);
   margin-top: 0;
-  position: relative;
-  padding-bottom: 10vmax;
+  padding-bottom: 7vmax;
+  margin-bottom: 0;
 }
 
 /* 
@@ -1023,7 +1020,7 @@ body {
   font-size: 1.2vmax;
   font-weight: 400;
   color: #11262c;
-  padding: 1vmax 4vmax;
+  padding: 1vmax 8vmax;
   font-family: "Montserrat", sans-serif;
   font-size: 1.5vmax;
   color: #294e5a;
@@ -1035,9 +1032,8 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  gap: -15vmax;
   background-color: transparent;
-  width: 100%;
+  width: 80%;
   margin: 5vmax auto 10vmax auto;
   padding: 5vmax 0;
 }
@@ -1049,6 +1045,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  width: 100%;
 }
 
 .carousel-track {
@@ -1161,18 +1158,10 @@ body {
 /* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 992px) {
   .carousel-image {
-    width: 15vmax; /* Ancho fijo para todas las imágenes */
+    width: 15vmax;
   }
-  /* 
-  .offer-link {
-      font-size: $size-xxs;
-      font-weight: 400;
-      padding: 0.4vmax 0.8vmax;
-
-  }
-   */
   .descripcionCarouselDiv {
-    width: 85%;
+    width: 90%;
     margin: 1vmax auto;
     font-size: 2.2vmax;
     font-weight: 400;
@@ -1183,7 +1172,7 @@ body {
   }
   .carousel-track {
     width: 46vmax;
-    gap: 0;
+    gap: 0vmax;
   }
   .carousel-image {
     width: 10vmax; /* Ancho fijo para todas las imágenes */
@@ -1215,6 +1204,19 @@ body {
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    width: 80%;
+    margin: 10vmax auto;
+  }
+  .carousel-track {
+    width: 45vmax;
+    gap: 0;
+  }
+  .carousel-image {
+    width: 8vmax;
+  }
+}
 /* medida especial 608 */
 @media screen and (max-width: 608px) {
   .Deals-Titles-Container {
@@ -1232,10 +1234,10 @@ body {
   }
   .carousel-track {
     width: 45vmax;
-    gap: 0;
+    gap: 2vmax;
   }
   .carousel-image {
-    width: 10vmax; /* Ancho fijo para todas las imágenes */
+    width: 10vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
@@ -1254,10 +1256,10 @@ body {
   }
   .carousel-track {
     width: 43vmax;
-    gap: 0;
+    gap: 2vmax;
   }
   .carousel-image {
-    width: 10vmax; /* Ancho fijo para todas las imágenes */
+    width: 10vmax;
   }
   /* La imagen central será más grande y destacada */
   .carousel-image.center {
@@ -1278,17 +1280,17 @@ body {
   }
 }
 /* ++++++++++++++++++++++++ media query  | MEDIDA ESPECIAL |   ++++++++++++++++++++++++++++++++++*/
-@media screen and (max-width: 476px) {
+@media screen and (max-width: 480px) {
   .carousel-container {
-    width: 80%;
+    width: 85%;
     margin: 8vmax auto;
   }
   .carousel-track {
-    width: 30vmax;
+    width: 32vmax;
     gap: 0;
   }
   .carousel-image {
-    width: 7vmax; /* Ancho fijo para todas las imágenes */
+    width: 8vmax; /* Ancho fijo para todas las imágenes */
   }
 }
 /* ++++++++++++++++++++++++ media query  | Medida Especial |   ++++++++++++++++++++++++++++++++++*/
@@ -1300,11 +1302,11 @@ body {
     margin: -5vmax 0 2vmax 0;
   }
   .carousel-container {
-    width: 70%;
-    margin: 8vmax auto;
+    width: 90%;
+    margin: 5vmax auto;
   }
   .carousel-track {
-    width: 30vmax;
+    width: 25vmax;
     gap: 0;
   }
   .carousel-image {
@@ -1312,22 +1314,34 @@ body {
   }
   /* La imagen central será más grande y destacada */
   .carousel-image.center {
-    transform: scale(2);
-    opacity: 1;
-    z-index: 3; /* Asegura que la imagen central esté por encima de las demás */
+    transform: scale(2.5);
+    /*    opacity: 1;
+       z-index: 3;  */
   }
   /* Las imágenes adyacentes (izquierda y derecha de la central) */
   .carousel-image.next,
   .carousel-image.prev {
-    transform: scale(1.5); /* Tamaño intermedio para las imágenes adyacentes */
-    opacity: 0.7; /* Mayor opacidad para destacar */
-    z-index: 2; /* Asegura que estén por debajo de la imagen central */
+    transform: scale(1.8);
+    /*   opacity: 0.7; 
+      z-index: 2; */
   }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 375px) {
+  .carousel-container {
+    width: 90%;
+    margin: 5vmax auto;
+  }
+  .carousel-track {
+    width: 7vmax;
+    gap: 0;
+  }
+  .carousel-image {
+    width: 7vmax;
+  }
+}
 .svg-hoteleria-primero {
-  background-color: rgba(218, 236, 241, 0.466);
-  margin-top: -10vmax;
+  margin-top: -18vmax;
 }
 
 .Hoteleria-Section {

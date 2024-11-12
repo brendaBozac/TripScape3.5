@@ -67,7 +67,7 @@
 
 
 .carousel-caption a {
-    font-size: 1.6vmax;
+    font-size: 1.8vmax;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black;
     font-family: 'Quilon', sans-serif;
@@ -77,7 +77,7 @@
     padding: 0.8vmax 1.6vmax;
     box-shadow: 2px 2px 4px rgb(0, 0, 0);
     z-index: 6 !important;
-    position: relative;
+    // position: relative;
     user-select: none;
 
 }
@@ -90,12 +90,6 @@
     background-color: #FFB51C;
 
 
-    position: absolute;
-    // top: 15%;
-    // left: 50%;
-    transform: scale(1);
-    
-    // transform: ; /* Zoom */
 
 }
 
