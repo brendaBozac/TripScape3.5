@@ -1201,22 +1201,22 @@ body {
     margin: 16vmax auto;
   }
   .carousel-track {
-    width: 46vmax;
-    gap: 0vmax;
+    width: 40vmax;
+    gap: 1vmax;
   }
   .carousel-image {
-    width: 10vmax; /* Ancho fijo para todas las imágenes */
+    width: 13vmax; /* Ancho fijo para todas las imágenes */
   }
   /* La imagen central será más grande y destacada */
   .carousel-image.center {
-    transform: scale(2.4);
+    transform: scale(2.2);
     opacity: 1;
     z-index: 3; /* Asegura que la imagen central esté por encima de las demás */
   }
   /* Las imágenes adyacentes (izquierda y derecha de la central) */
   .carousel-image.next,
   .carousel-image.prev {
-    transform: scale(1.8); /* Tamaño intermedio para las imágenes adyacentes */
+    transform: scale(1.6); /* Tamaño intermedio para las imágenes adyacentes */
     opacity: 0.7; /* Mayor opacidad para destacar */
     z-index: 2; /* Asegura que estén por debajo de la imagen central */
   }
