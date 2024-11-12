@@ -7,11 +7,9 @@
     z-index: 8;
 
     .ContainerNavbar {
-        // background-color: $color-light-one;
         background-color: $color-arena;
         display: flex;
         flex-direction: row;
-        // height: 3vmax;
         justify-content: center;
         
     }
@@ -69,33 +67,7 @@
 /* media queries */
 /* estructura */
 
-/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
 
-@media screen and (min-width:1401px) {
-    
-    
-}
-
-
-/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
-
-
-
-@media screen and (max-width:1400px) {
-    
-    
-}
-
-
-
-/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
-
-
-@media screen and (max-width:1200px) {
-    
-
-    
-}
 
 
 
@@ -223,21 +195,3 @@
 
 }
 
-
-/* medida personalizada 420 */
-
-
-
-@media screen and (max-width:420px) {
-
-
-
-
-}
-
-/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
-
-@media screen and (max-width:320px) {
-
-
-}

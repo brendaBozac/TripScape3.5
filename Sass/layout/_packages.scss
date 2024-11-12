@@ -4,7 +4,6 @@
     padding-bottom: 2.5vmax;
     background: #F9E8DF;
 
-    // border: solid 4px red;
 
    .PackagesRow {
         margin: 0;
@@ -20,10 +19,6 @@
             align-items: center;
             text-align: center;
             gap: 2vmax;
-            // border: solid 3px blue;
-            // background-color: transparent;
-            // position: relative;
-
             padding: 0 5vmax;
 
             h2 {
@@ -31,23 +26,19 @@
                 margin: 8vmax 0 0 0;
                 padding: 0 8vmax;
                 font-weight: 400;
-                // border: solid 3px blueviolet;
-
-                
+          
             }
 
             h3 {
                 @include h2-styles($fuente-principal, $size-small, $color-dark-two);
                 margin: 3vmax 0 8vmax 0;
                 padding: 0 5vmax;
-            
-                // border: 4px solid black;
-
+       
             }
 
 
         }
-   }
+    }
 
 }
 
@@ -55,6 +46,8 @@
 .adornoUno {
     font-size: $size-large;
 }
+
+
 
 /* Estilos de animación */
 @keyframes fadeInUp {
@@ -78,47 +71,35 @@
 
 
 
-
-
-
-
 /* div contenedor de las tres columnas que tienen las fotos */
 .primerCardsGroup {
     
     height: 40vmax;
-    // width: 90%;
-    // overflow: hidden;
     margin: 0 5vmax;
-    // border: solid 2px rgb(252, 42, 77);
-    // padding: 0;
-    // border-radius: 25px;
    
 }
 
 /* contenedor de cada imagen mas su texto hover */
 .cardsDiv {
-    // width: 100%;
-    position: relative; /* Necesario para que el texto se posicione sobre la imagen */
+
+    position: relative; /* para que el texto se posicione sobre la imagen */
     overflow: hidden;   /* Para que el zoom no cambie el tamaño visible */
     transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
     box-shadow: 1px 4px 9px #11262cb4;
     border-radius: 2vmax;
 }
 
-
-
-
 .cardsDiv img {
     height: 100%;
     object-fit: cover;
     transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
-
 }
   
-  /* Efecto hover para zoom y filtro */
+
+/* Efecto hover para zoom y filtro */
 .cardsDiv:hover img {
     transform: scale(1.1); /* Zoom */
-    filter: brightness(0.8); /* Filtro de brillo para oscurecer ligeramente */
+    filter: brightness(0.8);
 }
   
 
@@ -129,30 +110,23 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    // background-color: $color-contrast-opacity;
-    // background-color: rgb(218, 106, 3);
     background-color: $color-botones;
-
-
     text-shadow: 1px 1px 2px black;
     letter-spacing: 1px;
-
     border-radius: 10px;
     padding: 0.2vmax 1.2vmax;
     font-size: $size-xxs;
-    // font-family: $fuente-principal;
     font-family: 'Quilon', sans-serif;
-
     text-align: center;
     opacity: 0; /* Inicialmente oculto */
     transition: opacity 0.4s ease; /* Transición suave para aparición del texto */
 }
 
 .cardsDiv:hover .cardText {
-    opacity: 1; /* Texto aparece cuando se hace hover */
+    opacity: 1;
 }
 
-    /* Efecto de link clicable sobre el texto */
+/* Efecto de link clicable sobre el texto */
 .cardsDiv .cardText a {
     color: $color-light-one;
     text-decoration: none;
@@ -163,15 +137,8 @@
 
 .cardsDiv .cardText a:hover {
     color: $color-botones-hover;
-    
-
-    // text-shadow: 1px 2px 3px $color-dark-one;
-
+ 
 }
-
-
-
-
 
 
 
@@ -179,21 +146,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
     padding: 0;
     width: 100%;
     height: 19vmax;
     gap: 1vmax;
-    // border: solid 3px rgb(137, 253, 28);
-
-    filter: sepia(10%) brightness(1); /* Aplica un filtro sepia y oscurece la imagen */
-    transition: transform 0.3s ease, filter 0.3s ease; /* Transición suave para zoom y filtro */
+    filter: sepia(10%) brightness(1);
+    transition: transform 0.3s ease, filter 0.3s ease;
 
 }
 
 
 .cardsDivLados:hover {
-    filter: none; /* Elimina el filtro en el hover */
+    filter: none;
    
 }
 
@@ -204,8 +168,6 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     gap: 1vmax;
-    // border: solid 3px rgb(137, 253, 28);
-
 }
 
 .contenedorCentralPalmeras {
@@ -219,8 +181,8 @@
         height: 40vmax;
         padding: 0;
         margin: 0;
-        filter: sepia(10%) brightness(1); /* Aplica un filtro sepia y oscurece la imagen */
-        transition: transform 0.3s ease, filter 0.3s ease; /* Transición suave para zoom y filtro */
+        filter: sepia(10%) brightness(1);
+        transition: transform 0.3s ease, filter 0.3s ease;
     }
     
 
@@ -234,9 +196,7 @@
     
     /* es la imagen */
     .cardCentral {
-        height: 100%;
-        // width: 100%;
-        
+        height: 100%; 
         padding: 0;
         display: flex;
         justify-content: center;
@@ -257,15 +217,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    // background-color: $color-contrast-opacity;
-    // background-color: rgb(218, 106, 3);
     background-color: $color-botones;
-
-
     border-radius: 10px;
     padding: 0.2vmax 1.2vmax;
     font-size: $size-xxs;
-    // font-family: $fuente-principal;
     font-family: 'Quilon', sans-serif;
     text-shadow: 1px 1px 2px black;
     letter-spacing: 2px;
@@ -281,7 +236,7 @@
     
 }
 
-    /* Efecto de link clicable sobre el texto */
+/* Efecto de link clicable sobre el texto */
 .cardTextCentral a {
     color: $color-light-one;
     text-decoration: none;
@@ -291,7 +246,6 @@
 
 .cardTextCentral a:hover {
     color: $color-botones-hover;
-    // text-shadow: 1px 2px 3px $color-dark-one;
 
 }
 
@@ -301,34 +255,6 @@
 
 /* media queries */
 /* estructura */
-
-/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
-
-@media screen and (min-width:1401px) {
-    
-    
-}
-
-
-/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
-
-
-@media screen and (max-width:1400px) {
-    
-    
-}
-
-
-
-/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
-
-
-@media screen and (max-width:1200px) {
-    
-
-    
-}
-
 
 
 /* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
@@ -371,7 +297,6 @@
         flex-direction: column; /* Cambia la dirección de las columnas a vertical */
         height: auto;
         padding: 3vmax;
-        // border: solid 3px red;
     }
     
 
@@ -398,14 +323,15 @@
     order: -1; /* Mueve la columna central por encima de todo */
     
         .cardCentralDiv {
-            height: 19vmax; /* Ajusta la altura a algo más razonable en pantallas pequeñas */
+            height: 19vmax; /* Ajusta la altura en pantallas pequeñas */
             padding: 0;
             margin: 0 0 1vmax 0;
+
              /* Ajuste de la imagen central en pantallas pequeñas */
             .cardCentral {
-                height: auto; /* Ajusta la altura automáticamente */
-                width: 100%; /* Ocupa todo el ancho del contenedor */
-                object-fit: cover; /* Asegúrate de que la imagen se recorte correctamente */
+                height: auto;
+                width: 100%;
+                object-fit: cover;
                 object-position: center center;
                 padding: 0;
                 margin: 0;
@@ -422,7 +348,6 @@
     .cardsIzqDiv, .cardsDerDiv {
         order: 0; /* Mantén las otras columnas en su orden original */
         flex-flow: row nowrap;
-        // height: 25vmax;
         height: 19vmax;
         padding: 0;
         margin: 0 0 1vmax 0;
@@ -484,9 +409,9 @@
 
         /* img central */
         .cardCentral {
-            height: auto; /* Ajusta la altura automáticamente */
-            width: 100%; /* Ocupa todo el ancho del contenedor */
-            object-fit: cover; /* Asegúrate de que la imagen se recorte correctamente */
+            height: auto;
+            width: 100%;
+            object-fit: cover;
             object-position: center bottom;
             padding: 0;
             margin: 0;
@@ -547,7 +472,7 @@
 
 
     .cardCentralDiv {
-        height: 20vmax; /* Ajusta la altura a algo más razonable en pantallas pequeñas */
+        height: 20vmax;
         overflow: hidden;
         padding: 0;
     }

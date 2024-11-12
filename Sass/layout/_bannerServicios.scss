@@ -3,9 +3,7 @@
     margin: 5vmax 0 0 0;
     background-color: $color-arena;
     z-index: 2;
-
     background-image: linear-gradient(to bottom, #F9E8DF 30%, #8acad8b2 100%);
-    // border: solid 3px black;
     border: none;
 }
 
@@ -17,7 +15,6 @@
         font-family: "Alata", sans-serif;
         font-size: $size-terc;
         color: $color-dark-one;
-        // border: solid 3px rgb(192, 32, 59);
     }
 
 
@@ -41,7 +38,6 @@
         transform: translateY(0);
     }
 
-
 }
 
 .bannerBandaContainer {
@@ -53,7 +49,6 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-
 
 
     .div-icono-servicio {
@@ -88,9 +83,7 @@
                 text-align: center;
                 font-size: $size-xxxs;
                 color: $color-dark-one;
-
                 font-family: "Alata", sans-serif;
-
 
             }
 
@@ -117,40 +110,10 @@
 /* media queries */
 /* estructura */
 
-/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
-
-@media screen and (min-width:1401px) {
-    
-    
-}
-
-
-/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
-
-
-@media screen and (max-width:1400px) {
-    
-    
-}
-
-
-
-/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
-
-
-@media screen and (max-width:1200px) {
-    
-
-    
-}
-
-
-
 /* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
 
 
 @media screen and (max-width:992px) {
-
 
         
     .bannerContainerTitulos {
@@ -208,7 +171,6 @@
 
     .div-icono-servicio {
        
-        border: solid 3px rgb(199, 61, 84);
         .contenedorImg {
             padding: 1.5vmax;
            
@@ -330,12 +292,6 @@
 
 @media screen and (max-width:576px) {
 
-
-    
-
-
-
-    
     .bannerBandaContainer {
 
         .div-icono-servicio {
@@ -395,11 +351,4 @@
             
         }
     }
-}
-
-/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
-
-@media screen and (max-width:320px) {
-
-
 }
