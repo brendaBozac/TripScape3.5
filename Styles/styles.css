@@ -659,7 +659,7 @@ body {
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .primerCardsGroup {
     flex-direction: column; /* Cambia la dirección de las columnas a vertical */
     height: auto;
@@ -893,6 +893,7 @@ body {
     flex-flow: row wrap;
     align-content: center;
     width: 85%;
+    padding: 0;
     margin: 0 auto;
   }
   .bannerBandaContainer .div-icono-servicio {
@@ -910,6 +911,9 @@ body {
   }
 }
 @media screen and (max-width: 820px) {
+  .div-icono-servicio {
+    border: solid 3px rgb(199, 61, 84);
+  }
   .div-icono-servicio .contenedorImg {
     padding: 1.5vmax;
   }
@@ -1235,23 +1239,35 @@ body {
 }
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 768px) {
+  .Deals-Titles-Container {
+    padding: 0 5vmax;
+  }
   .descripcionCarouselDiv {
     width: 90%;
     margin: 1vmax auto;
     font-size: 1.5vmax;
     font-weight: 400;
-    padding: 1vmax 5vmax;
+    padding: 1vmax 4vmax;
   }
   .carousel-container {
     width: 80%;
     margin: 10vmax auto;
   }
   .carousel-track {
-    width: 45vmax;
-    gap: 0;
+    width: 40vmax;
+    gap: 1;
   }
   .carousel-image {
-    width: 8vmax;
+    width: 10vmax;
+  }
+  .offer-link {
+    padding: 0.6vmax 1vmax;
+    border-radius: 5px;
+    font-size: 1.8vmax;
+  }
+  .botonCarousel {
+    padding: 0.8vmax;
+    margin: 0.5vmax;
   }
 }
 /* medida especial 608 */
@@ -1318,10 +1334,6 @@ body {
     opacity: 0.7; /* Mayor opacidad para destacar */
     z-index: 2; /* Asegura que estén por debajo de la imagen central */
   }
-  .botonCarousel {
-    padding: 1vmax 1vmax; /* Espaciado interno */
-    margin: 0.5vmax;
-  }
 }
 /* ++++++++++++++++++++++++ media query  | MEDIDA ESPECIAL |   ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 480px) {
@@ -1340,6 +1352,13 @@ body {
   }
   .carousel-image {
     width: 7vmax; /* Ancho fijo para todas las imágenes */
+  }
+  .offer-link {
+    padding: 0.4vmax 0.8vmax;
+    border-radius: 5px;
+  }
+  .botonCarousel {
+    padding: 0.8vmax 0.6vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query  | Medida Especial |   ++++++++++++++++++++++++++++++++++*/

@@ -374,6 +374,9 @@
 @media screen and (max-width:768px) {
 
     
+    .Deals-Titles-Container {
+        padding: 0 5vmax;
+    }
         
     .descripcionCarouselDiv {
         width: 90%;
@@ -381,7 +384,7 @@
         
         font-size: $size-xxs;
         font-weight: 400;
-        padding: 1vmax 5vmax;
+        padding: 1vmax 4vmax;
 
     }    
 
@@ -394,18 +397,31 @@
 
     .carousel-track {
         
-        width: 45vmax;
-        gap: 0;
+        width: 40vmax;
+        gap: 1;
     } 
 
         
     .carousel-image {
 
-        width: 8vmax;
+        width: 10vmax;
 
 
     }
 
+    
+    .offer-link {
+        padding: 0.6vmax 1vmax;
+        border-radius: 5px;
+        font-size: $size-xs;
+    }
+
+    .botonCarousel {
+        padding: 0.8vmax;
+        margin: 0.5vmax;
+    }
+
+   
 }
 
 
@@ -463,6 +479,8 @@
 
 
     }
+
+
 }
 
 
@@ -533,12 +551,7 @@
     }
 
         
-    .botonCarousel {
-        
-        padding: 1vmax 1vmax; /* Espaciado interno */
     
-        margin: 0.5vmax;
-    }
 
 
     
@@ -580,6 +593,15 @@
 
     }
    
+
+    .offer-link {
+        padding: 0.4vmax 0.8vmax;
+        border-radius: 5px;
+    }
+
+    .botonCarousel {
+        padding: 0.8vmax 0.6vmax;
+    }
 }
 
 

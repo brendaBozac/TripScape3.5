@@ -168,7 +168,9 @@
         flex-flow: row wrap;
         align-content: center;
         width: 85%;
+        padding: 0;
         margin: 0 auto;
+       
         
 
         .div-icono-servicio {
@@ -177,7 +179,7 @@
             justify-content: center;
             margin-bottom: 2vmax;
             width: 30%;
-
+   
                 
             .contenedorImg {
            
@@ -206,7 +208,7 @@
 
     .div-icono-servicio {
        
-
+        border: solid 3px rgb(199, 61, 84);
         .contenedorImg {
             padding: 1.5vmax;
            
