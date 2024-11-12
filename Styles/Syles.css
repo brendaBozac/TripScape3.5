@@ -253,9 +253,6 @@ body {
   .carousel-caption h3 {
     font-size: 6vmax;
   }
-  .wave-viajera {
-    margin-top: -13vmax;
-  }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 768px) {
@@ -362,7 +359,7 @@ body {
     margin: 0;
   }
   .wave-viajera {
-    margin-top: -8vmax;
+    margin-top: -10vmax;
   }
 }
 @media screen and (max-width: 380px) {
@@ -502,7 +499,7 @@ body {
   position: relative; /* Necesario para que el texto se posicione sobre la imagen */
   overflow: hidden; /* Para que el zoom no cambie el tamaño visible */
   transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
-  box-shadow: 1px 4px 9px rgba(17, 38, 44, 0.7058823529);
+  box-shadow: 1px 4px 9px #11262c;
   border-radius: 2vmax;
 }
 
@@ -909,29 +906,8 @@ body {
     font-size: 1.8vmax;
   }
 }
-@media screen and (max-width: 820px) {
-  .div-icono-servicio .contenedorImg {
-    padding: 1.5vmax;
-  }
-  .div-icono-servicio .contenedorImg .bannerServicioImg {
-    width: 4vmax;
-  }
-  .div-icono-servicio .servicioParrafDiv p {
-    text-align: center;
-    font-size: 1.2vmax;
-    color: #11262c;
-  }
-}
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 768px) {
-  .bannerContainerTitulos .div-titulo-banner h3 {
-    margin: 0 auto;
-    padding: 0 5vmax 4vmax 5vmax;
-    font-size: 3.6vmax;
-  }
-  .bannerBandaContainer {
-    margin-top: 4vmax;
-  }
   .bannerBandaContainer .div-icono-servicio {
     justify-content: flex-start;
   }
@@ -942,20 +918,6 @@ body {
 }
 /* medida especial */
 @media screen and (max-width: 650px) {
-  .section-servicios {
-    padding: 2vmax 4vmax;
-  }
-  .bannerContainerTitulos {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  .bannerContainerTitulos .div-titulo-banner h3 {
-    text-align: center;
-    font-size: 3.8vmax;
-    margin-top: -3vmax;
-    padding: 0 2vmax;
-  }
   .bannerBandaContainer {
     padding: 2vmax 5vmax;
   }
@@ -970,6 +932,15 @@ body {
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 576px) {
+  .bannerContainerTitulos {
+    display: flex;
+    justify-content: center;
+  }
+  .bannerContainerTitulos .div-titulo-banner h3 {
+    text-align: center;
+    font-size: 3.6vmax;
+    margin-top: -3vmax;
+  }
   .bannerBandaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
     width: 8vmax;
   }
@@ -979,7 +950,7 @@ body {
   }
 }
 /* medida especial */
-@media screen and (max-width: 482px) {
+@media screen and (max-width: 478px) {
   .bannerBandaContainer {
     padding: 2vmax 2vmax;
     width: 100%;
@@ -1075,6 +1046,7 @@ body {
   align-items: center;
   position: relative;
   width: 100%;
+  border: solid 3px red;
 }
 
 .carousel-track {
@@ -1194,7 +1166,6 @@ body {
     margin: 1vmax auto;
     font-size: 2.2vmax;
     font-weight: 400;
-    padding: 1vmax 6vmax;
   }
   .carousel-container {
     width: 80%;
@@ -1235,13 +1206,6 @@ body {
 }
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 768px) {
-  .descripcionCarouselDiv {
-    width: 90%;
-    margin: 1vmax auto;
-    font-size: 1.5vmax;
-    font-weight: 400;
-    padding: 1vmax 5vmax;
-  }
   .carousel-container {
     width: 80%;
     margin: 10vmax auto;
@@ -1265,12 +1229,6 @@ body {
   .Deals-Titles-Container h3 {
     padding: 1vmax 4vmax;
   }
-  .Deals-Titles-Container .descripcionCarouselDiv {
-    width: 90%;
-    margin: 1vmax auto;
-    font-weight: 400;
-    padding: 1vmax 4vmax;
-  }
   .carousel-container {
     width: 80%;
     margin: 10vmax auto;
@@ -1292,7 +1250,6 @@ body {
   .descripcionCarouselDiv {
     font-size: 3vmax;
     width: 100%;
-    padding: 1vmax 2.5vmax;
   }
   .carousel-container {
     width: 80%;
@@ -1325,11 +1282,6 @@ body {
 }
 /* ++++++++++++++++++++++++ media query  | MEDIDA ESPECIAL |   ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 480px) {
-  .descripcionCarouselDiv {
-    font-size: 2.2vmax;
-    width: 100%;
-    padding: 1vmax 2vmax;
-  }
   .carousel-container {
     width: 85%;
     margin: 8vmax auto;
@@ -1339,7 +1291,7 @@ body {
     gap: 0;
   }
   .carousel-image {
-    width: 7vmax; /* Ancho fijo para todas las imágenes */
+    width: 8vmax; /* Ancho fijo para todas las imágenes */
   }
 }
 /* ++++++++++++++++++++++++ media query  | Medida Especial |   ++++++++++++++++++++++++++++++++++*/
@@ -1390,9 +1342,7 @@ body {
   }
 }
 .svg-hoteleria-primero {
-  background-color: transparent;
   margin-top: -18vmax;
-  border: solid 3px rgb(0, 0, 0);
 }
 
 .Hoteleria-Section {
@@ -1588,11 +1538,6 @@ body {
 }
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 768px) {
-  .svg-hoteleria-primero {
-    background-color: transparent;
-    margin-top: -10vmax;
-    border: solid 3px rgb(202, 29, 29);
-  }
   .bannerHoteleriaContainer .div-icono-servicio .contenedorImg {
     padding: 1vmax;
   }
@@ -1696,4 +1641,4 @@ body {
   background: linear-gradient(to bottom, #F9E8DF 60%, #c24003 100%);
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=Syles.css.map */

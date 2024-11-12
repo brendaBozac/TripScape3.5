@@ -101,7 +101,7 @@
     position: relative; /* Necesario para que el texto se posicione sobre la imagen */
     overflow: hidden;   /* Para que el zoom no cambie el tamaño visible */
     transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
-    box-shadow: 1px 4px 9px #11262c;
+    box-shadow: 1px 4px 9px #11262cb4;
     border-radius: 2vmax;
 }
 

@@ -1,9 +1,9 @@
 .svg-hoteleria-primero {
 
-    // background-color: transparent;
+    background-color: transparent;
     margin-top: -18vmax;
     
-    // border: solid 3px rgb(0, 0, 0);
+    border: solid 3px rgb(0, 0, 0);
 
 }
 
@@ -315,7 +315,16 @@
 
 @media screen and (max-width:768px) {
 
+    .svg-hoteleria-primero {
+
+        background-color: transparent;
+        margin-top: -10vmax;
+        
+        border: solid 3px rgb(202, 29, 29);
     
+    }
+
+
     .bannerHoteleriaContainer {
        
 

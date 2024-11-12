@@ -96,7 +96,6 @@
     align-items: center;
     position: relative;
     width: 100%;
-
 }
 
 
@@ -104,7 +103,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
    
 }
 
@@ -298,9 +296,11 @@
     
     font-size: $size-small;
     font-weight: 400;
-
+    padding: 1vmax 6vmax;
 
 }    
+
+
 
 .carousel-container {
     width: 80%;
@@ -374,6 +374,18 @@
 @media screen and (max-width:768px) {
 
     
+        
+    .descripcionCarouselDiv {
+        width: 90%;
+        margin: 1vmax auto;
+        
+        font-size: $size-xxs;
+        font-weight: 400;
+        padding: 1vmax 5vmax;
+
+    }    
+
+
     .carousel-container {
         width: 80%;
         margin: 10vmax auto;
@@ -417,6 +429,16 @@
             
         }
     
+                
+        .descripcionCarouselDiv {
+            width: 90%;
+            margin: 1vmax auto;
+            
+            
+            font-weight: 400;
+            padding: 1vmax 4vmax;
+
+        }    
         
     }
     
@@ -460,6 +482,7 @@
         .descripcionCarouselDiv {
             font-size: $size-terc;
             width: 100%;
+            padding: 1vmax 2.5vmax;
         
         
         }     
@@ -528,6 +551,14 @@
 @media screen and (max-width:480px) {
 
        
+    .descripcionCarouselDiv {
+        font-size: $size-small;
+        width: 100%;
+        padding: 1vmax 2vmax;
+    
+    
+    }     
+
         
     .carousel-container {
         width: 85%;
@@ -545,7 +576,7 @@
         
     .carousel-image {
 
-        width: 8vmax; /* Ancho fijo para todas las imágenes */
+        width: 7vmax; /* Ancho fijo para todas las imágenes */
 
     }
    

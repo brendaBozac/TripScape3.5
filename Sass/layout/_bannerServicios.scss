@@ -17,6 +17,7 @@
         font-family: "Alata", sans-serif;
         font-size: $size-terc;
         color: $color-dark-one;
+        // border: solid 3px rgb(192, 32, 59);
     }
 
 
@@ -201,14 +202,61 @@
 }
 
 
+@media screen and (max-width:820px) {
+
+    .div-icono-servicio {
+       
+
+        .contenedorImg {
+            padding: 1.5vmax;
+           
+            .bannerServicioImg {
+                width: 4vmax;
+            
+            }
+
+        }
+
+        .servicioParrafDiv {
+
+        
+            p {
+                text-align: center;
+                font-size: $size-xxxs;
+                color: $color-dark-one;
+
+               
+            }
+
+        }
+
+    }
+    
+
+    
+}
+
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
 
 
 @media screen and (max-width:768px) {
 
+        
+    .bannerContainerTitulos {
+
+        .div-titulo-banner h3 {
+            margin: 0 auto;
+            
+            padding: 0 5vmax 4vmax 5vmax;
+           
+            font-size: $size-secundario;
+          
+        }
+    }
 
     .bannerBandaContainer {
-        // padding: 2vmax 3vmax;
+       
+        margin-top: 4vmax;
 
         .div-icono-servicio {
             justify-content: flex-start;
@@ -233,7 +281,26 @@
 
 @media screen and (max-width:650px) {
 
+    .section-servicios {
+        padding: 2vmax 4vmax;
+    }
+        
+    .bannerContainerTitulos {
 
+   
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+        .div-titulo-banner h3 {
+    
+     
+            text-align: center;
+            font-size: 3.8vmax;
+            margin-top: -3vmax;
+            padding: 0 2vmax;
+        }
+    }
     
     
     .bannerBandaContainer {
@@ -263,19 +330,6 @@
 
 
     
-        
-    .bannerContainerTitulos {
-
-        display: flex;
-        justify-content: center;
-
-        .div-titulo-banner h3 {
-    
-            text-align: center;
-            font-size: $size-secundario;
-            margin-top: -3vmax;
-        }
-    }
 
 
 
@@ -310,7 +364,7 @@
 
 /* medida especial */
 
-@media screen and (max-width:478px) {
+@media screen and (max-width:482px) {
     
     .bannerBandaContainer {
         padding: 2vmax 2vmax;
