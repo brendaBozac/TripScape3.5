@@ -139,10 +139,10 @@
         .div-icono-servicio {
 
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             margin-bottom: 2vmax;
             width: 30%;
-   
+            padding: 1.5vmax;
                 
             .contenedorImg {
            
@@ -158,7 +158,8 @@
 
                 p {
                     margin-bottom: 0;
-                    font-size: $size-xs;
+                    font-size: $size-xxs;
+                    border: solid 2px blue;
                 }
             }
             
@@ -188,7 +189,7 @@
                 text-align: center;
                 font-size: $size-xxxs;
                 color: $color-dark-one;
-
+                border: solid 6px rgb(101, 101, 199);
                
             }
 
@@ -224,18 +225,25 @@
 
         .div-icono-servicio {
             justify-content: flex-start;
+
+
+                
+            .servicioParrafDiv {
+
+                p {
+                    margin-bottom: 0;
+                    font-size: $size-xxs;
+                    border: solid 6px rgb(196, 43, 157);
+                }
+            
+        
+            }
+
         }
-    }
 
     
-    .servicioParrafDiv {
 
-        p {
-            margin-bottom: 0;
-            font-size: $size-xxs;
-        }
     }
-    
 
 }
 
@@ -323,7 +331,18 @@
 /* medida especial */
 
 @media screen and (max-width:482px) {
-    
+
+        
+    .bannerContainerTitulos {
+
+        .div-titulo-banner h3 {
+            padding: 0 5vmax;
+            font-size: $size-secundario;
+            color: $color-dark-one;
+        }
+
+    }
+
     .bannerBandaContainer {
         padding: 2vmax 2vmax;
         width: 100%;
@@ -345,7 +364,7 @@
 
                 p {
                     margin-bottom: 0;
-                    font-size: $size-xxs;
+                    font-size: $size-xs;
                 }
             }
             

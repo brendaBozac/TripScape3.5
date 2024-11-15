@@ -230,7 +230,14 @@ body {
   .carousel-caption a {
     border-radius: 10px;
   }
+  .wave-viajera {
+    margin-top: -18vmax;
+  }
 }
+/* @media screen and (max-width:896px) {
+
+
+} */
 @media screen and (max-width: 820px) {
   .carousel-paisajes-container {
     height: 48vmax;
@@ -249,7 +256,8 @@ body {
     font-size: 6vmax;
   }
   .wave-viajera {
-    margin-top: -13vmax;
+    margin-top: -15vmax;
+    border: solid 3px blue;
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
@@ -266,6 +274,10 @@ body {
   .carousel-caption a {
     font-size: 2vmax;
     border-radius: 8px;
+  }
+  .wave-viajera {
+    margin-top: -15vmax;
+    border: solid 3px red;
   }
 }
 @media screen and (max-width: 609px) {
@@ -284,7 +296,7 @@ body {
     border-radius: 5px;
   }
   .wave-viajera {
-    margin-top: -13vmax;
+    margin-top: -14vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
@@ -300,9 +312,6 @@ body {
   }
   .headerSpan {
     font-size: 3.8vmax;
-  }
-  .wave-viajera {
-    margin-top: -13vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
@@ -332,7 +341,7 @@ body {
     margin: 0;
   }
   .wave-viajera {
-    margin-top: -8vmax;
+    margin-top: -13vmax;
   }
 }
 @media screen and (max-width: 380px) {
@@ -842,16 +851,18 @@ body {
   }
   .bannerBandaContainer .div-icono-servicio {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 2vmax;
     width: 30%;
+    padding: 1.5vmax;
   }
   .bannerBandaContainer .div-icono-servicio .contenedorImg .bannerServicioImg {
     width: 4vmax;
   }
   .bannerBandaContainer .div-icono-servicio .servicioParrafDiv p {
     margin-bottom: 0;
-    font-size: 1.8vmax;
+    font-size: 1.5vmax;
+    border: solid 2px blue;
   }
 }
 @media screen and (max-width: 820px) {
@@ -865,6 +876,7 @@ body {
     text-align: center;
     font-size: 1.2vmax;
     color: #11262c;
+    border: solid 6px rgb(101, 101, 199);
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
@@ -880,9 +892,10 @@ body {
   .bannerBandaContainer .div-icono-servicio {
     justify-content: flex-start;
   }
-  .servicioParrafDiv p {
+  .bannerBandaContainer .div-icono-servicio .servicioParrafDiv p {
     margin-bottom: 0;
     font-size: 1.5vmax;
+    border: solid 6px rgb(196, 43, 157);
   }
 }
 /* medida especial */
@@ -925,6 +938,11 @@ body {
 }
 /* medida especial */
 @media screen and (max-width: 482px) {
+  .bannerContainerTitulos .div-titulo-banner h3 {
+    padding: 0 5vmax;
+    font-size: 3.6vmax;
+    color: #11262c;
+  }
   .bannerBandaContainer {
     padding: 2vmax 2vmax;
     width: 100%;
@@ -937,7 +955,7 @@ body {
   }
   .bannerBandaContainer .div-icono-servicio .servicioParrafDiv p {
     margin-bottom: 0;
-    font-size: 1.5vmax;
+    font-size: 1.8vmax;
   }
 }
 .Deals-Excursiones-Section {
@@ -1008,6 +1026,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 80%;
 }
 
 .carousel-image {
@@ -1053,7 +1072,7 @@ body {
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 2px black;
   padding: 0.8vmax 1.6vmax;
-  border-radius: 15px;
+  border-radius: 5px;
   user-select: none;
   text-decoration: none;
   z-index: 4;
@@ -1085,8 +1104,16 @@ body {
 
 /* media queries */
 /* estructura */
+@media screen and (min-width: 993px) {
+  .wave-deals {
+    margin-top: -0.1vmax;
+  }
+}
 /* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 992px) {
+  .wave-deals {
+    margin-top: -0.1vmax;
+  }
   .carousel-image {
     width: 15vmax;
   }
@@ -1098,19 +1125,20 @@ body {
     padding: 1vmax 6vmax;
   }
   .carousel-container {
-    width: 80%;
-    margin: 16vmax auto;
+    width: 70vmax;
+    margin: 12vmax auto;
+    border: solid 3px pink;
   }
   .carousel-track {
     width: 40vmax;
-    gap: 1vmax;
+    gap: 1;
   }
   .carousel-image {
-    width: 13vmax;
+    width: 11vmax;
   }
   /* La imagen central será más grande y destacada */
   .carousel-image.center {
-    transform: scale(2.2);
+    transform: scale(2.4);
     opacity: 1;
     z-index: 3;
   }
@@ -1134,6 +1162,11 @@ body {
     z-index: 3;
   }
 }
+@media screen and (max-width: 820px) {
+  .Deals-Titles-Container h2 {
+    margin: -5vmax 2.5vmax 2vmax 2.5vmax;
+  }
+}
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 768px) {
   .Deals-Titles-Container {
@@ -1147,7 +1180,7 @@ body {
     padding: 1vmax 4vmax;
   }
   .carousel-container {
-    width: 80%;
+    width: 70%;
     margin: 10vmax auto;
   }
   .carousel-track {
@@ -1165,6 +1198,9 @@ body {
   .botonCarousel {
     padding: 0.8vmax;
     margin: 0.5vmax;
+  }
+  .wave-deals {
+    margin-top: -0.2vmax;
   }
 }
 /* medida especial 608 */
@@ -1240,19 +1276,20 @@ body {
     padding: 1vmax 2vmax;
   }
   .carousel-container {
-    width: 85%;
+    width: 80%;
     margin: 8vmax auto;
   }
   .carousel-track {
-    width: 32vmax;
-    gap: 0;
+    width: 100%;
+    gap: 1;
   }
   .carousel-image {
-    width: 7vmax;
+    width: 8vmax;
   }
   .offer-link {
     padding: 0.4vmax 0.8vmax;
     border-radius: 5px;
+    font-size: 1.5vmax;
   }
   .botonCarousel {
     padding: 0.8vmax 0.6vmax;
@@ -1267,7 +1304,7 @@ body {
     margin: -5vmax 0 2vmax 0;
   }
   .carousel-container {
-    width: 90%;
+    width: 80%;
     margin: 5vmax auto;
   }
   .carousel-track {
@@ -1275,7 +1312,7 @@ body {
     gap: 0;
   }
   .carousel-image {
-    width: 7vmax;
+    width: 8vmax;
   }
   /* La imagen central será más grande y destacada */
   .carousel-image.center {
@@ -1290,12 +1327,12 @@ body {
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 375px) {
   .carousel-container {
-    width: 90%;
+    width: 80%;
     margin: 5vmax auto;
   }
   .carousel-track {
     width: 7vmax;
-    gap: 0;
+    gap: 1;
   }
   .carousel-image {
     width: 7vmax;
@@ -1307,6 +1344,7 @@ body {
 }
 
 .Hoteleria-Section {
+  margin-top: -2vmax;
   height: auto;
   background-color: #f3d9ce;
   display: flex;
@@ -1374,6 +1412,7 @@ body {
   gap: 1vmax;
   padding: 0 0 5vmax 0;
   background-color: #F9E8DF;
+  margin-bottom: 0;
 }
 .div-five-stars-tres img {
   width: 1.8vmax;
@@ -1381,6 +1420,7 @@ body {
 }
 
 .titulo-banner-hotel {
+  margin-top: -2vmax;
   background-color: #F9E8DF;
 }
 .titulo-banner-hotel h3 {
@@ -1390,6 +1430,7 @@ body {
   margin: 1.5vmax 3vmax;
   font-weight: 400;
   text-align: center;
+  padding-bottom: 2vmax;
 }
 
 .bannerHoteleriaContainer {
@@ -1436,18 +1477,6 @@ body {
   margin-top: -5vmax;
 }
 
-/* 
-.container-img-hotel {
-    width: 100%;
-    height: 35vmax;
-    background-image: url('../Img/hoteldos.jpg');
-    background-position: center bottom;
-    background-size: cover;
-    margin: -16vmax 0 5vmax 0;
-    z-index: 1;
-
-
-} */
 /* efecto flotante */
 .img-fondo {
   background-image: url("../Img/opc5.jpg");
@@ -1468,20 +1497,26 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .flotan-text1 h2 {
-  font-size: 5rem;
-  text-shadow: 2px 2px 4px black;
-  font-family: "Bebas Neue", sans-serif;
-  padding: 0.2rem 3rem;
-  border-radius: 1rem;
-}
-
-.flotan-text1 p {
-  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 4vmax;
+  text-shadow: 4px 4px 8px black;
+  font-family: "Synonym", sans-serif;
   font-weight: bold;
-  padding: 0.5rem 2rem;
-  border-radius: 1rem;
+}
+.flotan-text1 p {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  font-size: 2vmax;
+  text-shadow: 7px 4px 8px black;
+  padding-top: 4vmax;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-family: "Lora", serif;
+  display: block;
 }
 
 .svg-hoteleria-bottom {
@@ -1491,13 +1526,25 @@ body {
 
 /* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 992px) {
+  .Hoteleria-Section {
+    margin-top: -3vmax;
+  }
+  .div-five-stars-dos {
+    gap: 1vmax;
+    padding: 0 0 10vmax 0;
+  }
+  .div-five-stars-dos img {
+    width: 1.8vmax;
+    filter: drop-shadow(1px 2px 1px rgba(17, 38, 44, 0.6862745098));
+  }
   .bannerHoteleriaContainer {
-    width: 80%;
+    width: 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-content: center;
-    width: 85%;
     margin: 0 auto;
+    padding: 0 4vmax;
+    border: solid 3px rgb(233, 116, 135);
   }
   .bannerHoteleriaContainer .div-icono-servicio {
     display: flex;
@@ -1516,13 +1563,32 @@ body {
   .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
     font-size: 1.5vmax;
   }
+  .img-fondo {
+    margin-top: -16vmax;
+  }
+}
+@media screen and (max-width: 820px) {
+  .svg-hoteleria-primero {
+    background-color: transparent;
+    margin-top: -18vmax;
+  }
+  .bannerHoteleriaContainer {
+    flex-flow: row wrap;
+    border: solid 3px rgb(157, 116, 233);
+  }
+  .img-fondo {
+    height: 40vmax;
+    margin-top: -14vmax;
+    margin-bottom: 8vmax;
+  }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 768px) {
-  .svg-hoteleria-primero {
-    background-color: transparent;
-    margin-top: -10vmax;
-    border: solid 3px rgb(202, 29, 29);
+  .Hoteleria-Section {
+    margin-top: -5vmax;
+  }
+  .bannerHoteleriaContainer {
+    border: solid 3px rgb(240, 219, 30);
   }
   .bannerHoteleriaContainer .div-icono-servicio .contenedorImg {
     padding: 1vmax;
@@ -1532,6 +1598,9 @@ body {
   }
   .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
     font-size: 1.8vmax;
+  }
+  .img-fondo {
+    margin-top: -16vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
@@ -1576,6 +1645,9 @@ body {
     padding-top: 0.5vmax;
     font-size: 2.2vmax;
   }
+  .img-fondo {
+    margin-top: -14vmax;
+  }
 }
 @media screen and (max-width: 420px) {
   .bannerHoteleriaContainer {
@@ -1596,6 +1668,12 @@ body {
   }
   .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
     font-size: 2.2vmax;
+  }
+  .flotan-text1 {
+    color: white;
+  }
+  .flotan-text1 h2 {
+    color: white;
   }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
@@ -1622,8 +1700,7 @@ body {
   }
 }
 .FooterSection {
-  border: solid 3px green;
-  margin-top: -5px;
+  margin-top: -8vmax;
   height: 30vmax;
   background: linear-gradient(to bottom, #F9E8DF 60%, #c24003 100%);
 }

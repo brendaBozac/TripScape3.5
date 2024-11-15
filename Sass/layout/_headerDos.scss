@@ -137,9 +137,19 @@
     
         border-radius: 10px;
     }
+
+    .wave-viajera {
+        margin-top: -18vmax;
+      
+    }
     
 
 }
+
+/* @media screen and (max-width:896px) {
+
+    
+} */
 
 @media screen and (max-width:820px) {
 
@@ -178,7 +188,8 @@
 
       
     .wave-viajera {
-        margin-top: -13vmax;
+        margin-top: -15vmax;
+        border: solid 3px blue;
       
     }
 
@@ -215,6 +226,12 @@
 
     }
 
+      
+    .wave-viajera {
+        margin-top: -15vmax;
+        border: solid 3px red;
+      
+    }
 }
 
 
@@ -246,7 +263,7 @@
 
 
     .wave-viajera {
-        margin-top: -13vmax;
+        margin-top: -14vmax;
       
     }
 }
@@ -280,10 +297,7 @@
 
     }
     
-    .wave-viajera {
-        margin-top: -13vmax;
-    }
-
+    
 
 }
 
@@ -335,7 +349,7 @@
     }
 
     .wave-viajera {
-        margin-top: -8vmax;
+        margin-top: -13vmax;
        
     }
 

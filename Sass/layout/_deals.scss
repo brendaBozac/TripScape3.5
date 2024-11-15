@@ -75,6 +75,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
    
 }
 
@@ -129,7 +130,7 @@
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px black;
     padding: 0.8vmax 1.6vmax;
-    border-radius: 15px;
+    border-radius: 5px;
     user-select: none;
     text-decoration: none;
     z-index: 4;
@@ -173,6 +174,12 @@
 /* media queries */
 /* estructura */
 
+@media screen and (min-width:993px) {
+    .wave-deals {
+        margin-top: -0.1vmax;
+    }
+}
+
 
 
 /* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
@@ -180,87 +187,110 @@
 
 @media screen and (max-width:992px) {
     
-      
-.carousel-image {
+    .wave-deals {
 
-    width: 15vmax; 
+        margin-top: -0.1vmax;
+    }
+        
+    .carousel-image {
 
-}
+        width: 15vmax; 
+
+    }
 
 
 
- 
-.descripcionCarouselDiv {
-    width: 90%;
-    margin: 1vmax auto; 
-    font-size: $size-small;
-    font-weight: 400;
-    padding: 1vmax 6vmax;
-
-}    
-
-.carousel-container {
-    width: 80%;
-    margin: 16vmax auto;
-
-} 
-
-.carousel-track {
     
-    width: 40vmax;
-    gap: 1vmax; 
-} 
+    .descripcionCarouselDiv {
+        width: 90%;
+        margin: 1vmax auto; 
+        font-size: $size-small;
+        font-weight: 400;
+        padding: 1vmax 6vmax;
 
-       
-.carousel-image {
+    }    
 
-    width: 13vmax;
+    .carousel-container {
+        width: 70vmax;
+        margin: 12vmax auto;
+        border: solid 3px pink;
 
-}
+    } 
 
+    .carousel-track {
+        
+        width: 40vmax;
+        gap: 1; 
+    } 
 
+        
+    .carousel-image {
 
+        width: 11vmax;
 
-/* La imagen central será más grande y destacada */
-.carousel-image.center {
-    transform: scale(2.2);
-    opacity: 1;
-    z-index: 3; 
-}
-
-
-
-
-
-/* Las imágenes adyacentes (izquierda y derecha de la central) */
-.carousel-image.next,
-.carousel-image.prev {
-    transform: scale(1.6); 
-    opacity: 0.7;
-    z-index: 2;
-}
+    }
 
 
-.offer-link {
-    font-size: $size-xxs;
-    font-weight: 400;
-    padding: 0.3vmax 0.6vmax;
-    top: 0;
-    
-}
 
 
-.offer-link:hover {
-    top: 0;
-}
+    /* La imagen central será más grande y destacada */
+    .carousel-image.center {
+        transform: scale(2.4);
+        opacity: 1;
+        z-index: 3; 
+    }
 
-.botonCarousel {
-    z-index: 3;
-}
+
+
+
+
+    /* Las imágenes adyacentes (izquierda y derecha de la central) */
+    .carousel-image.next,
+    .carousel-image.prev {
+        transform: scale(1.6); 
+        opacity: 0.7;
+        z-index: 2;
+    }
+
+
+    .offer-link {
+        font-size: $size-xxs;
+        font-weight: 400;
+        padding: 0.3vmax 0.6vmax;
+        top: 0;
+        
+    }
+
+
+    .offer-link:hover {
+        top: 0;
+    }
+
+    .botonCarousel {
+        z-index: 3;
+    }
 
    
 }
 
+
+@media screen and (max-width:820px) {
+
+        
+    .Deals-Titles-Container {
+
+    
+        
+
+        h2 {
+        
+            margin: -5vmax 2.5vmax 2vmax 2.5vmax;
+            
+        }
+
+    }
+
+}
 
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
 
@@ -284,7 +314,7 @@
 
 
     .carousel-container {
-        width: 80%;
+        width: 70%;
         margin: 10vmax auto;
 
     } 
@@ -313,7 +343,9 @@
         margin: 0.5vmax;
     }
 
-
+    .wave-deals {
+        margin-top: -0.2vmax;
+    }
 }
 
 
@@ -444,27 +476,29 @@
 
         
     .carousel-container {
-        width: 85%;
+        width: 80%;
         margin: 8vmax auto;
     } 
 
     .carousel-track {
         
-        width: 32vmax;
-        gap: 0; 
+        width: 100%;
+        gap: 1; 
     } 
 
         
     .carousel-image {
 
-        width: 7vmax; 
+        width: 8vmax; 
     }
    
 
     .offer-link {
         padding: 0.4vmax 0.8vmax;
         border-radius: 5px;
+        font-size: $size-xxs;
     }
+
 
     .botonCarousel {
         padding: 0.8vmax 0.6vmax;
@@ -487,7 +521,7 @@
         
         
     .carousel-container {
-        width: 90%;
+        width: 80%;
         margin: 5vmax auto;
     } 
 
@@ -500,7 +534,7 @@
         
     .carousel-image {
 
-        width: 7vmax;
+        width: 8vmax;
     }
 
 
@@ -531,14 +565,14 @@
 
 
     .carousel-container {
-        width: 90%;
+        width: 80%;
         margin: 5vmax auto;
 
     } 
 
     .carousel-track {
         width: 7vmax;
-        gap: 0;
+        gap: 1;
     } 
 
          
