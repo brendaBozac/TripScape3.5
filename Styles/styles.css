@@ -1213,7 +1213,7 @@ body {
     margin-top: 5vmax;
   }
   .Deals-Titles-Container h2 {
-    padding: 1vmax 6vmax;
+    padding: 1vmax 4vmax;
   }
   .Deals-Titles-Container h3 {
     padding: 1vmax 4vmax;
@@ -1240,7 +1240,7 @@ body {
 @media screen and (max-width: 576px) {
   .Deals-Titles-Container {
     margin-top: 4vmax;
-    padding: 0 4vmax;
+    padding: 0 2vmax;
   }
   .descripcionCarouselDiv {
     font-size: 3vmax;
@@ -1274,6 +1274,9 @@ body {
 }
 /* ++++++++++++++++++++++++ media query  | MEDIDA ESPECIAL |   ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 480px) {
+  .Deals-Titles-Container h2 {
+    font-size: 3.6vmax;
+  }
   .descripcionCarouselDiv {
     font-size: 2.2vmax;
     width: 100%;
@@ -1306,6 +1309,14 @@ body {
   .carousel-image.next,
   .carousel-image.prev {
     transform: scale(1.6);
+  }
+}
+@media screen and (max-width: 427px) {
+  .Deals-Titles-Container {
+    padding: 0 1vmax;
+  }
+  .Deals-Titles-Container h2 {
+    padding: 0 1vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query  | Medida Especial |   ++++++++++++++++++++++++++++++++++*/
@@ -1608,7 +1619,7 @@ body {
     font-size: 1.8vmax;
   }
   .img-fondo {
-    margin-top: -12vmax;
+    margin-top: -14vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/

@@ -359,7 +359,7 @@
         margin-top: 5vmax;
     
         h2 {
-            padding: 1vmax 6vmax;
+            padding: 1vmax 4vmax;
         }
     
         h3 {
@@ -408,7 +408,8 @@
     .Deals-Titles-Container {
 
         margin-top: 4vmax;
-        padding: 0 4vmax;
+        padding: 0 2vmax;
+        
     }    
 
 
@@ -465,7 +466,11 @@
 
 @media screen and (max-width:480px) {
 
-       
+    
+    .Deals-Titles-Container h2 {
+        font-size: $size-secundario;
+    }
+    
     .descripcionCarouselDiv {
         font-size: $size-small;
         width: 100%;
@@ -520,7 +525,18 @@
 }
 
 
+@media screen and (max-width:427px) {
 
+    .Deals-Titles-Container {
+
+        padding: 0 1vmax;
+
+        h2 {
+     
+        padding: 0 1vmax;
+        }
+    }    
+}
 
 /* ++++++++++++++++++++++++ media query  | Medida Especial |   ++++++++++++++++++++++++++++++++++*/
 
