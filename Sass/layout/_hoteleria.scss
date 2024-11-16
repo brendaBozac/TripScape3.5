@@ -174,24 +174,18 @@
 
     }
 }
-
-
-
+ 
 
 
 .svg-hoteleria-segundo {
    z-index: 3;
    margin-top: -5vmax;
+//    border: solid 3px red; 
 
 }
 
 
-
- 
-
-
 /* efecto flotante */
-
 
 
 .img-fondo {
@@ -203,6 +197,7 @@
     height: 40vmax;  
     margin-top: -18vmax;
     margin-bottom: 8vmax;
+    // border: solid 3px yellow;
 }
 
 .flotan-text1 {
@@ -424,7 +419,7 @@
 
     .img-fondo {
     
-        margin-top: -16vmax;
+        margin-top: -12vmax;
 
     }
 
@@ -479,13 +474,20 @@
         
     }
 
+    
+    .img-fondo {
+    
+        margin-top: -12vmax;
+
+    }
+
 
 }
 
 
 /* medida especial */
 
-@media screen and (max-width:478px) {
+@media screen and (max-width:480px) {
 
 
     .bannerHoteleriaContainer {
@@ -532,10 +534,16 @@
         
     }
 
+        
+    .svg-hoteleria-segundo {
+        margin-top: -8vmax;
+    
+    }
+ 
     
     .img-fondo {
     
-        margin-top: -14vmax;
+        margin-top: -8vmax;
 
     }
 
@@ -588,13 +596,17 @@
         
     }
 
+    
+    .img-fondo {
+    
+        margin-top: -10vmax;
+
+    }
+
         
     .flotan-text1 {
     
         color: white;
-    
-        
-
             
         h2 {
             color: white;

@@ -259,6 +259,11 @@ body {
     margin-top: -15vmax;
   }
 }
+@media screen and (max-width: 781px) {
+  .wave-viajera {
+    margin-top: -13vmax;
+  }
+}
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 768px) {
   .carousel-paisajes-container {
@@ -1603,7 +1608,7 @@ body {
     font-size: 1.8vmax;
   }
   .img-fondo {
-    margin-top: -16vmax;
+    margin-top: -12vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
@@ -1624,9 +1629,12 @@ body {
   .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
     font-size: 2.2vmax;
   }
+  .img-fondo {
+    margin-top: -12vmax;
+  }
 }
 /* medida especial */
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 480px) {
   .bannerHoteleriaContainer {
     display: flex;
     flex-flow: row wrap;
@@ -1648,8 +1656,11 @@ body {
     padding-top: 0.5vmax;
     font-size: 2.2vmax;
   }
+  .svg-hoteleria-segundo {
+    margin-top: -8vmax;
+  }
   .img-fondo {
-    margin-top: -14vmax;
+    margin-top: -8vmax;
   }
 }
 @media screen and (max-width: 420px) {
@@ -1671,6 +1682,9 @@ body {
   }
   .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
     font-size: 2.2vmax;
+  }
+  .img-fondo {
+    margin-top: -10vmax;
   }
   .flotan-text1 {
     color: white;
