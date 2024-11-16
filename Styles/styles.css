@@ -253,7 +253,7 @@ body {
     font-size: 3.8vmax;
   }
   .carousel-caption h3 {
-    font-size: 6vmax;
+    font-size: 7vmax;
   }
   .wave-viajera {
     margin-top: -15vmax;
@@ -339,7 +339,12 @@ body {
     margin: 0;
   }
   .wave-viajera {
-    margin-top: -13vmax;
+    margin-top: -10vmax;
+  }
+}
+@media screen and (max-width: 428px) {
+  .wave-viajera {
+    margin-top: -9vmax;
   }
 }
 @media screen and (max-width: 380px) {
@@ -1274,11 +1279,11 @@ body {
     margin: 8vmax auto;
   }
   .carousel-track {
-    width: 100%;
-    gap: 1;
+    width: 90%;
+    gap: 0;
   }
   .carousel-image {
-    width: 8vmax;
+    width: 7.5vmax;
   }
   .offer-link {
     padding: 0.4vmax 0.8vmax;
@@ -1287,6 +1292,15 @@ body {
   }
   .botonCarousel {
     padding: 0.8vmax 0.6vmax;
+  }
+  /* La imagen central será más grande y destacada */
+  .carousel-image.center {
+    transform: scale(2.5);
+  }
+  /* Las imágenes adyacentes (izquierda y derecha de la central) */
+  .carousel-image.next,
+  .carousel-image.prev {
+    transform: scale(1.6);
   }
 }
 /* ++++++++++++++++++++++++ media query  | Medida Especial |   ++++++++++++++++++++++++++++++++++*/

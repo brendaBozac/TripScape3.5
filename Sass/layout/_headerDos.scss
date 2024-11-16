@@ -108,6 +108,11 @@
 
 
 
+@media screen and (max-width:1200px) {
+    
+}
+
+
 /* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
 
 
@@ -183,7 +188,7 @@
     
 
     .carousel-caption h3 {
-        font-size: 6vmax;
+        font-size: 7vmax;
     }
 
       
@@ -347,13 +352,22 @@
     }
 
     .wave-viajera {
-        margin-top: -13vmax;
+        margin-top: -10vmax;
        
     }
 
     
 }
 
+@media screen and (max-width:428px){
+
+    
+    .wave-viajera {
+        margin-top: -9vmax;
+       
+    }
+    
+}
 
 
 @media screen and (max-width:380px){
