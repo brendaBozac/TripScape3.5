@@ -368,3 +368,20 @@
         }
     }
 }
+
+
+
+@media screen and (max-width:430px) {
+
+        
+    .bannerContainerTitulos {
+
+        .div-titulo-banner h3 {
+            padding: 0 2vmax;
+            font-size: $size-secundario;
+            color: $color-dark-one;
+        }
+
+    }
+
+}

@@ -338,6 +338,16 @@
 
 }
 
+@media screen and (max-width:844px) {
+
+    
+    .img-fondo {
+    
+        height: 40vmax;  
+        margin-top: -16vmax;
+
+    }
+}
 
 
 @media screen and (max-width:820px) {
@@ -477,7 +487,7 @@
     
     .img-fondo {
     
-        margin-top: -12vmax;
+        margin-top: -20vmax;
 
     }
 
@@ -490,6 +500,17 @@
 @media screen and (max-width:480px) {
 
 
+    .Hoteleria-Section {
+        margin-top: -8vmax;
+
+        .titulosHoteleriaDiv {
+            
+            p {
+                margin: 5vmax 7vmax;
+            }
+        }
+    }
+
     .bannerHoteleriaContainer {
 
         display: flex;
@@ -497,8 +518,8 @@
         justify-content: center;
 
         width: 100%;
-        padding-bottom: 3vmax;
         margin-bottom: 8vmax;
+        padding: 0 0 3vmax 0;
 
         .div-icono-servicio {
 
@@ -508,7 +529,7 @@
                 padding: 1.5vmax;
                 
                 .bannerServicioImg {
-                    width: 7vmax;
+                    width: 6vmax;
                 
                 }
 
@@ -517,26 +538,22 @@
             .hotelbannerParrafDiv {
 
                 
-
                 p {
     
                     padding-top: 0.5vmax;
-                    font-size: $size-small;
-
+                    font-size: $size-xs;
 
                 }
 
             }
 
         }
-
-        
         
     }
 
         
     .svg-hoteleria-segundo {
-        margin-top: -8vmax;
+        margin-top: -6vmax;
     
     }
  
@@ -547,7 +564,33 @@
 
     }
 
+        
+    .flotan-text1 {
+       
+        h2 {
+            font-size: 3vmax;
+    
+        }
 
+    }
+
+    .titulo-banner-hotel {
+        // border: solid 3px blue;
+        padding: 0;
+        margin: 0;
+        margin-top: -2vmax;
+        h3 {
+            padding: 3vmax 0 3vmax 0;
+            margin: 0 0 0 0;
+            // z-index: 3;
+        }
+    }
+
+    .div-five-stars-tres {
+        // border: solid 3px green;
+        padding-top: 3vmax;
+        margin-top: -10vmax;
+    }
 }
 
 
