@@ -373,7 +373,7 @@ body {
     margin-bottom: 2vmax;
   }
   .wave-viajera {
-    margin-top: -10vmax;
+    margin-top: -9vmax;
     z-index: 3;
     position: absolute;
   }
@@ -397,7 +397,7 @@ body {
     margin-bottom: 2vmax;
   }
   .wave-viajera {
-    margin-top: -10vmax;
+    margin-top: -9vmax;
     z-index: 3;
     position: absolute;
   }
@@ -1409,8 +1409,7 @@ body {
 }
 
 .stars-container {
-  margin-top: 0;
-  margin-bottom: 4vmax;
+  margin: 0 auto 4vmax auto;
   width: 100%;
 }
 .stars-container .div-five-stars {
@@ -1459,7 +1458,7 @@ body {
   font-family: "Alata", sans-serif;
   font-size: 3vmax;
   color: #11262c;
-  margin: 1.5vmax 3vmax;
+  margin: 1.5vmax 0;
   font-weight: 400;
   text-align: center;
   padding-bottom: 2vmax;
@@ -1715,7 +1714,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     padding-bottom: 3vmax;
   }
   .bannerHoteleriaContainer .div-icono-servicio {
@@ -1762,11 +1761,6 @@ body {
   .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
     font-size: 1.8vmax;
   }
-}
-.FooterSection {
-  margin-top: -15vmax;
-  height: 30vmax;
-  background: linear-gradient(to bottom, #F9E8DF 60%, #c24003 100%);
 }
 
 /*# sourceMappingURL=styles.css.map */

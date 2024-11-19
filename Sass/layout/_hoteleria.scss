@@ -42,9 +42,7 @@
 
 .stars-container {
     
-
-    margin-top: 0;
-    margin-bottom: 4vmax;
+    margin: 0 auto 4vmax auto;
     width: 100%;
 
 
@@ -108,9 +106,10 @@
 .titulo-banner-hotel {
     margin-top: -2vmax;
     background-color: $color-arena;
+
     h3 {
         @include h2-styles($fuente-principal, $size-terc, $color-dark-one);
-        margin: 1.5vmax 3vmax;
+        margin: 1.5vmax 0;
         font-weight: 400;
         text-align: center;
         padding-bottom: 2vmax;
@@ -126,6 +125,7 @@
     width: 100%;
     background-color: $color-arena;
         
+    
     .div-icono-servicio {
         display: flex;
         flex-flow: column nowrap;
@@ -156,6 +156,7 @@
 
         
         .hotelbannerParrafDiv {
+            
 
             display: flex;
             flex-flow: row nowrap;
@@ -603,7 +604,7 @@
         flex-flow: row wrap;
         justify-content: center;
 
-        width: 90%;
+        width: 100%;
         padding-bottom: 3vmax;
 
         .div-icono-servicio {
