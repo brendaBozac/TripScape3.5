@@ -1441,7 +1441,7 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   gap: 1vmax;
-  padding: 0 0 5vmax 0;
+  padding: 0 0 10vmax 0;
   background-color: #F9E8DF;
   margin-bottom: 0;
 }
@@ -1761,6 +1761,129 @@ body {
   .bannerHoteleriaContainer .div-icono-servicio .hotelbannerParrafDiv p {
     font-size: 1.8vmax;
   }
+}
+.waveFooter {
+  background-color: transparent;
+  margin-top: -10vmax;
+  z-index: 5;
+}
+
+.footerSection {
+  width: 100%;
+  z-index: 1;
+  background-image: url("../Img/ballena.jpg");
+  background-position: center bottom 20%;
+  background-size: cover;
+  height: 45vmax;
+  margin-top: -15vmax;
+  margin-left: 0;
+  margin-right: 0;
+}
+.footerSection .footerTitles {
+  border: 2px black;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  z-index: 2;
+  padding-top: 7vmax;
+  padding-left: 4vmax;
+  margin-top: 0;
+}
+.footerSection .footerTitles h2 {
+  font-family: "Clash Grotesk", sans-serif;
+  font-size: 3.6vmax;
+}
+.footerSection .footerTitles h3 {
+  font-family: "Synonym", sans-serif;
+  font-weight: 400;
+}
+.footerSection .footerTitles .descripcionFooterDiv {
+  width: 60%;
+  margin-top: 3vmax;
+}
+.footerSection .footerTitles .descripcionFooterDiv p {
+  font-size: 1.5vmax;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  color: #11262c;
+}
+.footerSection .footerTitles .experienciasFooter {
+  width: 80%;
+  color: rgb(0, 2, 14);
+  font-size: 1.8vmax;
+  margin-top: 2vmax;
+}
+.footerSection .footerTitles .redesFooterDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5vmax;
+  margin-top: 1.5vmax;
+}
+.footerSection .footerTitles .redesFooterDiv a .iconoRedes {
+  width: 3vmax;
+}
+.footerSection .columnaDerechaFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 4vmax;
+  margin-right: 0;
+}
+.footerSection .columnaDerechaFooter .atencionFooter {
+  width: 50%;
+  font-size: 1.5vmax;
+  margin-top: 8vmax;
+  text-align: end;
+  font-family: "Synonym", sans-serif;
+  font-weight: 400;
+}
+.footerSection .columnaDerechaFooter .botonFooterDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  margin-top: 1.8vmax;
+  margin-bottom: 4vmax;
+}
+.footerSection .columnaDerechaFooter .botonFooterDiv a {
+  font-size: 1.2vmax;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.849);
+  font-family: "Quilon", sans-serif;
+  text-decoration: none;
+  background-color: #F77B00;
+  border-radius: 10px;
+  padding: 0.5vmax 1.4vmax;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+  user-select: none;
+}
+.footerSection .columnaDerechaFooter .legalesFooter {
+  margin-top: -2vmax;
+  margin-bottom: 2vmax;
+}
+.footerSection .columnaDerechaFooter .legalesFooter .condiciones {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 1.2vmax;
+  font-weight: 600;
+}
+.footerSection .columnaDerechaFooter .legalesFooter .emailDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.footerSection .columnaDerechaFooter .legalesFooter .emailDiv a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 1.2vmax;
+  font-weight: 600;
+  padding-top: 1vmax;
+}
+.footerSection .columnaDerechaFooter img {
+  width: 12vmax;
+  filter: drop-shadow(2px 2px 3px rgba(255, 255, 255, 0.856));
 }
 
 /*# sourceMappingURL=styles.css.map */
