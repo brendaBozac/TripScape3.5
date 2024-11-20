@@ -1656,6 +1656,9 @@ body {
   .img-fondo {
     margin-top: -20vmax;
   }
+  .flotan-text1 p {
+    display: none;
+  }
 }
 /* medida especial */
 @media screen and (max-width: 480px) {
@@ -1884,6 +1887,41 @@ body {
 .footerSection .columnaDerechaFooter img {
   width: 12vmax;
   filter: drop-shadow(2px 2px 3px rgba(255, 255, 255, 0.856));
+}
+.footerSection .derechos {
+  text-align: center;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  font-size: "Alata", sans-serif;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: solid 4px yellow;
+}
+.footerSection .derechos p {
+  padding-bottom: 0;
+}
+
+/* media queries */
+/* estructura */
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 576px) {
+  .footerSection {
+    height: 70vmax;
+    margin-top: -15vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 380px) {
+  .footerSection {
+    height: 80vmax;
+    margin-top: -15vmax;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
