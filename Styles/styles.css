@@ -1795,35 +1795,48 @@ body {
 .footerSection .footerTitles h2 {
   font-family: "Clash Grotesk", sans-serif;
   font-size: 3.6vmax;
+  text-shadow: 2px 2px 3px rgba(167, 231, 247, 0.884);
 }
 .footerSection .footerTitles h3 {
   font-family: "Synonym", sans-serif;
   font-weight: 400;
+  text-shadow: 1px 2px 2px rgba(167, 231, 247, 0.884);
 }
 .footerSection .footerTitles .descripcionFooterDiv {
   width: 60%;
   margin-top: 3vmax;
 }
 .footerSection .footerTitles .descripcionFooterDiv p {
-  font-size: 1.5vmax;
+  font-size: 1.2vmax;
   font-family: "Alata", sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   color: #11262c;
 }
 .footerSection .footerTitles .experienciasFooter {
   width: 80%;
-  color: rgb(0, 2, 14);
+  color: rgb(255, 255, 255);
+  text-shadow: none;
   font-size: 1.8vmax;
-  margin-top: 2vmax;
+  margin-top: 15vmax;
+  font-weight: bold;
 }
 .footerSection .footerTitles .redesFooterDiv {
   display: flex;
   flex-direction: row;
-  gap: 1.5vmax;
+  gap: 1.8vmax;
   margin-top: 1.5vmax;
 }
 .footerSection .footerTitles .redesFooterDiv a .iconoRedes {
-  width: 3vmax;
+  width: 3.5vmax;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 0.3vmax;
+  border: none;
+  color: #F77B00;
+  filter: drop-shadow(1px 1px 2px rgba(255, 255, 255, 0.801));
+}
+.footerSection .footerTitles .redesFooterDiv a:hover {
+  filter: drop-shadow(2px 4px 4px white);
 }
 .footerSection .columnaDerechaFooter {
   display: flex;
@@ -1831,6 +1844,7 @@ body {
   align-items: end;
   padding-right: 4vmax;
   margin-right: 0;
+  margin-top: 5vmax;
 }
 .footerSection .columnaDerechaFooter .atencionFooter {
   width: 50%;
@@ -1839,6 +1853,7 @@ body {
   text-align: end;
   font-family: "Synonym", sans-serif;
   font-weight: 400;
+  text-shadow: 1px 2px 2px rgba(167, 231, 247, 0.884);
 }
 .footerSection .columnaDerechaFooter .botonFooterDiv {
   display: flex;
@@ -1859,6 +1874,9 @@ body {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
   user-select: none;
 }
+.footerSection .columnaDerechaFooter .botonFooterDiv a:hover {
+  color: yellow;
+}
 .footerSection .columnaDerechaFooter .legalesFooter {
   margin-top: -2vmax;
   margin-bottom: 2vmax;
@@ -1871,6 +1889,10 @@ body {
   color: #f0f0f0;
   font-size: 1.2vmax;
   font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(26, 80, 94, 0.884);
+}
+.footerSection .columnaDerechaFooter .legalesFooter .condiciones:hover {
+  color: yellow;
 }
 .footerSection .columnaDerechaFooter .legalesFooter .emailDiv {
   display: flex;
@@ -1883,20 +1905,26 @@ body {
   font-size: 1.2vmax;
   font-weight: 600;
   padding-top: 1vmax;
+  text-shadow: 1px 1px 2px rgba(26, 80, 94, 0.884);
+}
+.footerSection .columnaDerechaFooter .legalesFooter .emailDiv a:hover {
+  color: yellow;
 }
 .footerSection .columnaDerechaFooter img {
   width: 12vmax;
-  filter: drop-shadow(2px 2px 3px rgba(255, 255, 255, 0.856));
+  filter: drop-shadow(1px 4px 4px rgba(119, 195, 214, 0.918));
 }
 .footerSection .derechos {
-  text-align: center;
+  text-align: start;
   margin: 0;
-  color: white;
+  padding-left: 3vmax;
+  color: rgb(0, 0, 0);
+  width: 80%;
+  text-shadow: 1px 2px 4px rgb(255, 255, 255);
   font-weight: bold;
   font-size: "Alata", sans-serif;
   padding-bottom: 0;
-  margin-bottom: 0;
-  border: solid 4px yellow;
+  height: 2vmax;
 }
 .footerSection .derechos p {
   padding-bottom: 0;
