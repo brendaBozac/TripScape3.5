@@ -19,6 +19,7 @@
     margin-left: 0;
     margin-right: 0;
     padding-right: 2vmax;
+    padding-left: 0vmax;
 
 
     .footerTitles {
@@ -84,11 +85,10 @@
             width: 80%;
             color: rgb(255, 255, 255);
             text-shadow: none;
-            font-size: $size-xs;
+            font-size: $size-xxs;
             margin-top: 2.5vmax;
             font-weight: bold;
             text-shadow: 1px 1px 1px rgba(8, 70, 85, 0.849);
-            
             
 
         }
@@ -138,7 +138,7 @@
                 text-decoration: none;
                 // color: $color-light-one;
                 text-shadow: 1px 1px 1px rgba(8, 70, 85, 0.849);
-                font-size: $size-xxs;
+                font-size: $size-xxxs;
                 font-weight: bold;
                 color: white;
       
@@ -165,7 +165,7 @@
                     text-decoration: none;
                     color: white;
                     text-shadow: 1px 1px 1px rgba(8, 70, 85, 0.849);
-                    font-size: $size-xxs;
+                    font-size: $size-xxxs;
                     font-weight: bold;
                     padding-top: 1vmax;
 
@@ -225,6 +225,7 @@
             font-size: $size-xs;
             font-weight: bold;
             text-align: end;
+            padding-top: 2vmax;
         }
 
         .botonFooterDiv {
@@ -259,11 +260,17 @@
         }
 
        
-        img {
-            width: 12vmax;
-            filter: drop-shadow(1px 4px 4px rgba(119, 195, 214, 0.918));
-        }
+        
+        .imgAdventureDiv {
+
+
+            img {
+                width: 12vmax;
+                filter: drop-shadow(1px 4px 4px rgba(119, 195, 214, 0.918));
+
             
+            }
+        }
         
     }
 
@@ -341,33 +348,99 @@
 
         
     .footerSection {
-     
+        
+        border: solid 2px orange;
+        padding-top: 5vmax;
+        padding-left: 3vmax;
+        padding-right: 1vmax;
       
 
         .footerTitles {
         
-            
+           
+        border: 2px black;
+       
+        padding: 5vmax 0 0 0;
+        margin-top: 1vmax;
+
+        .tituloPrincipalFooter {
+            // border: 2px solid green;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            .brandFooterContainer {
+              
+                .brandFooter {
+                    margin-top: -0.8vmax;
+                    width: 4vmax;
+                  
+                }
+    
+                h2 {
+                 
+                    font-size: 4vmax;
+                 
+                }
+
+            }
+
+
+                
+            h3 {
+                font-family: 'Synonym', sans-serif;
+                font-weight: 400;
+                text-shadow: 1px 1px 1px rgba(167, 231, 247, 0.884);
+                margin-top: -1vmax;
+               
+            }
+        }
 
             .experienciasFooter {
                 width: 80%;
-                font-size: 1.8vmax;
-                margin-top: 2vmax;
+                font-size: $size-xs;
+                margin-top: 5vmax;
             }
             
+
+            
+        .redesFooterDiv {
+            display: flex;
+            flex-direction: row;
+            gap: 2vmax;
+            margin-top: 1.5vmax;
+            // border: solid 2px yellow;
+            width: 70%;
+            justify-content: center;
+            a {
+
+
+                .iconoRedes {
+                    width: 3.5vmax;
+                  
+                }
+
+            }
+        }
+
             .legalesFooter {
             
             
+                margin-top: 3vmax;
+
                 .condiciones {
             
-                    font-size: $size-xs;
+                    font-size: $size-xxs;
                     
                 }
 
                 .emailDiv {
                 
                     a { 
-                        font-size: $size-xs;
-                        padding-top: 0.6vmax;
+                        font-size: $size-xxs;
+                        padding-top: 0.5vmax;
 
                     }
 
@@ -379,19 +452,20 @@
 
 
         .columnaDerechaFooter {
-            margin-top: 1vmax;
+            margin-top: 1.5vmax;
 
 
             .atencionFooter {
-                width: 90%;
+                width: 80%;
                 font-size: $size-xs;
 
             }
 
             .accionFooter {
 
-                width: 90%;
-                font-size: $size-small;
+                width: 100%;
+                font-size: 2vmax;
+                // border: 2px solid white;
              
             }
 
@@ -399,17 +473,20 @@
               
                 a {
                 
-                    font-size: $size-xs;
+                    font-size: $size-xxs;
                     border-radius: 6px;
                     padding: 0.5vmax 2.5vmax;
                 
                 }
             }
 
-        
-            img {
-                width: 10vmax;
+            .imgAdventureDiv {
+
             
+                img {
+                    width: 10vmax;
+                
+                }
             }
                 
             
@@ -425,29 +502,69 @@
 
 
     .footerSection {
-        background-position: center bottom 25%;
+        background-position: center bottom;
 
     
         .footerTitles {
         
         
-            padding-top: 10vmax;
+            align-items: center;
+            padding-top: 5vmax;
+
+
+    
+            .tituloPrincipalFooter {
+               
+    
+                .brandFooterContainer {
+                  
+    
+                    .brandFooter {
+                        width: 6vmax;
+                    }
+        
+                    h2 {
+                        font-size: 6vmax;
+                        
+            
+                    }
+    
+                }
+
+                        
+                h3 {
+                    font-weight: bold;
+                    text-shadow: 1px 1px 1px rgba(167, 231, 247, 0.884);
+                    margin: 0 auto;
+                    width: 100%;
+                    text-align: center;
+                    padding: 0;
+                }
+    
+    
+            }
         
 
             .experienciasFooter {
-                width: 90%;
+                width: 70%;
                 font-size: $size-small;
-                margin-top: 3vmax;
+                margin-top: 8vmax;
+                text-align: center;
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                text-shadow: none;
+                text-shadow: 2px 1px 1px rgb(0, 0, 0);
+
             }
 
             .redesFooterDiv {
 
-                gap: 1.8vmax;
-                margin-top: 1.5vmax;
+                gap: 5vmax;
+                margin-top: 3vmax;
                 a {
 
                     .iconoRedes {
-                        width: 4vmax;
+                        width: 4.5vmax;
                      
                     }
 
@@ -457,25 +574,38 @@
             
             .legalesFooter {
             
-                margin-top: 4.5vmax;
-            
+                margin-top: 6vmax;
                 
                 .condiciones {
                 
-                    font-size: $size-xxs;
+                    font-size: $size-xs;
+                    align-items: center;
                    
                 }
 
                 .emailDiv {
                  
                     a { 
-                        font-size: $size-xxs;
-                    
+                        font-size: $size-xs;
+                        align-items: center;
 
                     }
 
                     
                 }
+            }
+
+                
+            .divisorFooter {
+
+                width: 70%;
+                margin: 0 auto;
+
+                hr {
+                    border-bottom: solid 2px black;
+                    display: block;
+                }
+            
             }
 
         }
@@ -484,23 +614,28 @@
         .columnaDerechaFooter {
         
             .atencionFooter {
-                width: 90%;
-                font-size: $size-xs;
-                margin-top: 10vmax;
+                width: 70%;
+                font-size: $size-cuarto;
+                margin: 0 auto;
+                align-items: center;
+                text-align: center;
+                // border: solid 2px yellow;
           
             }
 
             .accionFooter {
 
-                width: 90%;
-                font-size: $size-small;
+                width: 80%;
+                font-size: $size-terc;
+                text-align: center;
+                margin: 3vmax auto;
               
             }
 
             .botonFooterDiv {
                 flex-direction: row;
-                align-items: start;
-                margin-top: 1.8vmax;
+                align-items: center;
+                margin: 2vmax auto;
                 // margin-bottom: 4vmax;
 
 
@@ -513,10 +648,18 @@
                 }
             }
 
-        
-            img {
-                width: 9vmax;
-            
+            .imgAdventureDiv {
+
+                // border: 2px solid white;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                
+                img {
+                    width: 16vmax;
+                
+                }
             }
                 
             
@@ -534,76 +677,75 @@
 
 @media screen and (max-width:576px) {
 
-     
-
-    
-    .footerSection {
-    
-        padding: 4vmax;
+  
+    footerSection {
         background-position: center bottom;
 
-
+    
         .footerTitles {
         
-            flex-direction: column;
+        
             align-items: center;
-            padding: 7vmax 4vmax 0 4vmax;
-            margin-top: 6vmax;
-            // border: solid 3px white;
+            padding-top: 3vmax;
 
 
+    
             .tituloPrincipalFooter {
-
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-
+               
+    
                 .brandFooterContainer {
-                   
+                  
+    
                     .brandFooter {
-                    
-                        width: 7vmax;
-                        
+                        width: 5vmax;
                     }
         
                     h2 {
-                        font-size: 7vmax;
+                        font-size: 5vmax;
                         
             
                     }
-
+    
                 }
 
-
-                    
+                        
                 h3 {
-                    
-                    font-size: $size-principal;
                     font-weight: bold;
+                    text-shadow: 1px 1px 1px rgba(167, 231, 247, 0.884);
+                    margin: 0 auto;
+                    width: 100%;
+                    text-align: center;
+                    padding: 0;
                 }
+    
+    
             }
             
 
+
             .experienciasFooter {
-    
+                width: 70%;
+                font-size: $size-small;
+                margin-top: 8vmax;
                 text-align: center;
-                width: 80%;
-                font-size: $size-cuarto;
-                margin-top: 4.5vmax;
-          
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                text-shadow: none;
+                text-shadow: 2px 1px 1px rgb(0, 0, 0);
+
+
+
             }
 
             .redesFooterDiv {
-                
-                flex-direction: row;
-                gap: 1.8vmax;
-                margin-top: 2.5vmax;
+
+                gap: 5vmax;
+                margin-top: 3vmax;
                 a {
 
                     .iconoRedes {
                         width: 4.5vmax;
-                       
+                     
                     }
 
                 }
@@ -612,23 +754,24 @@
             
             .legalesFooter {
             
-                margin-top: 4vmax;
+                margin-top: 6vmax;
                 // border: solid 3px yellow;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-             
+
+            
                 
                 .condiciones {
-                    font-size: $size-xs;   
+                
+                    font-size: $size-xs;
+               
+                    align-items: center;
+                   
                 }
 
                 .emailDiv {
-                
-                    
+                 
                     a { 
                         font-size: $size-xs;
-                        padding-top: 0.6vmax;
+                        align-items: center;
 
                     }
 
@@ -636,88 +779,26 @@
                 }
             }
 
-            .divisorFooter {
-
-                width: 100%;
-
-                hr {
-                    border-bottom: solid 3px rgb(255, 255, 255);
-                    display: block;
-                }
-            
-            }
+                
+         
         }
 
 
         .columnaDerechaFooter {
-            // border: solid 3px white;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            padding: 0 2vmax;
         
             .atencionFooter {
-                font-size: $size-terc;
-                margin-top: 0;
-                text-align: center;
-                font-weight: 400;
-                padding-bottom: 2vmax;            
-                text-shadow: none;
-
-
-
-            }
-
-            .accionFooter {
-
-                // border: solid 2px rgb(240, 59, 89);
-                width: 90%;
-                font-size: $size-terc;
-                text-align: center;
-            }
-
-            .botonFooterDiv {
-                flex-direction: row;
-                align-items: center;
+                width: 70%;
+                font-size: $size-small;
                
-
-                a {
-                
-                    font-size: $size-terc;
-                    border-radius: 8px;
-                    
-                
-                }
+          
             }
 
-        
-            img {
-                width: 14vmax;
-                padding-bottom: 2vmax;
-            
-            }
-                
+               
             
         }
 
-        .derechos {
-            // border: solid orangered 2px;
-           
-     
-            padding-top: 2vmax;
-            padding-bottom: 0;
-           
-            p {
-                padding-bottom: 0;
-                font-size: $size-xs;
-            }
-
-        }
-        
     
     }
-
-
 
 }
 
@@ -727,7 +808,137 @@
 
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
 
-@media screen and (max-width:380px) {
+@media screen and (max-width:480px) {
 
 
+    .footerSection {
+
+        .footerTitles {
+
+
+            margin-top: 5vmax;
+
+            .tituloPrincipalFooter {
+
+                .brandFooterContainer {
+                  
+                    .brandFooter {
+                     
+                        width: 3.5vmax;
+                    }
+        
+                    h2 {
+                        font-size: 3.5vmax;
+                        padding-bottom: 0;
+            
+                    }
+
+                }
+
+                    
+                h3 {
+                   
+                    margin-top: 0;
+                    width: 100%;
+                   
+                }
+
+            }
+
+
+            .experienciasFooter {
+                width: 90%;
+                color: black;
+                font-size: $size-xs;
+                margin-top: 2.5vmax;
+                font-weight: bold;
+                text-shadow: 2px 1px 1px rgb(255, 255, 255);
+              
+    
+            }
+        }
+
+        
+        
+        .legalesFooter {
+            // border: 3px solid yellow;
+            margin-top: 3vmax;
+          
+            
+
+            .condiciones {
+            
+      
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                text-decoration: none;
+                // color: $color-light-one;
+                text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.849);
+                font-size: $size-xxxs;
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+      
+
+                
+            }
+
+            .emailDiv {
+               
+                
+
+                a { 
+     
+                    color: rgb(0, 0, 0);
+                    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+                    font-size: $size-xxxs;
+                  
+                }
+
+                
+            }
+        }
+
+    }
+
+
+    .columnaDerechaFooter {
+
+        .atencionFooter {
+            color: white;
+            font-size: $size-xs !important;
+            text-shadow: 1px 1px 1px rgb(0, 0, 0) !important;
+        }
+
+        
+        .accionFooter {
+
+            width: 90%;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 1px 1px rgba(9, 70, 85, 0.849);
+            font-size: $size-xs !important;
+            font-weight: bold;
+            text-align: end;
+            padding-top: 2vmax;
+        }
+
+        
+        .botonFooterDiv {
+
+            margin-top: 1.8vmax;
+            margin-bottom: 4vmax ;
+
+
+            a {
+            
+                font-size: $size-xxxs;
+                color: rgb(255, 255, 255);
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.849);
+                padding: 0.5vmax 2.5vmax;
+         
+
+
+            }
+        }
+    }
 }

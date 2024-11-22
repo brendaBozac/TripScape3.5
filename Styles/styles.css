@@ -1784,6 +1784,7 @@ body {
   margin-left: 0;
   margin-right: 0;
   padding-right: 2vmax;
+  padding-left: 0vmax;
 }
 .footerSection .footerTitles {
   display: flex;
@@ -1831,7 +1832,7 @@ body {
   width: 80%;
   color: rgb(255, 255, 255);
   text-shadow: none;
-  font-size: 1.8vmax;
+  font-size: 1.5vmax;
   margin-top: 2.5vmax;
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(8, 70, 85, 0.849);
@@ -1862,7 +1863,7 @@ body {
   align-items: start;
   text-decoration: none;
   text-shadow: 1px 1px 1px rgba(8, 70, 85, 0.849);
-  font-size: 1.5vmax;
+  font-size: 1.2vmax;
   font-weight: bold;
   color: white;
 }
@@ -1879,7 +1880,7 @@ body {
   text-decoration: none;
   color: white;
   text-shadow: 1px 1px 1px rgba(8, 70, 85, 0.849);
-  font-size: 1.5vmax;
+  font-size: 1.2vmax;
   font-weight: bold;
   padding-top: 1vmax;
 }
@@ -1920,6 +1921,7 @@ body {
   font-size: 1.8vmax;
   font-weight: bold;
   text-align: end;
+  padding-top: 2vmax;
 }
 .footerSection .columnaDerechaFooter .botonFooterDiv {
   display: flex;
@@ -1943,7 +1945,7 @@ body {
 .footerSection .columnaDerechaFooter .botonFooterDiv a:hover {
   color: yellow;
 }
-.footerSection .columnaDerechaFooter img {
+.footerSection .columnaDerechaFooter .imgAdventureDiv img {
   width: 12vmax;
   filter: drop-shadow(1px 4px 4px rgba(119, 195, 214, 0.918));
 }
@@ -1970,191 +1972,296 @@ body {
 /* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
 /* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 992px) {
+  .footerSection {
+    border: solid 2px orange;
+    padding-top: 5vmax;
+    padding-left: 3vmax;
+    padding-right: 1vmax;
+  }
+  .footerSection .footerTitles {
+    border: 2px black;
+    padding: 5vmax 0 0 0;
+    margin-top: 1vmax;
+  }
+  .footerSection .footerTitles .tituloPrincipalFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerSection .footerTitles .tituloPrincipalFooter .brandFooterContainer .brandFooter {
+    margin-top: -0.8vmax;
+    width: 4vmax;
+  }
+  .footerSection .footerTitles .tituloPrincipalFooter .brandFooterContainer h2 {
+    font-size: 4vmax;
+  }
+  .footerSection .footerTitles .tituloPrincipalFooter h3 {
+    font-family: "Synonym", sans-serif;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgba(167, 231, 247, 0.884);
+    margin-top: -1vmax;
+  }
   .footerSection .footerTitles .experienciasFooter {
     width: 80%;
     font-size: 1.8vmax;
-    margin-top: 2vmax;
+    margin-top: 5vmax;
+  }
+  .footerSection .footerTitles .redesFooterDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 2vmax;
+    margin-top: 1.5vmax;
+    width: 70%;
+    justify-content: center;
+  }
+  .footerSection .footerTitles .redesFooterDiv a .iconoRedes {
+    width: 3.5vmax;
+  }
+  .footerSection .footerTitles .legalesFooter {
+    margin-top: 3vmax;
   }
   .footerSection .footerTitles .legalesFooter .condiciones {
-    font-size: 1.8vmax;
+    font-size: 1.5vmax;
   }
   .footerSection .footerTitles .legalesFooter .emailDiv a {
-    font-size: 1.8vmax;
-    padding-top: 0.6vmax;
+    font-size: 1.5vmax;
+    padding-top: 0.5vmax;
   }
   .footerSection .columnaDerechaFooter {
-    margin-top: 1vmax;
+    margin-top: 1.5vmax;
   }
   .footerSection .columnaDerechaFooter .atencionFooter {
-    width: 90%;
+    width: 80%;
     font-size: 1.8vmax;
   }
   .footerSection .columnaDerechaFooter .accionFooter {
-    width: 90%;
-    font-size: 2.2vmax;
+    width: 100%;
+    font-size: 2vmax;
   }
   .footerSection .columnaDerechaFooter .botonFooterDiv a {
-    font-size: 1.8vmax;
+    font-size: 1.5vmax;
     border-radius: 6px;
     padding: 0.5vmax 2.5vmax;
   }
-  .footerSection .columnaDerechaFooter img {
+  .footerSection .columnaDerechaFooter .imgAdventureDiv img {
     width: 10vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 768px) {
   .footerSection {
-    background-position: center bottom 25%;
+    background-position: center bottom;
   }
   .footerSection .footerTitles {
-    padding-top: 10vmax;
+    align-items: center;
+    padding-top: 5vmax;
+  }
+  .footerSection .footerTitles .tituloPrincipalFooter .brandFooterContainer .brandFooter {
+    width: 6vmax;
+  }
+  .footerSection .footerTitles .tituloPrincipalFooter .brandFooterContainer h2 {
+    font-size: 6vmax;
+  }
+  .footerSection .footerTitles .tituloPrincipalFooter h3 {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(167, 231, 247, 0.884);
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0;
   }
   .footerSection .footerTitles .experienciasFooter {
-    width: 90%;
+    width: 70%;
     font-size: 2.2vmax;
-    margin-top: 3vmax;
+    margin-top: 8vmax;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: none;
+    text-shadow: 2px 1px 1px rgb(0, 0, 0);
   }
   .footerSection .footerTitles .redesFooterDiv {
-    gap: 1.8vmax;
-    margin-top: 1.5vmax;
+    gap: 5vmax;
+    margin-top: 3vmax;
   }
   .footerSection .footerTitles .redesFooterDiv a .iconoRedes {
-    width: 4vmax;
+    width: 4.5vmax;
   }
   .footerSection .footerTitles .legalesFooter {
-    margin-top: 4.5vmax;
+    margin-top: 6vmax;
   }
   .footerSection .footerTitles .legalesFooter .condiciones {
-    font-size: 1.5vmax;
+    font-size: 1.8vmax;
+    align-items: center;
   }
   .footerSection .footerTitles .legalesFooter .emailDiv a {
-    font-size: 1.5vmax;
+    font-size: 1.8vmax;
+    align-items: center;
+  }
+  .footerSection .footerTitles .divisorFooter {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .footerSection .footerTitles .divisorFooter hr {
+    border-bottom: solid 2px black;
+    display: block;
   }
   .footerSection .columnaDerechaFooter .atencionFooter {
-    width: 90%;
-    font-size: 1.8vmax;
-    margin-top: 10vmax;
+    width: 70%;
+    font-size: 2.6vmax;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
   }
   .footerSection .columnaDerechaFooter .accionFooter {
-    width: 90%;
-    font-size: 2.2vmax;
+    width: 80%;
+    font-size: 3vmax;
+    text-align: center;
+    margin: 3vmax auto;
   }
   .footerSection .columnaDerechaFooter .botonFooterDiv {
     flex-direction: row;
-    align-items: start;
-    margin-top: 1.8vmax;
+    align-items: center;
+    margin: 2vmax auto;
   }
   .footerSection .columnaDerechaFooter .botonFooterDiv a {
     font-size: 2.2vmax;
     border-radius: 6px;
     padding: 0.5vmax 2.5vmax;
   }
-  .footerSection .columnaDerechaFooter img {
-    width: 9vmax;
+  .footerSection .columnaDerechaFooter .imgAdventureDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footerSection .columnaDerechaFooter .imgAdventureDiv img {
+    width: 16vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 576px) {
-  .footerSection {
-    padding: 4vmax;
+  footerSection {
     background-position: center bottom;
   }
-  .footerSection .footerTitles {
-    flex-direction: column;
+  footerSection .footerTitles {
     align-items: center;
-    padding: 7vmax 4vmax 0 4vmax;
-    margin-top: 6vmax;
+    padding-top: 3vmax;
   }
-  .footerSection .footerTitles .tituloPrincipalFooter {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  footerSection .footerTitles .tituloPrincipalFooter .brandFooterContainer .brandFooter {
+    width: 5vmax;
   }
-  .footerSection .footerTitles .tituloPrincipalFooter .brandFooterContainer .brandFooter {
-    width: 7vmax;
+  footerSection .footerTitles .tituloPrincipalFooter .brandFooterContainer h2 {
+    font-size: 5vmax;
   }
-  .footerSection .footerTitles .tituloPrincipalFooter .brandFooterContainer h2 {
-    font-size: 7vmax;
-  }
-  .footerSection .footerTitles .tituloPrincipalFooter h3 {
-    font-size: 4.2vmax;
+  footerSection .footerTitles .tituloPrincipalFooter h3 {
     font-weight: bold;
-  }
-  .footerSection .footerTitles .experienciasFooter {
+    text-shadow: 1px 1px 1px rgba(167, 231, 247, 0.884);
+    margin: 0 auto;
+    width: 100%;
     text-align: center;
-    width: 80%;
-    font-size: 2.6vmax;
-    margin-top: 4.5vmax;
+    padding: 0;
   }
-  .footerSection .footerTitles .redesFooterDiv {
-    flex-direction: row;
-    gap: 1.8vmax;
-    margin-top: 2.5vmax;
+  footerSection .footerTitles .experienciasFooter {
+    width: 70%;
+    font-size: 2.2vmax;
+    margin-top: 8vmax;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: none;
+    text-shadow: 2px 1px 1px rgb(0, 0, 0);
   }
-  .footerSection .footerTitles .redesFooterDiv a .iconoRedes {
+  footerSection .footerTitles .redesFooterDiv {
+    gap: 5vmax;
+    margin-top: 3vmax;
+  }
+  footerSection .footerTitles .redesFooterDiv a .iconoRedes {
     width: 4.5vmax;
   }
-  .footerSection .footerTitles .legalesFooter {
-    margin-top: 4vmax;
-    display: flex;
-    flex-direction: column;
+  footerSection .footerTitles .legalesFooter {
+    margin-top: 6vmax;
+  }
+  footerSection .footerTitles .legalesFooter .condiciones {
+    font-size: 1.8vmax;
     align-items: center;
   }
-  .footerSection .footerTitles .legalesFooter .condiciones {
+  footerSection .footerTitles .legalesFooter .emailDiv a {
     font-size: 1.8vmax;
-  }
-  .footerSection .footerTitles .legalesFooter .emailDiv a {
-    font-size: 1.8vmax;
-    padding-top: 0.6vmax;
-  }
-  .footerSection .footerTitles .divisorFooter {
-    width: 100%;
-  }
-  .footerSection .footerTitles .divisorFooter hr {
-    border-bottom: solid 3px rgb(255, 255, 255);
-    display: block;
-  }
-  .footerSection .columnaDerechaFooter {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0 2vmax;
-  }
-  .footerSection .columnaDerechaFooter .atencionFooter {
-    font-size: 3vmax;
-    margin-top: 0;
-    text-align: center;
-    font-weight: 400;
-    padding-bottom: 2vmax;
-    text-shadow: none;
-  }
-  .footerSection .columnaDerechaFooter .accionFooter {
-    width: 90%;
-    font-size: 3vmax;
-    text-align: center;
-  }
-  .footerSection .columnaDerechaFooter .botonFooterDiv {
-    flex-direction: row;
     align-items: center;
   }
-  .footerSection .columnaDerechaFooter .botonFooterDiv a {
-    font-size: 3vmax;
-    border-radius: 8px;
-  }
-  .footerSection .columnaDerechaFooter img {
-    width: 14vmax;
-    padding-bottom: 2vmax;
-  }
-  .footerSection .derechos {
-    padding-top: 2vmax;
-    padding-bottom: 0;
-  }
-  .footerSection .derechos p {
-    padding-bottom: 0;
-    font-size: 1.8vmax;
+  footerSection .columnaDerechaFooter .atencionFooter {
+    width: 70%;
+    font-size: 2.2vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 480px) {
+  .footerSection .footerTitles {
+    margin-top: 5vmax;
+  }
+  .footerSection .footerTitles .tituloPrincipalFooter .brandFooterContainer .brandFooter {
+    width: 3.5vmax;
+  }
+  .footerSection .footerTitles .tituloPrincipalFooter .brandFooterContainer h2 {
+    font-size: 3.5vmax;
+    padding-bottom: 0;
+  }
+  .footerSection .footerTitles .tituloPrincipalFooter h3 {
+    margin-top: 0;
+    width: 100%;
+  }
+  .footerSection .footerTitles .experienciasFooter {
+    width: 90%;
+    color: black;
+    font-size: 1.8vmax;
+    margin-top: 2.5vmax;
+    font-weight: bold;
+    text-shadow: 2px 1px 1px rgb(255, 255, 255);
+  }
+  .footerSection .legalesFooter {
+    margin-top: 3vmax;
+  }
+  .footerSection .legalesFooter .condiciones {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.849);
+    font-size: 1.2vmax;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+  .footerSection .legalesFooter .emailDiv a {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    font-size: 1.2vmax;
+  }
+  .columnaDerechaFooter .atencionFooter {
+    color: white;
+    font-size: 1.8vmax !important;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0) !important;
+  }
+  .columnaDerechaFooter .accionFooter {
+    width: 90%;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 1px 1px rgba(9, 70, 85, 0.849);
+    font-size: 1.8vmax !important;
+    font-weight: bold;
+    text-align: end;
+    padding-top: 2vmax;
+  }
+  .columnaDerechaFooter .botonFooterDiv {
+    margin-top: 1.8vmax;
+    margin-bottom: 4vmax;
+  }
+  .columnaDerechaFooter .botonFooterDiv a {
+    font-size: 1.2vmax;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.849);
+    padding: 0.5vmax 2.5vmax;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
