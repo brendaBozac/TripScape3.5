@@ -8,17 +8,21 @@
 .footerSection {
     width: 100%;
     z-index: 1;
-    background-image: url('../Img/ballena.jpg');
+    background-color: #F9E8DF;
+    background-image: url('../Img/pop77.jpg');
+    background: linear-gradient(to bottom, (#ffffff) 0%, rgba(255, 255, 255, 0) 40%), url('../Img/pop77.jpg');
     background-position: center bottom 20%;
     background-size: cover;
-    height: 45vmax;
+    // height: 45vmax;
+    height: auto;
     margin-top: -15vmax;
     margin-left: 0;
     margin-right: 0;
+    padding-right: 2vmax;
 
 
     .footerTitles {
-        border: 2px black;
+        // border: 2px black;
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -27,42 +31,66 @@
         padding-left: 4vmax;
         margin-top: 0;
 
-        h2 {
-            font-family: 'Clash Grotesk', sans-serif;
-            font-size: $size-secundario;
-            text-shadow: 2px 2px 3px rgba(167, 231, 247, 0.884);
 
-        }
+        .tituloPrincipalFooter {
+            // border: 2px solid green;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-        h3 {
-            font-family: 'Synonym', sans-serif;
-            font-weight: 400;
-            text-shadow: 1px 2px 2px rgba(167, 231, 247, 0.884);
 
-        }
+            .brandFooterContainer {
+                // border: 2px solid green;
+                display: flex;
+                flex-wrap: row nowrap;
+                justify-content: center;
+                align-items: center;
+                gap: 0.8vmax;
 
-        .descripcionFooterDiv {
-
-            width: 60%;
-            margin-top: 3vmax;
-            p {
-                font-size: $size-xxxs;
-                font-family: $fuente-principal;
-                font-weight: bold;
-                color: $color-dark-one;
-                // text-shadow: 1px 2px 4px white;
+                .brandFooter {
+                    margin-top: -0.8vmax;
+                    width: 5vmax;
+                    filter: drop-shadow(2px 1px 1px rgba(167, 231, 247, 0.884));
+                }
+    
+                h2 {
+                    font-family: 'Clash Grotesk', sans-serif;
+                    font-size: 5vmax;
+                    text-shadow: 2px 1px 1px rgba(167, 231, 247, 0.884);
+                    padding-bottom: 0;
+        
+                }
 
             }
+
+
+                
+            h3 {
+                font-family: 'Synonym', sans-serif;
+                font-weight: 400;
+                text-shadow: 1px 1px 1px rgba(167, 231, 247, 0.884);
+                margin-top: 0;
+                width: 100%;
+                text-align: center;
+                padding-top: 0;
+            }
         }
+        
+
+
 
         .experienciasFooter {
             width: 80%;
             color: rgb(255, 255, 255);
             text-shadow: none;
             font-size: $size-xs;
-            margin-top: 15vmax;
+            margin-top: 2.5vmax;
             font-weight: bold;
-            // text-shadow: 1px 2px 2px rgba(255, 123, 0, 0.884);
+            text-shadow: 1px 1px 1px rgba(8, 70, 85, 0.849);
+            
+            
+
         }
 
         .redesFooterDiv {
@@ -75,26 +103,93 @@
 
                 .iconoRedes {
                     width: 3.5vmax;
-
                     background-color: transparent;
                     border-radius: 10px;
                     padding: 0.3vmax;
                     border: none;
-                    color: #F77B00;
-                    filter: drop-shadow(1px 1px 2px rgba(255, 255, 255, 0.801));
+                    filter: drop-shadow(1px 1px 2px rgb(255, 255, 255));
 
                 }
 
 
                 
                 &:hover {
-             
-                    // background-color: #f77c00c7;
-                    // border-radius: 10px;
-                    filter: drop-shadow(2px 4px 4px white);
+          
+                    filter: drop-shadow(2px 3px 4px rgb(129, 247, 255));
                     
                 }
             }
+        }
+
+
+        
+        .legalesFooter {
+            // border: 3px solid yellow;
+            margin-top: 3vmax;
+          
+            
+
+            .condiciones {
+            
+      
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                text-decoration: none;
+                // color: $color-light-one;
+                text-shadow: 1px 1px 1px rgba(8, 70, 85, 0.849);
+                font-size: $size-xxs;
+                font-weight: bold;
+                color: white;
+      
+
+                
+                &:hover {
+             
+                    
+                    color: yellow;
+                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.884);
+                    
+                }
+            }
+
+            .emailDiv {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+                
+
+                a { 
+     
+                    text-decoration: none;
+                    color: white;
+                    text-shadow: 1px 1px 1px rgba(8, 70, 85, 0.849);
+                    font-size: $size-xxs;
+                    font-weight: bold;
+                    padding-top: 1vmax;
+
+                    &:hover {
+             
+                        color: yellow;
+                        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.884);
+                        
+                    }
+                }
+
+                
+            }
+        }
+
+        .divisorFooter {
+
+            width: 100%;
+
+            hr {
+                border-bottom: solid 2px black;
+                display: none;
+            }
+           
         }
     }
 
@@ -103,21 +198,33 @@
         display: flex;
         flex-direction: column;
         align-items: end;
-        padding-right: 4vmax;
+        justify-content: space-evenly;
+        padding-right: 2vmax;
         margin-right: 0;
-        margin-top: 5vmax;
+        margin-top: 0;
 
 
         .atencionFooter {
-            width: 50%;
+            width: 80%;
             font-size: $size-xxs;
             margin-top: 8vmax;
             text-align: end;
             font-family: 'Synonym', sans-serif;
             font-weight: 400;
-            text-shadow: 1px 2px 2px rgba(167, 231, 247, 0.884);
+            text-shadow: 1px 1px 1px rgba(168, 229, 245, 0.849);
+            padding-bottom: 1.5vmax;
 
 
+        }
+
+        .accionFooter {
+
+            width: 90%;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 1px 1px rgba(9, 70, 85, 0.849);
+            font-size: $size-xs;
+            font-weight: bold;
+            text-align: end;
         }
 
         .botonFooterDiv {
@@ -130,14 +237,14 @@
 
             a {
             
-                font-size: $size-xxxs;
+                font-size: $size-xxs;
                 color: rgb(255, 255, 255);
                 text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.849);
                 font-family: 'Quilon', sans-serif;
                 text-decoration: none;
                 background-color: #F77B00;
                 border-radius: 10px;
-                padding: 0.5vmax 1.4vmax;
+                padding: 0.5vmax 2.5vmax;
                 box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
                 user-select: none;
 
@@ -151,61 +258,7 @@
             }
         }
 
-
-        .legalesFooter {
-            // border: 3px solid yellow;
-            margin-top: -2vmax;
-            margin-bottom: 2vmax;
-            
-
-            .condiciones {
-                display: flex;
-                flex-direction: column;
-                align-items: end;
-                text-decoration: none;
-                color: $color-light-one;
-                font-size: $size-xxxs;
-                font-weight: 600;
-                text-shadow: 1px 1px 2px rgba(26, 80, 94, 0.884);
-
-                
-                &:hover {
-             
-                    color: yellow;
-                    
-                }
-            }
-
-            .emailDiv {
-                display: flex;
-                flex-direction: column;
-                align-items: end;
-
-                
-
-                a { 
-                    text-decoration: none;
-                    color: $color-light-one;
-                    font-size: $size-xxxs;
-                    font-weight: 600;
-                    padding-top: 1vmax;
-                    text-shadow: 1px 1px 2px rgba(26, 80, 94, 0.884);
-
-                    &:hover {
-             
-                        color: yellow;
-                        
-                    }
-                }
-
-                
-            }
-        }
-                
-
-
-
-
+       
         img {
             width: 12vmax;
             filter: drop-shadow(1px 4px 4px rgba(119, 195, 214, 0.918));
@@ -215,18 +268,20 @@
     }
 
     .derechos {
-        text-align: start;
-        margin: 0;
+        // border: solid orangered 2px;
+        text-align: center;
+        margin: 0 auto;
         padding-left: 3vmax;
-        color: rgb(0, 0, 0);
+        color: white;
         width: 80%;
-        text-shadow: 1px 2px 4px rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.849);
         font-weight: bold;
-        font-size: $fuente-principal;
+        padding-top: 3vmax;
         padding-bottom: 0;
-        height: 2vmax;
+        // height: 2vmax;
         p {
             padding-bottom: 0;
+            font-size: $size-xxxs;
         }
 
     }
@@ -283,16 +338,192 @@
 
 @media screen and (max-width:992px) {
     
-    
-   
-}
 
+        
+    .footerSection {
+     
+      
+
+        .footerTitles {
+        
+            
+
+            .experienciasFooter {
+                width: 80%;
+                font-size: 1.8vmax;
+                margin-top: 2vmax;
+            }
+            
+            .legalesFooter {
+            
+            
+                .condiciones {
+            
+                    font-size: $size-xs;
+                    
+                }
+
+                .emailDiv {
+                
+                    a { 
+                        font-size: $size-xs;
+                        padding-top: 0.6vmax;
+
+                    }
+
+                    
+                }
+            }
+
+        }
+
+
+        .columnaDerechaFooter {
+            margin-top: 1vmax;
+
+
+            .atencionFooter {
+                width: 90%;
+                font-size: $size-xs;
+
+            }
+
+            .accionFooter {
+
+                width: 90%;
+                font-size: $size-small;
+             
+            }
+
+            .botonFooterDiv {
+              
+                a {
+                
+                    font-size: $size-xs;
+                    border-radius: 6px;
+                    padding: 0.5vmax 2.5vmax;
+                
+                }
+            }
+
+        
+            img {
+                width: 10vmax;
+            
+            }
+                
+            
+        }
+    
+    }
+}
 
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
 
 
 @media screen and (max-width:768px) {
 
+
+    .footerSection {
+        background-position: center bottom 25%;
+
+    
+        .footerTitles {
+        
+        
+            padding-top: 10vmax;
+        
+
+            .experienciasFooter {
+                width: 90%;
+                font-size: $size-small;
+                margin-top: 3vmax;
+            }
+
+            .redesFooterDiv {
+
+                gap: 1.8vmax;
+                margin-top: 1.5vmax;
+                a {
+
+                    .iconoRedes {
+                        width: 4vmax;
+                     
+                    }
+
+                }
+            }
+
+            
+            .legalesFooter {
+            
+                margin-top: 4.5vmax;
+            
+                
+                .condiciones {
+                
+                    font-size: $size-xxs;
+                   
+                }
+
+                .emailDiv {
+                 
+                    a { 
+                        font-size: $size-xxs;
+                    
+
+                    }
+
+                    
+                }
+            }
+
+        }
+
+
+        .columnaDerechaFooter {
+        
+            .atencionFooter {
+                width: 90%;
+                font-size: $size-xs;
+                margin-top: 10vmax;
+          
+            }
+
+            .accionFooter {
+
+                width: 90%;
+                font-size: $size-small;
+              
+            }
+
+            .botonFooterDiv {
+                flex-direction: row;
+                align-items: start;
+                margin-top: 1.8vmax;
+                // margin-bottom: 4vmax;
+
+
+                a {
+                
+                    font-size: $size-small;
+                    border-radius: 6px;
+                    padding: 0.5vmax 2.5vmax;
+                
+                }
+            }
+
+        
+            img {
+                width: 9vmax;
+            
+            }
+                
+            
+        }
+
+    
+    }
 
 }
 
@@ -303,12 +534,191 @@
 
 @media screen and (max-width:576px) {
 
-            
+     
+
+    
     .footerSection {
     
-        height: 70vmax;
-        margin-top: -15vmax;
+        padding: 4vmax;
+        background-position: center bottom;
+
+
+        .footerTitles {
+        
+            flex-direction: column;
+            align-items: center;
+            padding: 7vmax 4vmax 0 4vmax;
+            margin-top: 6vmax;
+            // border: solid 3px white;
+
+
+            .tituloPrincipalFooter {
+
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                .brandFooterContainer {
+                   
+                    .brandFooter {
+                    
+                        width: 7vmax;
+                        
+                    }
+        
+                    h2 {
+                        font-size: 7vmax;
+                        
+            
+                    }
+
+                }
+
+
+                    
+                h3 {
+                    
+                    font-size: $size-principal;
+                    font-weight: bold;
+                }
+            }
+            
+
+            .experienciasFooter {
+    
+                text-align: center;
+                width: 80%;
+                font-size: $size-cuarto;
+                margin-top: 4.5vmax;
+          
+            }
+
+            .redesFooterDiv {
+                
+                flex-direction: row;
+                gap: 1.8vmax;
+                margin-top: 2.5vmax;
+                a {
+
+                    .iconoRedes {
+                        width: 4.5vmax;
+                       
+                    }
+
+                }
+            }
+
+            
+            .legalesFooter {
+            
+                margin-top: 4vmax;
+                // border: solid 3px yellow;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+             
+                
+                .condiciones {
+                    font-size: $size-xs;   
+                }
+
+                .emailDiv {
+                
+                    
+                    a { 
+                        font-size: $size-xs;
+                        padding-top: 0.6vmax;
+
+                    }
+
+                    
+                }
+            }
+
+            .divisorFooter {
+
+                width: 100%;
+
+                hr {
+                    border-bottom: solid 3px rgb(255, 255, 255);
+                    display: block;
+                }
+            
+            }
+        }
+
+
+        .columnaDerechaFooter {
+            // border: solid 3px white;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 0 2vmax;
+        
+            .atencionFooter {
+                font-size: $size-terc;
+                margin-top: 0;
+                text-align: center;
+                font-weight: 400;
+                padding-bottom: 2vmax;            
+                text-shadow: none;
+
+
+
+            }
+
+            .accionFooter {
+
+                // border: solid 2px rgb(240, 59, 89);
+                width: 90%;
+                font-size: $size-terc;
+                text-align: center;
+            }
+
+            .botonFooterDiv {
+                flex-direction: row;
+                align-items: center;
+               
+
+                a {
+                
+                    font-size: $size-terc;
+                    border-radius: 8px;
+                    
+                
+                }
+            }
+
+        
+            img {
+                width: 14vmax;
+                padding-bottom: 2vmax;
+            
+            }
+                
+            
+        }
+
+        .derechos {
+            // border: solid orangered 2px;
+           
+     
+            padding-top: 2vmax;
+            padding-bottom: 0;
+           
+            p {
+                padding-bottom: 0;
+                font-size: $size-xs;
+            }
+
+        }
+        
+    
     }
+
+
+
 }
 
 
@@ -319,10 +729,5 @@
 
 @media screen and (max-width:380px) {
 
-    
-.footerSection {
-  
-    height: 80vmax;
-    margin-top: -15vmax;
-    }
+
 }

@@ -1774,16 +1774,18 @@ body {
 .footerSection {
   width: 100%;
   z-index: 1;
-  background-image: url("../Img/ballena.jpg");
+  background-color: #F9E8DF;
+  background-image: url("../Img/pop77.jpg");
+  background: linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0) 40%), url("../Img/pop77.jpg");
   background-position: center bottom 20%;
   background-size: cover;
-  height: 45vmax;
+  height: auto;
   margin-top: -15vmax;
   margin-left: 0;
   margin-right: 0;
+  padding-right: 2vmax;
 }
 .footerSection .footerTitles {
-  border: 2px black;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -1792,33 +1794,47 @@ body {
   padding-left: 4vmax;
   margin-top: 0;
 }
-.footerSection .footerTitles h2 {
-  font-family: "Clash Grotesk", sans-serif;
-  font-size: 3.6vmax;
-  text-shadow: 2px 2px 3px rgba(167, 231, 247, 0.884);
+.footerSection .footerTitles .tituloPrincipalFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.footerSection .footerTitles h3 {
+.footerSection .footerTitles .tituloPrincipalFooter .brandFooterContainer {
+  display: flex;
+  flex-wrap: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8vmax;
+}
+.footerSection .footerTitles .tituloPrincipalFooter .brandFooterContainer .brandFooter {
+  margin-top: -0.8vmax;
+  width: 5vmax;
+  filter: drop-shadow(2px 1px 1px rgba(167, 231, 247, 0.884));
+}
+.footerSection .footerTitles .tituloPrincipalFooter .brandFooterContainer h2 {
+  font-family: "Clash Grotesk", sans-serif;
+  font-size: 5vmax;
+  text-shadow: 2px 1px 1px rgba(167, 231, 247, 0.884);
+  padding-bottom: 0;
+}
+.footerSection .footerTitles .tituloPrincipalFooter h3 {
   font-family: "Synonym", sans-serif;
   font-weight: 400;
-  text-shadow: 1px 2px 2px rgba(167, 231, 247, 0.884);
-}
-.footerSection .footerTitles .descripcionFooterDiv {
-  width: 60%;
-  margin-top: 3vmax;
-}
-.footerSection .footerTitles .descripcionFooterDiv p {
-  font-size: 1.2vmax;
-  font-family: "Alata", sans-serif;
-  font-weight: bold;
-  color: #11262c;
+  text-shadow: 1px 1px 1px rgba(167, 231, 247, 0.884);
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 0;
 }
 .footerSection .footerTitles .experienciasFooter {
   width: 80%;
   color: rgb(255, 255, 255);
   text-shadow: none;
   font-size: 1.8vmax;
-  margin-top: 15vmax;
+  margin-top: 2.5vmax;
   font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(8, 70, 85, 0.849);
 }
 .footerSection .footerTitles .redesFooterDiv {
   display: flex;
@@ -1832,28 +1848,78 @@ body {
   border-radius: 10px;
   padding: 0.3vmax;
   border: none;
-  color: #F77B00;
-  filter: drop-shadow(1px 1px 2px rgba(255, 255, 255, 0.801));
+  filter: drop-shadow(1px 1px 2px rgb(255, 255, 255));
 }
 .footerSection .footerTitles .redesFooterDiv a:hover {
-  filter: drop-shadow(2px 4px 4px white);
+  filter: drop-shadow(2px 3px 4px rgb(129, 247, 255));
+}
+.footerSection .footerTitles .legalesFooter {
+  margin-top: 3vmax;
+}
+.footerSection .footerTitles .legalesFooter .condiciones {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(8, 70, 85, 0.849);
+  font-size: 1.5vmax;
+  font-weight: bold;
+  color: white;
+}
+.footerSection .footerTitles .legalesFooter .condiciones:hover {
+  color: yellow;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.884);
+}
+.footerSection .footerTitles .legalesFooter .emailDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.footerSection .footerTitles .legalesFooter .emailDiv a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(8, 70, 85, 0.849);
+  font-size: 1.5vmax;
+  font-weight: bold;
+  padding-top: 1vmax;
+}
+.footerSection .footerTitles .legalesFooter .emailDiv a:hover {
+  color: yellow;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.884);
+}
+.footerSection .footerTitles .divisorFooter {
+  width: 100%;
+}
+.footerSection .footerTitles .divisorFooter hr {
+  border-bottom: solid 2px black;
+  display: none;
 }
 .footerSection .columnaDerechaFooter {
   display: flex;
   flex-direction: column;
   align-items: end;
-  padding-right: 4vmax;
+  justify-content: space-evenly;
+  padding-right: 2vmax;
   margin-right: 0;
-  margin-top: 5vmax;
+  margin-top: 0;
 }
 .footerSection .columnaDerechaFooter .atencionFooter {
-  width: 50%;
+  width: 80%;
   font-size: 1.5vmax;
   margin-top: 8vmax;
   text-align: end;
   font-family: "Synonym", sans-serif;
   font-weight: 400;
-  text-shadow: 1px 2px 2px rgba(167, 231, 247, 0.884);
+  text-shadow: 1px 1px 1px rgba(168, 229, 245, 0.849);
+  padding-bottom: 1.5vmax;
+}
+.footerSection .columnaDerechaFooter .accionFooter {
+  width: 90%;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 1px 1px rgba(9, 70, 85, 0.849);
+  font-size: 1.8vmax;
+  font-weight: bold;
+  text-align: end;
 }
 .footerSection .columnaDerechaFooter .botonFooterDiv {
   display: flex;
@@ -1863,51 +1929,18 @@ body {
   margin-bottom: 4vmax;
 }
 .footerSection .columnaDerechaFooter .botonFooterDiv a {
-  font-size: 1.2vmax;
+  font-size: 1.5vmax;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.849);
   font-family: "Quilon", sans-serif;
   text-decoration: none;
   background-color: #F77B00;
   border-radius: 10px;
-  padding: 0.5vmax 1.4vmax;
+  padding: 0.5vmax 2.5vmax;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
   user-select: none;
 }
 .footerSection .columnaDerechaFooter .botonFooterDiv a:hover {
-  color: yellow;
-}
-.footerSection .columnaDerechaFooter .legalesFooter {
-  margin-top: -2vmax;
-  margin-bottom: 2vmax;
-}
-.footerSection .columnaDerechaFooter .legalesFooter .condiciones {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  text-decoration: none;
-  color: #f0f0f0;
-  font-size: 1.2vmax;
-  font-weight: 600;
-  text-shadow: 1px 1px 2px rgba(26, 80, 94, 0.884);
-}
-.footerSection .columnaDerechaFooter .legalesFooter .condiciones:hover {
-  color: yellow;
-}
-.footerSection .columnaDerechaFooter .legalesFooter .emailDiv {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-}
-.footerSection .columnaDerechaFooter .legalesFooter .emailDiv a {
-  text-decoration: none;
-  color: #f0f0f0;
-  font-size: 1.2vmax;
-  font-weight: 600;
-  padding-top: 1vmax;
-  text-shadow: 1px 1px 2px rgba(26, 80, 94, 0.884);
-}
-.footerSection .columnaDerechaFooter .legalesFooter .emailDiv a:hover {
   color: yellow;
 }
 .footerSection .columnaDerechaFooter img {
@@ -1915,19 +1948,19 @@ body {
   filter: drop-shadow(1px 4px 4px rgba(119, 195, 214, 0.918));
 }
 .footerSection .derechos {
-  text-align: start;
-  margin: 0;
+  text-align: center;
+  margin: 0 auto;
   padding-left: 3vmax;
-  color: rgb(0, 0, 0);
+  color: white;
   width: 80%;
-  text-shadow: 1px 2px 4px rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.849);
   font-weight: bold;
-  font-size: "Alata", sans-serif;
+  padding-top: 3vmax;
   padding-bottom: 0;
-  height: 2vmax;
 }
 .footerSection .derechos p {
   padding-bottom: 0;
+  font-size: 1.2vmax;
 }
 
 /* media queries */
@@ -1936,20 +1969,192 @@ body {
 /* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
 /* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
 /* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 992px) {
+  .footerSection .footerTitles .experienciasFooter {
+    width: 80%;
+    font-size: 1.8vmax;
+    margin-top: 2vmax;
+  }
+  .footerSection .footerTitles .legalesFooter .condiciones {
+    font-size: 1.8vmax;
+  }
+  .footerSection .footerTitles .legalesFooter .emailDiv a {
+    font-size: 1.8vmax;
+    padding-top: 0.6vmax;
+  }
+  .footerSection .columnaDerechaFooter {
+    margin-top: 1vmax;
+  }
+  .footerSection .columnaDerechaFooter .atencionFooter {
+    width: 90%;
+    font-size: 1.8vmax;
+  }
+  .footerSection .columnaDerechaFooter .accionFooter {
+    width: 90%;
+    font-size: 2.2vmax;
+  }
+  .footerSection .columnaDerechaFooter .botonFooterDiv a {
+    font-size: 1.8vmax;
+    border-radius: 6px;
+    padding: 0.5vmax 2.5vmax;
+  }
+  .footerSection .columnaDerechaFooter img {
+    width: 10vmax;
+  }
+}
 /* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 768px) {
+  .footerSection {
+    background-position: center bottom 25%;
+  }
+  .footerSection .footerTitles {
+    padding-top: 10vmax;
+  }
+  .footerSection .footerTitles .experienciasFooter {
+    width: 90%;
+    font-size: 2.2vmax;
+    margin-top: 3vmax;
+  }
+  .footerSection .footerTitles .redesFooterDiv {
+    gap: 1.8vmax;
+    margin-top: 1.5vmax;
+  }
+  .footerSection .footerTitles .redesFooterDiv a .iconoRedes {
+    width: 4vmax;
+  }
+  .footerSection .footerTitles .legalesFooter {
+    margin-top: 4.5vmax;
+  }
+  .footerSection .footerTitles .legalesFooter .condiciones {
+    font-size: 1.5vmax;
+  }
+  .footerSection .footerTitles .legalesFooter .emailDiv a {
+    font-size: 1.5vmax;
+  }
+  .footerSection .columnaDerechaFooter .atencionFooter {
+    width: 90%;
+    font-size: 1.8vmax;
+    margin-top: 10vmax;
+  }
+  .footerSection .columnaDerechaFooter .accionFooter {
+    width: 90%;
+    font-size: 2.2vmax;
+  }
+  .footerSection .columnaDerechaFooter .botonFooterDiv {
+    flex-direction: row;
+    align-items: start;
+    margin-top: 1.8vmax;
+  }
+  .footerSection .columnaDerechaFooter .botonFooterDiv a {
+    font-size: 2.2vmax;
+    border-radius: 6px;
+    padding: 0.5vmax 2.5vmax;
+  }
+  .footerSection .columnaDerechaFooter img {
+    width: 9vmax;
+  }
+}
 /* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 576px) {
   .footerSection {
-    height: 70vmax;
-    margin-top: -15vmax;
+    padding: 4vmax;
+    background-position: center bottom;
+  }
+  .footerSection .footerTitles {
+    flex-direction: column;
+    align-items: center;
+    padding: 7vmax 4vmax 0 4vmax;
+    margin-top: 6vmax;
+  }
+  .footerSection .footerTitles .tituloPrincipalFooter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerSection .footerTitles .tituloPrincipalFooter .brandFooterContainer .brandFooter {
+    width: 7vmax;
+  }
+  .footerSection .footerTitles .tituloPrincipalFooter .brandFooterContainer h2 {
+    font-size: 7vmax;
+  }
+  .footerSection .footerTitles .tituloPrincipalFooter h3 {
+    font-size: 4.2vmax;
+    font-weight: bold;
+  }
+  .footerSection .footerTitles .experienciasFooter {
+    text-align: center;
+    width: 80%;
+    font-size: 2.6vmax;
+    margin-top: 4.5vmax;
+  }
+  .footerSection .footerTitles .redesFooterDiv {
+    flex-direction: row;
+    gap: 1.8vmax;
+    margin-top: 2.5vmax;
+  }
+  .footerSection .footerTitles .redesFooterDiv a .iconoRedes {
+    width: 4.5vmax;
+  }
+  .footerSection .footerTitles .legalesFooter {
+    margin-top: 4vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerSection .footerTitles .legalesFooter .condiciones {
+    font-size: 1.8vmax;
+  }
+  .footerSection .footerTitles .legalesFooter .emailDiv a {
+    font-size: 1.8vmax;
+    padding-top: 0.6vmax;
+  }
+  .footerSection .footerTitles .divisorFooter {
+    width: 100%;
+  }
+  .footerSection .footerTitles .divisorFooter hr {
+    border-bottom: solid 3px rgb(255, 255, 255);
+    display: block;
+  }
+  .footerSection .columnaDerechaFooter {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 2vmax;
+  }
+  .footerSection .columnaDerechaFooter .atencionFooter {
+    font-size: 3vmax;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 2vmax;
+    text-shadow: none;
+  }
+  .footerSection .columnaDerechaFooter .accionFooter {
+    width: 90%;
+    font-size: 3vmax;
+    text-align: center;
+  }
+  .footerSection .columnaDerechaFooter .botonFooterDiv {
+    flex-direction: row;
+    align-items: center;
+  }
+  .footerSection .columnaDerechaFooter .botonFooterDiv a {
+    font-size: 3vmax;
+    border-radius: 8px;
+  }
+  .footerSection .columnaDerechaFooter img {
+    width: 14vmax;
+    padding-bottom: 2vmax;
+  }
+  .footerSection .derechos {
+    padding-top: 2vmax;
+    padding-bottom: 0;
+  }
+  .footerSection .derechos p {
+    padding-bottom: 0;
+    font-size: 1.8vmax;
   }
 }
 /* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
-@media screen and (max-width: 380px) {
-  .footerSection {
-    height: 80vmax;
-    margin-top: -15vmax;
-  }
-}
 
 /*# sourceMappingURL=styles.css.map */
